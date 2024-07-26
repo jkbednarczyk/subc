@@ -19,7 +19,7 @@ export const Navbar: FC = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          Navigation Bar
+          Salon Unikatów
         </NavLink>
 
         <div
@@ -33,44 +33,18 @@ export const Navbar: FC = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink
-                to="/news"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
-                News
+              <NavLink to="/about-us" className="nav__link" onClick={closeMenuOnMobile}>
+                O Nas
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink
-                to="/about-us"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
-                About Us
+              <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" className="nav__link" onClick={closeMenuOnMobile}>
+                Nasze Aukcje
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink
-                to="/favorite"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
-                Favorite
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink
-                to="/location"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
-                Location
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/get-started" className="nav__link nav__cta">
-                Get Started
+              <NavLink to="/location" className="nav__link" onClick={closeMenuOnMobile}>
+                Kontakt
               </NavLink>
             </li>
           </ul>

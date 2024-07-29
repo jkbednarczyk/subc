@@ -52,12 +52,13 @@
 }
 
 .intro-image {
-    max-width: 300px; /* Adjust the size as needed */
-    margin-right: 20px; /* Space between image and text */
+    max-width: 300px;
+    margin-right: 20px;
 }
 
 .intro-content p {
-    flex: 1; /* Make the paragraph take the remaining space */
+    flex: 1;
+    font-size: 18px;
 }
 
 @media (max-width: 768px) {

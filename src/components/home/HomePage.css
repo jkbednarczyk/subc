@@ -19,7 +19,7 @@
 }
 
 .content h1 {
-    font-size: 66px;
+    font-size: 86px;
     font-family: var(--second-font);
 }
 
@@ -43,8 +43,39 @@
     font-family: var(--subtitle-font);
 }
 
-.introduction p {
-    align-items: left;
+.intro-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* remember to adjust for small screen */
+.intro-image {
+    max-width: 300px; /* Adjust the size as needed */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.intro-content p {
+    flex: 1; /* Make the paragraph take the remaining space */
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 56px;
+    }
+
+    .content p {
+        font-size: 18px;;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image {
+        max-width: 200px;
+        margin: 0 0 20px 0; /* Space below the image */
+    }
+}

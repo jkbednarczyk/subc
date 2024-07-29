@@ -42,3 +42,9 @@
   padding-top: 5rem;
   padding-left: 1rem;
 }
+
+.nova {
+  background-color: grey;
+  height: 800px;
+  background-image: url('./assets/images/teacup.png');
+}

@@ -38,7 +38,7 @@ export const Navbar: FC = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" target="_blank" className="nav__link" onClick={closeMenuOnMobile}>
                 Nasze Aukcje
               </NavLink>
             </li>

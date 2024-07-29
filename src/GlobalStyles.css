@@ -17,6 +17,7 @@
   --body-color: hsl(0, 0%, 6%);
   --body-font: "Montserrat", sans-serif;
   --second-font: "Great Vibes", normal;
+  --subtitle-font: "Alata", normal;
   --h2-font-size: 2.25rem;
   --small-font-size: 0.813rem;
   --font-semi-bold: 600;
@@ -41,10 +42,4 @@
  .main-content {
   padding-top: 5rem;
   padding-left: 1rem;
-}
-
-.nova {
-  background-color: grey;
-  height: 800px;
-  background-image: url('./assets/images/teacup.png');
 }

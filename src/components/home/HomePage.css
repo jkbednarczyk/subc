@@ -1,0 +1,50 @@
+.home {
+    display: flex;
+    height: 100vh;
+    background-image: url('../../assets/images/teacup.png');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 66px;
+    font-family: var(--second-font);
+}
+
+.content p {
+    font-family: var(--subtitle-font);
+    font-style: italic;
+    font-size:24px;
+    margin: 5px 0;
+    max-width: 550px;
+    letter-spacing: 1px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    font-family: var(--subtitle-font);
+}
+
+.introduction p {
+    align-items: left;
+}
+
+/* remember to adjust for small screen */

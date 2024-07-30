@@ -77,6 +77,6 @@
 
     .intro-image {
         max-width: 200px;
-        margin: 0 0 20px 0; /* Space below the image */
+        margin: 0 0 20px 0;
     }
 }

@@ -61,6 +61,28 @@
     font-size: 18px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(39, 38, 38);
+    color: rgb(252, 252, 252);
+    font-family: var(--subtitle-font);
+}
+
+.footer-content {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .content h1 {
         font-size: 56px;

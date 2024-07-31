@@ -27,22 +27,22 @@ export const HomePage = () => {
         </section>
         <section className="footer">
             <div className="footer-content">
-                <div className="footer-location">
+                <div className="footer-item">
                     <FontAwesomeIcon icon={faLocationDot}/> Kraków, Małopolska
                 </div>
-                <div className="footer-mail">
+                <div className="footer-item">
                     <FontAwesomeIcon icon={faEnvelope}/> salonunikatow@gmail.com
                 </div>
-                <div className="footer-mobile">
+                <div className="footer-item">
                     <FontAwesomeIcon icon={faPhone}/> +48 662 921 155
                 </div>
                 <div className='footer-instagram'>
-                    <NavLink to="https://www.instagram.com/salon_unikatow/" target="_blank" className="nav__link">
+                    <NavLink to="https://www.instagram.com/salon_unikatow/" target="_blank">
                         <FontAwesomeIcon icon={faInstagram}/>
                     </NavLink>
                 </div>
                 <div className="footer-allegro">
-                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow/" target="_blank" className="nav__link">
+                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow/" target="_blank">
                         <img src={allegro} alt="" className="footer-allegro-icon"/>
                     </NavLink>
                 </div>
@@ -50,7 +50,6 @@ export const HomePage = () => {
                     <FontAwesomeIcon icon={faCopyright}/> 2024 Salon Unikatów. Zapoznaj się z 
                     <a href={"/privacyPolicy"}>{" polityką prywatności"}</a>.
                 </div>
-            
             </div>
         </section>
     </>

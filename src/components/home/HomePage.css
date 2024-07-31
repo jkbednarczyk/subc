@@ -83,6 +83,14 @@
     text-align: center;
 }
 
+.footer-copyright a {
+    color: var(--first-color);
+}
+
+.footer-allegro-icon {
+    height: 15px;
+}
+
 @media (max-width: 768px) {
     .content h1 {
         font-size: 56px;

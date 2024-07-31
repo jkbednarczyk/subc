@@ -87,6 +87,10 @@
     color: var(--first-color);
 }
 
+.footer-instagram a {
+    color: white;
+}
+
 .footer-allegro-icon {
     height: 15px;
 }

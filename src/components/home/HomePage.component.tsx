@@ -37,10 +37,12 @@ export const HomePage = () => {
                     <FontAwesomeIcon icon={faPhone}/> +48 662 921 155
                 </div>
                 <div className='footer-instagram'>
-                    <FontAwesomeIcon icon={faInstagram}/>
+                    <NavLink to="https://www.instagram.com/salon_unikatow/" target="_blank" className="nav__link">
+                        <FontAwesomeIcon icon={faInstagram}/>
+                    </NavLink>
                 </div>
                 <div className="footer-allegro">
-                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" target="_blank" className="nav__link">
+                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow/" target="_blank" className="nav__link">
                         <img src={allegro} alt="" className="footer-allegro-icon"/>
                     </NavLink>
                 </div>

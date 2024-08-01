@@ -4,6 +4,7 @@ import { Navbar } from './components/navbar/Navbar.component';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage } from './components/home/HomePage.component';
 import { PrivacyPolicy } from './components/privacyPolicy/PrivacyPolicy';
+import { ContactPage } from './components/contact/ContactPage.component';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
        <Routes>
          <Route path="/" element={<HomePage />} />
          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+         <Route path="/contact" element={<ContactPage />} />
        </Routes>
      </main>
    </Router>

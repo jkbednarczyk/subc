@@ -43,7 +43,7 @@ export const Navbar: FC = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/location" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>
                 Kontakt
               </NavLink>
             </li>

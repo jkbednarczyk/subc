@@ -1,11 +1,46 @@
 .contact-form {
     display: flex;
-    justify-content: right;
-    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     background: #828282;
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
+}
+
+.contact-data {
+    font-style: var(--second-font);
+    font-size: 15px;
+    border: 2px solid red;
+    max-width: 750px;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    color: black
+}
+
+.contact-item {
+    flex: 1; /* Each child will take up an equal amount of space */
+    border: 1px solid green; /* Just for visual separation */
+    padding: 10px;
+    display: flex;
+}
+
+.icon {
+    color:blueviolet;
+    border: 1px solid yellow;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    justify-content: center;
+  display: grid;
+  align-content: center;
+}
+
+.icon svg {
+    height: 55px;
+}
+
+.data {
+    color: aqua;
 }
 

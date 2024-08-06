@@ -3,44 +3,63 @@
     justify-content: center;
     min-height: 100vh;
     background: #828282;
-    max-width: 1500px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
 
 .contact-data {
-    font-style: var(--second-font);
     font-size: 15px;
-    border: 2px solid red;
-    max-width: 750px;
+    max-width: 650px;
     width: 100%;
     margin: 50px 0 50px 0;
-    color: black
+    color: white
 }
 
 .contact-item {
-    flex: 1; /* Each child will take up an equal amount of space */
-    border: 1px solid green; /* Just for visual separation */
-    padding: 10px;
+    flex: 1;
+    padding: 20px;
     display: flex;
 }
 
 .icon {
-    color:blueviolet;
-    border: 1px solid yellow;
     max-width: 80px;
     max-height: 80px;
     width: 100%;
     justify-content: center;
-  display: grid;
-  align-content: center;
+    display: grid;
+    align-content: center;
 }
 
 .icon svg {
-    height: 55px;
+    height: 30px;
 }
 
 .data {
-    color: aqua;
+    align-content: center;
 }
 
+@media (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .data {
+        text-align: left;
+    }
+
+    .icon svg {
+        height: 20px;
+    }
+
+    .contact-data {
+        font-size: 15px;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .contact-item {
+        padding: 15px;
+    }
+}

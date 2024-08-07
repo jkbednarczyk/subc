@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gwendolyn:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Great+Vibes&family=Gwendolyn:wght@400;700&display=swap');
-
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
 
 * {
@@ -10,14 +9,17 @@
  }
  
  :root {
-  --header-height: 3.5rem;
-  --first-color: hsl(28, 88%, 62%);
-  --title-color: hsl(0, 0%, 95%);
-  --text-color: hsl(0, 0%, 75%);
-  --body-color: hsl(0, 0%, 6%);
+  --header-height: 3rem;
+  --first-color: #E1995B;
+  --title-color: #FFFFFF;
+  --text-color: #FFFFFF;
+  --body-color: #060606;
+  --footer-background: #272626;
+  --common-page-background: #828282;
+  --button-hover: #663399;
   --body-font: "Montserrat", sans-serif;
-  --second-font: "Great Vibes", normal;
   --subtitle-font: "Alata", normal;
+  --title-font: "Great Vibes", normal;
   --h2-font-size: 2.25rem;
   --small-font-size: 0.813rem;
   --font-semi-bold: 600;

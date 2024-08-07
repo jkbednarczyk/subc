@@ -2,6 +2,8 @@ import{ FC, useState } from "react";
 import './Navbar.css'
 import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar: FC = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -46,6 +48,12 @@ export const Navbar: FC = () => {
               <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>
                 Kontakt
               </NavLink>
+            </li>
+            <li className="nav__item">
+              <button className="nav__lang">
+                <FontAwesomeIcon icon={faGlobe} className="button_icon" />
+                <span>PL | ENG</span>
+              </button>
             </li>
           </ul>
           <div className="nav__close" id="nav-close" onClick={toggleMenu}>

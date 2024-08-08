@@ -3,13 +3,32 @@ import ReactDOM from 'react-dom/client';
 import "./GlobalStyles.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import eng_lang from './lang/en.json';
+import pl_lang from './lang/pl.json';
+import i18next from 'i18next';
+import { I18nextProvider } from 'react-i18next';
+
+i18next.init({
+  interpolation: {escapeValue: true},
+  lng: "pl",
+  resources: {
+    pl: {
+      global: pl_lang,
+    },
+    eng : {
+      global: eng_lang,
+    },
+  },
+})
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <I18nextProvider i18n={i18next}>
+      <App />
+    </I18nextProvider>
   </React.StrictMode>
 );
 

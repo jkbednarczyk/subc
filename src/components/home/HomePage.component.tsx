@@ -7,14 +7,17 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import '../../fontawesome.config';
 import { NavLink } from "react-router-dom";
 import allegro from "../../assets/images/allegro.svg"
+import { useTranslation } from 'react-i18next';
 
 export const HomePage = () => {
+
+    const [t, i18n] = useTranslation("global");
 
     return <>
         <section className="home">
             <div className="content">
                 <h1>Salon Unikatów</h1>
-                <p>Z Nami Odkryjesz Piękno Przeszłości</p>
+                <p>{t("MOTTO")}</p>
             </div>
         </section>
         <section className="introduction">

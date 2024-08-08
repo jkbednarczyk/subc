@@ -4,9 +4,17 @@ import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 export const Navbar: FC = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const [t, i18n] = useTranslation("global");
+
+  const handleLanguageChange = (lang: string) => {
+    i18n.changeLanguage(lang);
+  }
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -50,7 +58,7 @@ export const Navbar: FC = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <button className="nav__lang">
+              <button className="nav__lang" onClick={() => handleLanguageChange("eng")}>
                 <FontAwesomeIcon icon={faGlobe} className="button_icon" />
                 <span>PL | ENG</span>
               </button>

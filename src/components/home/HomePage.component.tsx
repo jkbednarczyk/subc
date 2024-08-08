@@ -7,17 +7,17 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import '../../fontawesome.config';
 import { NavLink } from "react-router-dom";
 import allegro from "../../assets/images/allegro.svg"
-import { useTranslation } from 'react-i18next';
+import { translate } from '../../lang/utils/TranslationUtils';
 
 export const HomePage = () => {
 
-    const [t, i18n] = useTranslation("global");
+    
 
     return <>
         <section className="home">
             <div className="content">
                 <h1>Salon Unikatów</h1>
-                <p>{t("MOTTO")}</p>
+                <p>{translate("MOTTO")}</p>
             </div>
         </section>
         <section className="introduction">
@@ -50,8 +50,8 @@ export const HomePage = () => {
                     </NavLink>
                 </div>
                 <div className="footer-copyright">
-                    <FontAwesomeIcon icon={faCopyright}/> 2024 Salon Unikatów. Zapoznaj się z 
-                    <a href={"/privacyPolicy"}>{" polityką prywatności"}</a>.
+                    <FontAwesomeIcon icon={faCopyright}/> {translate("COPYRIGHT")}
+                    <a href={"/privacyPolicy"}>{translate("PRIVACY_POLICY")}</a>.
                 </div>
             </div>
         </section>

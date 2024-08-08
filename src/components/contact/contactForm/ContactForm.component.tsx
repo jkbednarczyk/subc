@@ -1,6 +1,7 @@
 import React from "react";
 import Swal from 'sweetalert2';
 import './ContactForm.css';
+import { translate } from "../../../lang/utils/TranslationUtils";
 
 export const ContactForm = () => {
 
@@ -33,20 +34,20 @@ export const ContactForm = () => {
 
     return <>
         <form onSubmit={onSubmit}>
-            <h2>Formularz kontaktowy</h2>
+            <h2>{translate("CONTACT_FORM")}</h2>
             <div className="input-box">
-                <label>Imię i nazwisko</label>
-                <input type="text" className="field" placeholder="Wpisz imię i nazwisko" name="name" required />
+                <label>{translate("NAME_AND_SURNAME")}</label>
+                <input type="text" className="field" placeholder={translate("NAME_AND_SURNAME_PLACEHOLDER")} name="name" required />
             </div>
             <div className="input-box">
-                <label>Adres e-mail</label>
-                <input type="email" className="field" placeholder="Wpisz adres e-mail" name="email" required />
+                <label>{translate("EMAIL")}</label>
+                <input type="email" className="field" placeholder={translate("EMAIL_PLACEHOLDER")} name="email" required />
             </div>
             <div className="input-box">
-                <label>Wiadomość</label>
-                <textarea name="message" className="field message" placeholder="Wpisz swoją wiadomość" required></textarea>
+                <label>{translate("MESSAGE")}</label>
+                <textarea name="message" className="field message" placeholder={translate("MESSAGE_PLACEHOLDER")} required></textarea>
             </div>
-            <button type="submit">Wyślij</button>
+            <button type="submit">{translate("SUBMIT_MESSAGE")}</button>
         </form>
     </>
 }

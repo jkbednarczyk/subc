@@ -4,12 +4,11 @@ import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import i18next from "i18next";
+import {translate} from '../../lang/utils/TranslationUtils';
 import { useTranslation } from "react-i18next";
 
 export const Navbar: FC = () => {
   const [showMenu, setShowMenu] = useState(false);
-
   const [t, i18n] = useTranslation("global");
 
   const handleLanguageChange = (lang: string) => {
@@ -39,22 +38,22 @@ export const Navbar: FC = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
-                Home
+                {translate("HOME")}
               </NavLink>
             </li>
             <li className="nav__item">
               <NavLink to="/about-us" className="nav__link" onClick={closeMenuOnMobile}>
-                O Nas
+                {translate("ABOUT_US")}
               </NavLink>
             </li>
             <li className="nav__item">
               <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" target="_blank" className="nav__link" onClick={closeMenuOnMobile}>
-                Nasze Aukcje
+                {translate("OUR_AUCTIONS")}
               </NavLink>
             </li>
             <li className="nav__item">
               <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>
-                Kontakt
+                {translate("CONTACT")}
               </NavLink>
             </li>
             <li className="nav__item">

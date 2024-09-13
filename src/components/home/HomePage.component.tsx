@@ -11,8 +11,6 @@ import { translate } from '../../lang/utils/TranslationUtils';
 
 export const HomePage = () => {
 
-    
-
     return <>
         <section className="home">
             <div className="content">
@@ -45,13 +43,15 @@ export const HomePage = () => {
                     </NavLink>
                 </div>
                 <div className="footer-allegro">
-                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow/" target="_blank">
+                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" target="_blank">
                         <img src={allegro} alt="" className="footer-allegro-icon"/>
                     </NavLink>
                 </div>
                 <div className="footer-copyright">
                     <FontAwesomeIcon icon={faCopyright}/> {translate("COPYRIGHT")}
-                    <a href={"/privacyPolicy"}>{translate("PRIVACY_POLICY")}</a>.
+                    <NavLink to="/privacyPolicy">
+                        {translate("PRIVACY_POLICY")}
+                    </NavLink>.
                 </div>
             </div>
         </section>

@@ -7,12 +7,19 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import {translate} from '../../lang/utils/TranslationUtils';
 import { useTranslation } from "react-i18next";
 
-export const Navbar: FC = () => {
+interface NavbarProps {
+  language: string;
+}
+
+export const Navbar: FC<NavbarProps> = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [t, i18n] = useTranslation("global");
+  const [currentLang, setCurrentLang] = useState<string>(props.language);
 
   const handleLanguageChange = (lang: string) => {
-    i18n.changeLanguage(lang);
+    const afterChange: string = lang === "pl" ? "eng" : "pl"; 
+    setCurrentLang(afterChange);
+    i18n.changeLanguage(afterChange);
   }
 
   const toggleMenu = () => {
@@ -57,7 +64,7 @@ export const Navbar: FC = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <button className="nav__lang" onClick={() => handleLanguageChange("eng")}>
+              <button className="nav__lang" onClick={() => handleLanguageChange(currentLang)}>
                 <FontAwesomeIcon icon={faGlobe} className="button_icon" />
                 <span>PL | ENG</span>
               </button>

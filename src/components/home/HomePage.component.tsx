@@ -8,6 +8,8 @@ import '../../fontawesome.config';
 import { NavLink } from "react-router-dom";
 import allegro from "../../assets/images/allegro.svg"
 import { translate } from '../../lang/utils/TranslationUtils';
+import { OurAuctions } from '../auctions/OurAuctions.component';
+
 
 export const HomePage = () => {
 
@@ -19,12 +21,7 @@ export const HomePage = () => {
             </div>
         </section>
         <section className="introduction">
-            <div className="intro-content">
-            <img src={Clock} alt="" className="intro-image" />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut erat in purus accumsan placerat. Vestibulum imperdiet ornare turpis, non semper sapien commodo nec. Quisque dolor mauris, euismod vitae sagittis et, sodales id sem. Sed et convallis felis. Fusce eu pretium ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vitae urna magna. Morbi scelerisque nisl dapibus mollis tristique. Mauris ullamcorper felis nunc, non mattis lacus condimentum ac. Phasellus at augue et arcu sagittis consequat sed sed leo.
-                </p>
-            </div>
+            <OurAuctions/>
         </section>
         <section className="footer">
             <div className="footer-content">

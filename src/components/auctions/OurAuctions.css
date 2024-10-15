@@ -4,6 +4,10 @@
 
 h1 {
     text-align: center;
+    color: var(--text-color);
+    font-size: 50px;
+    font-family: var(--subtitle-font);
+    font-style: italic;
 }
 
 .auctions_container {

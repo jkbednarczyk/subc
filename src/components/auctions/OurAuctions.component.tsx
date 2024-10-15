@@ -6,45 +6,46 @@ import Meissen from '../../assets/images/meissen.webp';
 import Rosenthal from '../../assets/images/rosenthal.jpg';
 import Watches from '../../assets/images/watches.jpg';
 import { CustomLink } from "../common/CustomLink";
+import {translate} from '../../lang/utils/TranslationUtils';
 
 
 export const OurAuctions = () => {
     return <div className="auctions">
-        <h1>Nasze aukcje</h1>
+        <h1>{translate("OUR_OFFER")}</h1>
         <div className="auctions_container">
             <div className="auctions_wrapper">
                 <ul className="auctions_tiles">
                     <AuctionsTile 
                         to = {CustomLink.allegroFigurines}
-                        imageLocation={Teacup}
-                        text="Figurki porcelanowe"
+                        imageLocation = {Teacup}
+                        text = {translate("FIGURINES")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroRosenthal} 
-                        imageLocation={Rosenthal}
-                        text="Porcelana Rosenthal"
+                        imageLocation = {Rosenthal}
+                        text = {translate("ROSENTHAL")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroClocksAndWatches} 
-                        imageLocation={Watches}
-                        text="Zegary i zegarki"
+                        imageLocation = {Watches}
+                        text = {translate("CLOCKS_AND_WATCHES")}
                     />
                 </ul>
                 <ul className="auctions_tiles">
                     <AuctionsTile 
                         to = {CustomLink.allegroMeissen} 
-                        imageLocation={Meissen}
-                        text="Miśnia"
+                        imageLocation = {Meissen}
+                        text = {translate("MEISSEN")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroNineteenthCentury}
-                        imageLocation={Teacup}
-                        text="XIX wiek"
+                        imageLocation = {Teacup}
+                        text = {translate("NINETEENTH_CENTURY")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroAllAuctions} 
-                        imageLocation={Clock}
-                        text="Wszystkie aukcje"
+                        imageLocation = {Clock}
+                        text = {translate("ALL_AUCTIONS")}
                     />
                 </ul>
             </div>

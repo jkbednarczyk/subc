@@ -25,6 +25,8 @@ h1 {
 }
 
 .auctions_tile {
+    width: 300px;
+    height: 300px;
     display: inline flow-root list-item;
     flex: 1;
     margin: 0 1rem;
@@ -78,6 +80,7 @@ h1 {
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
   }
 
   @media (max-width: 768px) {

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import {translate} from '../../lang/utils/TranslationUtils';
 import { useTranslation } from "react-i18next";
+import { CustomLink } from "../common/CustomLink";
 
 interface NavbarProps {
   language: string;
@@ -54,7 +55,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" target="_blank" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to = {CustomLink.allegroAllAuctions} target="_blank" className="nav__link" onClick={closeMenuOnMobile}>
                 {translate("OUR_AUCTIONS")}
               </NavLink>
             </li>

@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import allegro from "../../assets/images/allegro.svg"
 import { translate } from '../../lang/utils/TranslationUtils';
 import { OurAuctions } from '../auctions/OurAuctions.component';
+import { CustomLink } from '../common/CustomLink';
 
 
 export const HomePage = () => {
@@ -35,12 +36,12 @@ export const HomePage = () => {
                     <FontAwesomeIcon icon={faPhone}/> +48 662 921 155
                 </div>
                 <div className='footer-instagram'>
-                    <NavLink to="https://www.instagram.com/salon_unikatow/" target="_blank">
+                    <NavLink to = {CustomLink.instagramPage} target="_blank">
                         <FontAwesomeIcon icon={faInstagram}/>
                     </NavLink>
                 </div>
                 <div className="footer-allegro">
-                     <NavLink to="https://allegro.pl/uzytkownik/SalonUnikatow" target="_blank">
+                     <NavLink to = {CustomLink.allegroAllAuctions} target="_blank">
                         <img src={allegro} alt="" className="footer-allegro-icon"/>
                     </NavLink>
                 </div>

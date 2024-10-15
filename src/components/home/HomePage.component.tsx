@@ -1,5 +1,4 @@
 import './HomePage.css';
-import Clock from '../../assets/images/clock.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright, faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";

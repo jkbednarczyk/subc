@@ -1,0 +1,16 @@
+about_us {
+    padding-top: 5rem;
+}
+
+.about_us_text p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 15px 130px;
+}
+
+@media (max-width: 768px) { 
+    .about_us_text p {
+        padding: 25px 30px;
+    }
+}

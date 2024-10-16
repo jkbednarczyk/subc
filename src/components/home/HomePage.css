@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
+    height: 1250px;
     margin: 0 auto;
     /* background: var(--common-page-background); */
     max-width: 1300px;
@@ -114,7 +114,7 @@
 
 @media (max-width: 768px) {
     .introduction {
-        height: 2000px;
+        height: 2700px;
     }
 
     .content h1 {

@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import allegro from "../../assets/images/allegro.svg"
 import { translate } from '../../lang/utils/TranslationUtils';
 import { OurAuctions } from './auctions/OurAuctions.component';
+import { AboutUs } from './aboutUs/AboutUs.component';
 import { CustomLink } from '../common/CustomLink';
 
 
@@ -22,6 +23,7 @@ export const HomePage = () => {
         </section>
         <section className="introduction">
             <OurAuctions/>
+            <AboutUs />
         </section>
         <section className="footer">
             <div className="footer-content">

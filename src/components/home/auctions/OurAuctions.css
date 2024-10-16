@@ -1,5 +1,5 @@
 .auctions {
-    padding: 4rem;
+    padding-top: 4rem;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
     font-style: italic;
 }
 
-p {
+.auctions p {
     text-align: center;
     color: var(--text-color);
     font-size: 18px;

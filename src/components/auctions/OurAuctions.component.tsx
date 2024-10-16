@@ -14,6 +14,7 @@ export const OurAuctions = () => {
         <h1>{translate("OUR_OFFER")}</h1>
         <div className="auctions_container">
             <div className="auctions_wrapper">
+            <p>{translate("OUR_OFFER_TEXT")}</p>
                 <ul className="auctions_tiles">
                     <AuctionsTile 
                         to = {CustomLink.allegroFigurines}
@@ -38,9 +39,9 @@ export const OurAuctions = () => {
                         text = {translate("MEISSEN")}
                     />
                     <AuctionsTile 
-                        to = {CustomLink.allegroNineteenthCentury}
+                        to = {CustomLink.allegroCups}
                         imageLocation = {Teacup}
-                        text = {translate("NINETEENTH_CENTURY")}
+                        text = {translate("CUPS")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroAllAuctions} 

@@ -10,6 +10,13 @@ h1 {
     font-style: italic;
 }
 
+p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
 .auctions_container {
     display: flex;
     flex-flow: column;
@@ -21,7 +28,7 @@ h1 {
 
 .auctions_wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 30px 0 45px;
 }
 
 .auctions_tiles {
@@ -88,6 +95,7 @@ h1 {
   }
 
   @media (max-width: 768px) {
+    
     .auctions_tile_link {
       margin-bottom: 25px;
     }

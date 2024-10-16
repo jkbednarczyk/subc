@@ -1,12 +1,12 @@
 import { AuctionsTile } from "./auctionsTile/AuctionsTile.component";
 import "./OurAuctions.css";
-import Teacup from '../../assets/images/teacup.png';
-import Clock from '../../assets/images/clock.png';
-import Meissen from '../../assets/images/meissen.webp';
-import Rosenthal from '../../assets/images/rosenthal.jpg';
-import Watches from '../../assets/images/watches.jpg';
-import { CustomLink } from "../common/CustomLink";
-import {translate} from '../../lang/utils/TranslationUtils';
+import Teacup from '../../../assets/images/teacup.png';
+import Clock from '../../../assets/images/clock.png';
+import Meissen from '../../../assets/images/meissen.webp';
+import Rosenthal from '../../../assets/images/rosenthal.jpg';
+import Watches from '../../../assets/images/watches.jpg';
+import { CustomLink } from "../../common/CustomLink";
+import {translate} from '../../../lang/utils/TranslationUtils';
 
 
 export const OurAuctions = () => {

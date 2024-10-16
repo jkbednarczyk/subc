@@ -7,7 +7,7 @@ import '../../fontawesome.config';
 import { NavLink } from "react-router-dom";
 import allegro from "../../assets/images/allegro.svg"
 import { translate } from '../../lang/utils/TranslationUtils';
-import { OurAuctions } from '../auctions/OurAuctions.component';
+import { OurAuctions } from './auctions/OurAuctions.component';
 import { CustomLink } from '../common/CustomLink';
 
 

@@ -1,10 +1,13 @@
 {
+    "NAVBAR": {
+        "HOME": "Strona Główna",
+        "ABOUT_US": "O Nas",
+        "OUR_AUCTIONS": "Nasze Aukcje",
+        "CONTACT": "Kontakt",
+        "PURCHASE": "Skup"
+    },
+    
     "MOTTO": "Z Nami Odkryjesz Piękno Przeszłości",
-    "HOME": "Strona Główna",
-    "ABOUT_US": "O Nas",
-    "OUR_AUCTIONS": "Nasze Aukcje",
-    "CONTACT": "Kontakt",
-    "PURCHASE": "Skup",
     "COPYRIGHT": "2024 Salon Unikatów. Zapoznaj się z ",
     "PRIVACY_POLICY": "polityką prywatności",
     
@@ -29,7 +32,7 @@
     "CUPS": "Filiżanki",
     "ALL_AUCTIONS": "Wszystkie aukcje",
 
-    "ABOUT_US_HP": "O nas",
+    "ABOUT_US": "O nas",
     "WHO_WE_ARE": "Jesteśmy rodzinnym biznesem, który z pasją zajmuje się antykami, szczególnie porcelaną. W naszej ofercie znajdziecie piękne figurki, filiżanki i unikatowe bibeloty, które wniosą do Państwa domów odrobinę magii.",
     "OUR_WORK": "Nasze skarby pozyskujemy z giełd i domów aukcyjnych w całej Europie. Każdy przedmiot jest starannie wyselekcjonowany, aby zapewnić najwyższą jakość. Dbamy o to, aby każdy klient czuł się wyjątkowo, oferując indywidualne podejście i bezpieczne pakowanie przesyłek.",
 
@@ -38,5 +41,14 @@
         "MEMORIES": "Nasze skarby pozyskujemy na giełdach i w domach aukcyjnych w całej Europie. Każdy przedmiot, który oferujemy, jest starannie wyselekcjonowany, aby zapewnić Państwu autentyczność i najwyższą jakość. Wierzymy, że porcelana to nie tylko element dekoracyjny, ale także nośnik wspomnień i emocji.",
         "APPROACH": "Jako rodzinna firma, dbamy o to, aby każdy klient czuł się u nas wyjątkowo. Zapewniamy indywidualne podejście oraz bezpieczne pakowanie naszych przesyłek abyście Państwo mogli mieć pewność, że  zakupione przedmioty dotrą do Państwa w idealnym stanie!",
         "INVITATION": "Zapraszamy do odkrywania naszej kolekcji i wspólnego poszukiwania unikatów, które staną się częścią Waszego życia. Dziękujemy, że jesteście z nami!"
+    },
+
+    "PURCHASE": {
+        "TITLE": "Skup antyków i staroci",
+        "FIRST": "Nie wiesz gdzie zgłosić się ze starą rzeczą znalezioną na strychu, czy piwnicy?",
+        "SECOND": "Planujesz przearanżowanie swojej kolekcji?",
+        "THIRD": "Dobrze trafiłeś – skontaktuj się z nami!",
+        "FOURTH": "Zajmujemy się skupem staroci, antyków – porcelany, zegarów, sreber, monet, starych szkieł oraz wielu innych…",
+        "FIFTH": "Gwarantujemy pełną przejrzystość transakcji oraz bezpieczeństwo, traktując każdego z szacunkiem."
     }
 }

@@ -48,28 +48,28 @@ export const Navbar: FC<NavbarProps> = (props) => {
             <CustomNavLink 
               to = "/"
               onClick = {closeMenuOnMobile}
-              text = {translate("HOME")}
+              text = {translate("NAVBAR.HOME")}
             />
             <CustomNavLink 
               to = {CustomLink.allegroAllAuctions}
               onClick = {closeMenuOnMobile}
-              text = {translate("OUR_AUCTIONS")}
+              text = {translate("NAVBAR.OUR_AUCTIONS")}
               target = "_blank"
             />
             <CustomNavLink 
               to = "/aboutUs"
               onClick = {closeMenuOnMobile}
-              text = {translate("ABOUT_US")}
+              text = {translate("NAVBAR.ABOUT_US")}
             />
             <CustomNavLink 
-              to = "/about-us"
+              to = "/purchase"
               onClick = {closeMenuOnMobile}
-              text = {translate("PURCHASE")}
+              text = {translate("NAVBAR.PURCHASE")}
             />
             <CustomNavLink 
               to = "/contact"
               onClick = {closeMenuOnMobile}
-              text = {translate("CONTACT")}
+              text = {translate("NAVBAR.CONTACT")}
             />
             <li className="nav__item">
               <button className="nav__lang" onClick={() => handleLanguageChange(currentLang)}>

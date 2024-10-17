@@ -1,10 +1,13 @@
 {
+    "NAVBAR": {
+        "HOME": "Home",
+        "ABOUT_US": "About Us",
+        "OUR_AUCTIONS": "Our Auctions",
+        "CONTACT": "Contact",
+        "PURCHASE": "Purchase"
+    },
+    
     "MOTTO": "With Us You Will Discover the Beauty of the Past",
-    "HOME": "Home",
-    "ABOUT_US": "About Us",
-    "OUR_AUCTIONS": "Our Auctions",
-    "CONTACT": "Contact",
-    "PURCHASE": "Purchase",
     "COPYRIGHT": "2024 Salon Unikatów. Please read our ",
     "PRIVACY_POLICY": "privacy policy",
     
@@ -29,14 +32,23 @@
     "CUPS": "Cups",
     "ALL_AUCTIONS": "All auctions",
 
-    "ABOUT_US_HP": "About us",
+    "ABOUT_US": "About us",
     "WHO_WE_ARE": "We are a family-owned business that passionately deals with antiques, especially porcelain. In our offer, you will find beautiful figurines, teacups, and unique trinkets that will add a touch of magic to your homes.",
     "OUR_WORK": "We source our treasures from fairs and auction houses across Europe. Each item is carefully selected to ensure the highest quality. We strive to make every customer feel special by offering a personalized approach and secure packaging for our shipments.",
 
-    "ABOUT_US_PAGE" : {
+    "ABOUT_US_PAGE": {
         "WELCOME": "Welcome to our website! We are a small, family-owned business that passionately deals with antiques, especially porcelain. In our offer, you will find beautiful figurines, cups, and unique trinkets that will bring a touch of magic and history into your homes.",
         "MEMORIES": "We source our treasures from fairs and auction houses across Europe. Each item we offer is carefully selected to ensure authenticity and the highest quality. We believe that porcelain is not just a decorative element, but also a carrier of memories and emotions.",
         "APPROACH": "As a family business, we strive to make every customer feel special. We provide a personalized approach and secure packaging for our shipments, so you can be confident that your purchases will arrive in perfect condition!",
         "INVITATION": "We invite you to explore our collection and join us in the search for unique items that will become a part of your life. Thank you for being with us!"
+    },
+
+    "PURCHASE": {
+        "TITLE": "We will buy your antiques",
+        "FIRST": "Don't know where to go with an old item found in your attic or basement?",
+        "SECOND": "Are you planning to rearrange your collection?",
+        "THIRD": "You've come to the right place - contact us!",
+        "FOURTH": "We buy old stuff, antiques - porcelain, clocks, silverware, coins, old glass and many others...",
+        "FIFTH": "We guarantee full transparency of transactions and security, treating everyone with respect."
     }
 }

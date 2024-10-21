@@ -1,0 +1,42 @@
+.contact-item {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+}
+
+.icon {
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+}
+
+.icon svg {
+    height: 30px;
+}
+
+.data {
+    align-content: center;
+}
+
+.data a {
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .data {
+        text-align: left;
+    }
+
+    .icon svg {
+        height: 20px;
+    }
+
+    .contact-data {
+        font-size: 15px;
+        width: 100%;
+        margin: 0;
+    }
+}

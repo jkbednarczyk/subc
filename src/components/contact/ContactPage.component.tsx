@@ -1,19 +1,10 @@
-import React from "react";
 import './ContactPage.css';
 import { ContactForm } from "./contactForm/ContactForm.component";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { translate } from "../../lang/utils/TranslationUtils";
+import { CustomContactItem } from '../common/customContactItem/CustomContactItem.component';
 
-const ContactItem = ({ icon, children }: { icon: any, children: React.ReactNode }) => (
-    <li className="contact-item">
-        <div className="icon">
-            <FontAwesomeIcon icon={icon} />
-        </div>
-        <div className="data">{children}</div>
-    </li>
-);
 
 export const ContactPage = () => {
     return (
@@ -22,7 +13,7 @@ export const ContactPage = () => {
                 <li className="contact-item">
                     {translate("CONTACT_PAGE_TEXT")}
                 </li>
-                <ContactItem icon={faLocationDot}>
+                <CustomContactItem icon={faLocationDot}>
                     <p>
                         Salon Unikatów<br />
                         NIP 6793272126<br />
@@ -30,13 +21,13 @@ export const ContactPage = () => {
                         ul. Dekarzy 11<br />
                         30-414 Kraków
                     </p>
-                </ContactItem>
-                <ContactItem icon={faEnvelope}>
+                </CustomContactItem>
+                <CustomContactItem icon={faEnvelope}>
                     <a href="mailto:salonunikatow@gmail.com">salonunikatow@gmail.com</a>
-                </ContactItem>
-                <ContactItem icon={faPhone}>
+                </CustomContactItem>
+                <CustomContactItem icon={faPhone}>
                     <a href="tel:+48662921155">+48 662 921 155</a>
-                </ContactItem>
+                </CustomContactItem>
             </ul>
             <ul className="contact-data">
                 <li className="contact-item">

@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./GlobalStyles.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import eng_lang from './lang/en-gb.json';
 import pl_lang from './lang/pl-gb.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';    
+import 'primeicons/primeicons.css';  
+import './GlobalStyles.css';
 
 i18next.init({
   interpolation: {escapeValue: true},

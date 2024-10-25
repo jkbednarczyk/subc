@@ -3,14 +3,14 @@ import { translate } from '../../lang/utils/TranslationUtils';
 import {Galleria, GalleriaResponsiveOptions} from 'primereact/galleria';
 import { useState, useEffect } from 'react';
 import { PhotoService } from './PhotoService.service';
-import {Button} from 'primereact/button';
+import Teacups from '../../assets/images/about_us.jpg';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
     const responsiveOptions: GalleriaResponsiveOptions[] = [
         {
             breakpoint: '991px',
-            numVisible: 4
+            numVisible: 3
         },
         {
             breakpoint: '767px',
@@ -18,7 +18,7 @@ export const AboutUsPage = () => {
         },
         {
             breakpoint: '575px',
-            numVisible: 1
+            numVisible: 2
         }
     ];
 
@@ -36,16 +36,29 @@ export const AboutUsPage = () => {
 
     return <>
         <section className="about_us">
-            <div className="about_us_content">
-                <p>{translate("ABOUT_US_PAGE.WELCOME")}</p>
-                <p>{translate("ABOUT_US_PAGE.MEMORIES")}</p>
-                <p>{translate("ABOUT_US_PAGE.APPROACH")}</p>
-                <p>{translate("ABOUT_US_PAGE.INVITATION")}</p>
+            <div className="about_us_content_container">
+                <figure className="about_us_image_wrapper">
+                    <img src={Teacups} alt="" className="about_us_photo"/>
+                </figure>
+                <div className="about_us_content_text">
+                    <p>{translate("ABOUT_US_PAGE.WELCOME")}</p>
+                    <p>{translate("ABOUT_US_PAGE.MEMORIES")}</p>
+                    <p>{translate("ABOUT_US_PAGE.APPROACH")}</p>
+                    <p>{translate("ABOUT_US_PAGE.INVITATION")}</p>
+                </div>
+            </div>
+            <div className="about_us_comments_intro">
+                <h1>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h1>
+                <p>{translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}</p>
             </div>
             <div className="about_us_comments">
-            <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={3}  
-                item={itemTemplate} thumbnail={thumbnailTemplate} />
-        </div>
+                <Galleria 
+                    value={images} 
+                    responsiveOptions={responsiveOptions} 
+                    numVisible={3}  
+                    item={itemTemplate} thumbnail={thumbnailTemplate} 
+                />
+            </div>
         </section>
     </>
 }

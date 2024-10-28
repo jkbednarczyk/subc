@@ -4,6 +4,7 @@ import {Galleria, GalleriaResponsiveOptions} from 'primereact/galleria';
 import { useState, useEffect } from 'react';
 import { PhotoService } from './PhotoService.service';
 import Teacups from '../../assets/images/about_us.jpg';
+import Dog from '../../assets/images/about_us_2.jpg';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
@@ -47,17 +48,25 @@ export const AboutUsPage = () => {
                     <p>{translate("ABOUT_US_PAGE.INVITATION")}</p>
                 </div>
             </div>
-            <div className="about_us_comments_intro">
-                <h1>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h1>
-                <p>{translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}</p>
-            </div>
-            <div className="about_us_comments">
-                <Galleria 
-                    value={images} 
-                    responsiveOptions={responsiveOptions} 
-                    numVisible={3}  
-                    item={itemTemplate} thumbnail={thumbnailTemplate} 
-                />
+            <h1>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h1>
+            <div className="about_us_content_container">
+                <div className="about_us_comments_intro">
+                    <p>{translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}</p>
+                    <figure className="about_us_image_wrapper">
+                            <img src={Dog} alt="" className="about_us_photo"/>
+                    </figure>
+                </div>
+                <div className="about_us_comments">
+                    <Galleria 
+                        value={images} 
+                        responsiveOptions={responsiveOptions} 
+                        numVisible={3}  
+                        item={itemTemplate} thumbnail={thumbnailTemplate} 
+                        circular 
+                        autoPlay 
+                        transitionInterval={4000}
+                    />
+                </div>
             </div>
         </section>
     </>

@@ -12,7 +12,7 @@ export const ContactPage = () => {
         <section className="contact-form">
             <ul className="contact-data">
                 <li className="contact-item">
-                    {translate("CONTACT_PAGE_TEXT")}
+                    <p>{translate("CONTACT.CONTACT_PAGE_TEXT")}</p>
                 </li>
                 <CustomContactItem icon={faLocationDot}>
                     <p>

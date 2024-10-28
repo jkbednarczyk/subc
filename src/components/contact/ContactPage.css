@@ -40,5 +40,6 @@
 
     .contact-item {
         padding: 15px;
+        flex-direction: column;
     }
 }

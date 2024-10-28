@@ -10,18 +10,22 @@
     "MOTTO": "With Us You Will Discover the Beauty of the Past",
     "COPYRIGHT": "2024 Salon Unikatów. Please read our ",
     "PRIVACY_POLICY": "privacy policy",
+
+    "CONTACT": {
+        "CONTACT_FORM": "Contact form",
+        "NAME_AND_SURNAME": "Name and surname",
+        "NAME_AND_SURNAME_PLACEHOLDER": "Enter your name and surname",
+        "EMAIL": "E-mail",
+        "EMAIL_PLACEHOLDER": "Enter your e-mail",
+        "MESSAGE": "Message",
+        "MESSAGE_PLACEHOLDER": "Enter your message",
+        "SUBMIT_MESSAGE": "Send",
+        "CONTACT_PAGE_TEXT": "We invite you to get in touch! Whether you're looking for unique antiques, interested in selling valuable items, or have questions about our offerings, we're here to help. Simply fill out the contact form or reach out to us directly – we’ll be happy to assist and advise you. Our passion for antiques means we approach each client individually, ensuring a personalized experience every time.",
+        "THANK_YOU": "Thank you!",
+        "MESSAGE_SENT_SUCCESSFULLY": "Message has been sent successfully"
+    },
     
-    "CONTACT_FORM": "Contact form",
-    "NAME_AND_SURNAME": "Name and surname",
-    "NAME_AND_SURNAME_PLACEHOLDER": "Enter your name and surname",
-    "EMAIL": "E-mail",
-    "EMAIL_PLACEHOLDER": "Enter your e-mail",
-    "MESSAGE": "Message",
-    "MESSAGE_PLACEHOLDER": "Enter your message",
-    "SUBMIT_MESSAGE": "Send",
-    "CONTACT_PAGE_TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a condimentum augue. Praesent lacinia accumsan dolor, nec semper diam luctus ac. Nullam tincidunt auctor interdum. Etiam pretium tempor felis at hendrerit. Praesent aliquam mi ac massa fringilla mollis. Nunc bibendum erat in enim ultricies, sodales ultrices erat ornare. Vestibulum volutpat, nisi vel tristique pharetra, quam lectus dictum justo, quis porta quam orci vel nisl. Nunc id posuere metus. Sed in pharetra neque. Nam id efficitur arcu. Sed venenatis, ligula vitae bibendum commodo, leo diam scelerisque purus, viverra ornare nisi magna at lorem. Morbi egestas lorem est, eu hendrerit lectus tristique id. Pellentesque tempus massa sed hendrerit facilisis.",
-    "THANK_YOU": "Thank you!",
-    "MESSAGE_SENT_SUCCESSFULLY": "Message has been sent successfully",
+    
 
     "OUR_OFFER": "Our offer",
     "OUR_OFFER_TEXT": "We encourage you to check out our auctions!",

@@ -34,20 +34,20 @@ export const ContactForm = () => {
 
     return <>
         <form onSubmit={onSubmit}>
-            <h2>{translate("CONTACT_FORM")}</h2>
+            <h2>{translate("CONTACT.CONTACT_FORM")}</h2>
             <div className="input-box">
-                <label>{translate("NAME_AND_SURNAME")}</label>
-                <input type="text" className="field" placeholder={translate("NAME_AND_SURNAME_PLACEHOLDER")} name="name" required />
+                <label>{translate("CONTACT.NAME_AND_SURNAME")}</label>
+                <input type="text" className="field" placeholder={translate("CONTACT.NAME_AND_SURNAME_PLACEHOLDER")} name="name" required />
             </div>
             <div className="input-box">
-                <label>{translate("EMAIL")}</label>
-                <input type="email" className="field" placeholder={translate("EMAIL_PLACEHOLDER")} name="email" required />
+                <label>{translate("CONTACT.EMAIL")}</label>
+                <input type="email" className="field" placeholder={translate("CONTACT.EMAIL_PLACEHOLDER")} name="email" required />
             </div>
             <div className="input-box">
-                <label>{translate("MESSAGE")}</label>
-                <textarea name="message" className="field message" placeholder={translate("MESSAGE_PLACEHOLDER")} required></textarea>
+                <label>{translate("CONTACT.MESSAGE")}</label>
+                <textarea name="message" className="field message" placeholder={translate("CONTACT.MESSAGE_PLACEHOLDER")} required></textarea>
             </div>
-            <button type="submit">{translate("SUBMIT_MESSAGE")}</button>
+            <button type="submit">{translate("CONTACT.SUBMIT_MESSAGE")}</button>
         </form>
     </>
 }

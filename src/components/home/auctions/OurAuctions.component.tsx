@@ -1,10 +1,10 @@
 import { AuctionsTile } from "./auctionsTile/AuctionsTile.component";
 import "./OurAuctions.css";
-import Teacup from '../../../assets/images/teacup.png';
-import Clock from '../../../assets/images/clock.png';
-import Meissen from '../../../assets/images/meissen.webp';
+import Teacups from '../../../assets/images/teacups.jpg';
+import Clock from '../../../assets/images/clock.jpg';
+import Meissen from '../../../assets/images/meissen.jpg';
 import Rosenthal from '../../../assets/images/rosenthal.jpg';
-import Watches from '../../../assets/images/watches.jpg';
+import Watches from '../../../assets/images/clock.jpg';
 import { CustomLink } from "../../common/CustomLink";
 import {translate} from '../../../lang/utils/TranslationUtils';
 
@@ -18,7 +18,7 @@ export const OurAuctions = () => {
                 <ul className="auctions_tiles">
                     <AuctionsTile 
                         to = {CustomLink.allegroFigurines}
-                        imageLocation = {Teacup}
+                        imageLocation = {Teacups}
                         text = {translate("FIGURINES")}
                     />
                     <AuctionsTile 
@@ -40,7 +40,7 @@ export const OurAuctions = () => {
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroCups}
-                        imageLocation = {Teacup}
+                        imageLocation = {Teacups}
                         text = {translate("CUPS")}
                     />
                     <AuctionsTile 

@@ -3,7 +3,7 @@ import './GlobalStyles.css';
 import { Navbar } from './components/navbar/Navbar.component';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage } from './components/home/HomePage.component';
-import { PrivacyPolicy } from './components/privacyPolicy/PrivacyPolicy';
+import { PrivacyPolicy } from './components/privacyPolicy/PrivacyPolicy.component';
 import { ContactPage } from './components/contact/ContactPage.component';
 import { AboutUsPage } from './components/aboutUs/AboutUsPage.component';
 import { PurchasePage } from './components/purchase/PurchasePage.component';

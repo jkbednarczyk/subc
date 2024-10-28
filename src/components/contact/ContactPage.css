@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     min-height: 80vh;
-    background: linear-gradient(to right, var(--body-color) 1%, var(--common-page-background) 20%, var(--common-page-background) 80%, var(--body-color) 99%);
+    background: linear-gradient(to right, var(--body-color) 1%, var(--common-page-background) 50%, var(--common-page-background) 50%, var(--body-color) 99%);
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;

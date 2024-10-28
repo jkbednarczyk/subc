@@ -41,7 +41,7 @@
     max-width: 1300px;
     color: var(--body-color);
     font-family: var(--body-font);
-    background: linear-gradient(to right, var(--body-color) 3%, var(--common-page-background) 30%, var(--common-page-background) 70%, var(--body-color) 97%);
+    background: linear-gradient(to right, var(--body-color) 1%, var(--common-page-background) 50%, var(--common-page-background) 50%, var(--body-color) 99%);
 }
 
 .intro-content {

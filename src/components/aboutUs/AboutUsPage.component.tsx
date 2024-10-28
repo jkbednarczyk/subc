@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import { PhotoService } from './PhotoService.service';
 import Teacups from '../../assets/images/about_us.jpg';
 import Dog from '../../assets/images/about_us_2.jpg';
+import { NavLink } from 'react-router-dom';
+import { CustomLink } from '../common/CustomLink';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
@@ -51,7 +53,12 @@ export const AboutUsPage = () => {
             <h1>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h1>
             <div className="about_us_content_container">
                 <div className="about_us_comments_intro">
-                    <p>{translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}</p>
+                    <p>
+                        {translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}
+                        <NavLink to = {CustomLink.allegroComments} target="_blank">
+                            {translate("ABOUT_US_PAGE.COMMENTS_LINK")}
+                        </NavLink>.
+                    </p>
                     <figure className="about_us_image_wrapper">
                             <img src={Dog} alt="" className="about_us_photo"/>
                     </figure>

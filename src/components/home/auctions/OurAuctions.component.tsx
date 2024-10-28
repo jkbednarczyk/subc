@@ -5,6 +5,7 @@ import Clock from '../../../assets/images/clock.jpg';
 import Meissen from '../../../assets/images/meissen.jpg';
 import Rosenthal from '../../../assets/images/rosenthal.jpg';
 import Watches from '../../../assets/images/clock.jpg';
+import Figurines from '../../../assets/images/figurines.jpg';
 import { CustomLink } from "../../common/CustomLink";
 import {translate} from '../../../lang/utils/TranslationUtils';
 
@@ -18,7 +19,7 @@ export const OurAuctions = () => {
                 <ul className="auctions_tiles">
                     <AuctionsTile 
                         to = {CustomLink.allegroFigurines}
-                        imageLocation = {Teacups}
+                        imageLocation = {Figurines}
                         text = {translate("FIGURINES")}
                     />
                     <AuctionsTile 

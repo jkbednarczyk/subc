@@ -3,6 +3,7 @@ import { translate } from '../../lang/utils/TranslationUtils';
 import {faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { CustomContactItem } from '../common/customContactItem/CustomContactItem.component';
+import { Footer } from '../footer/Footer.component';
 
 
 export const PurchasePage = () => {
@@ -26,5 +27,6 @@ export const PurchasePage = () => {
                 </CustomContactItem>
             </ul>
         </section>
+        <Footer/>
     </>
 }

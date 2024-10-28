@@ -7,6 +7,7 @@ import Teacups from '../../assets/images/about_us.jpg';
 import Dog from '../../assets/images/about_us_2.jpg';
 import { NavLink } from 'react-router-dom';
 import { CustomLink } from '../common/CustomLink';
+import { Footer } from '../footer/Footer.component';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
@@ -76,5 +77,6 @@ export const AboutUsPage = () => {
                 </div>
             </div>
         </section>
+        <Footer/>
     </>
 }

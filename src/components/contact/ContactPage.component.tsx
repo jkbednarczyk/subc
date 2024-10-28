@@ -4,10 +4,11 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { translate } from "../../lang/utils/TranslationUtils";
 import { CustomContactItem } from '../common/customContactItem/CustomContactItem.component';
+import { Footer } from '../footer/Footer.component';
 
 
 export const ContactPage = () => {
-    return (
+    return <>
         <section className="contact-form">
             <ul className="contact-data">
                 <li className="contact-item">
@@ -35,5 +36,6 @@ export const ContactPage = () => {
                 </li>
             </ul>
         </section>
-    );
+        <Footer/>
+    </>
 };

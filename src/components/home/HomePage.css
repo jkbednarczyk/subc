@@ -63,55 +63,6 @@
     font-size: 18px;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    margin: 0 auto;
-    color: var(--text-color);
-    font-family: var(--body-font);
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-item {
-    height: 35px;
-    font-size: 20px;
-    margin-top: 2px;
-}
-
-.footer-instagram {
-    height: 35px;
-    font-size: 25px;
-}
-
-.footer-copyright a {
-    color: var(--first-color);
-}
-
-.footer-instagram a {
-    color: var(--text-color);
-}
-
-.footer-copyright {
-    height: 50px;
-    margin-top: 30px;
-}
-
-.footer-allegro-icon {
-    margin-top: 4px;
-    height: 25px;
-}
-
 @media (max-width: 768px) {
     .introduction {
         height: 2700px;

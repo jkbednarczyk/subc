@@ -25,8 +25,6 @@
         "MESSAGE_SENT_SUCCESSFULLY": "Message has been sent successfully"
     },
     
-    
-
     "OUR_OFFER": "Our offer",
     "OUR_OFFER_TEXT": "We encourage you to check out our auctions!",
     "FIGURINES": "Porcelain figurines",
@@ -58,5 +56,19 @@
         "FOURTH": "We buy old stuff, antiques - porcelain, clocks, silverware, coins, old glass and many others...",
         "FIFTH": "We guarantee full transparency of transactions and security, treating everyone with respect.",
         "CONTACT": "Please, contact us!"
+    },
+
+    "PRIVACY_POLICY_PAGE": {
+        "TITLE": "Privacy policy",
+        "TITLE_1": "1.",
+        "TITLE_2": "2.",
+        "TITLE_3": "3.",
+        "TITLE_4": "4.",
+        "TITLE_5": "5.",
+        "TITLE_6": "6.",
+        "TITLE_7": "7.",
+        "TITLE_8": "8.",
+        "SUBTITLE_2_1": "2.1.",
+        "SUBTITLE_2_2": "2.2."
     }
 }

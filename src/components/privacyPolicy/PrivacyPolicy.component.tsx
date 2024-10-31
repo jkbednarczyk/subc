@@ -36,7 +36,7 @@ export const PrivacyPolicy = () => {
                     </p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_3")}</h2>
                 <p className="outside_policy">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_1")}
-                    <NavLink to = {CustomLink.web3FormsPrivacyPolicy} target="_blank">
+                    <NavLink to = {CustomLink.allegroHomePage} target="_blank">
                         {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_LINK")}
                     </NavLink>
                     {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_2")}

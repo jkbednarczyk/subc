@@ -39,7 +39,7 @@ export const AboutUsPage = () => {
     }
 
     return <>
-        <section className="about_us">
+        <section className="about_us_page">
             <div className="about_us_content_container">
                 <figure className="about_us_image_wrapper">
                     <img src={Teacups} alt="" className="about_us_photo"/>

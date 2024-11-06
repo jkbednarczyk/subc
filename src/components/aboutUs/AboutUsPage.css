@@ -1,4 +1,4 @@
-.about_us {
+.about_us_page {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -94,8 +94,8 @@
 }
 
 @media (max-width: 780px) {
-    .about_us {
-        height: 2800px;
+    .about_us_page {
+        height: 2700px;
     }
 
     .about_us_content_container {

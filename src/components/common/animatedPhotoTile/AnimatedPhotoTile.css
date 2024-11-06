@@ -1,0 +1,34 @@
+.photo_tile {
+    width: 250px;
+    height: 250px;
+    display: inline flow-root list-item;
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  .photo_tile_pic_wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .photo_tile_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  
+  .photo_tile_img:hover {
+    transform: scale(1.1);
+  }

@@ -1,9 +1,10 @@
-import React from "react";
 import Swal from 'sweetalert2';
 import './ContactForm.css';
 import { translate } from "../../../lang/utils/TranslationUtils";
 
 export const ContactForm = () => {
+    const POPUP_TITLE: string = translate("CONTACT.THANK_YOU");
+    const POPUP_MESSAGE: string = translate("CONTACT.MESSAGE_SENT_SUCCESSFULLY");
 
     const onSubmit = async (event: any) => {
         event.preventDefault();
@@ -25,8 +26,8 @@ export const ContactForm = () => {
     
         if (res.success) {
             Swal.fire({
-                title: "Dziękujemy!",
-                text: "Wiadomość została wysłana",
+                title: POPUP_TITLE,
+                text: POPUP_MESSAGE,
                 icon: "success"
               });
         }

@@ -28,7 +28,8 @@ export const Navbar: FC<NavbarProps> = (props) => {
     setShowMenu(!showMenu);
   };
 
-  const closeMenuOnMobile = () => {
+  const scrollToTopAndCloseMenuOnMobile = () => {
+    window.scrollTo(0, 0);
     if (window.innerWidth <= 1150) {
       setShowMenu(false);
     }
@@ -47,28 +48,28 @@ export const Navbar: FC<NavbarProps> = (props) => {
           <ul className="nav__list">
             <CustomNavLink 
               to = "/"
-              onClick = {closeMenuOnMobile}
+              onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.HOME")}
             />
             <CustomNavLink 
               to = {CustomLink.allegroAllAuctions}
-              onClick = {closeMenuOnMobile}
+              onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.OUR_AUCTIONS")}
               target = "_blank"
             />
             <CustomNavLink 
               to = "/aboutUs"
-              onClick = {closeMenuOnMobile}
+              onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.ABOUT_US")}
             />
             <CustomNavLink 
               to = "/purchase"
-              onClick = {closeMenuOnMobile}
+              onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.PURCHASE")}
             />
             <CustomNavLink 
               to = "/contact"
-              onClick = {closeMenuOnMobile}
+              onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.CONTACT")}
             />
             <li className="nav__item">

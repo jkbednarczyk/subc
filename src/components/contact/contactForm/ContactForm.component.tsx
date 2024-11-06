@@ -29,7 +29,8 @@ export const ContactForm = () => {
                 title: POPUP_TITLE,
                 text: POPUP_MESSAGE,
                 icon: "success"
-              });
+            });
+            event.target.reset();   
         }
       };
 

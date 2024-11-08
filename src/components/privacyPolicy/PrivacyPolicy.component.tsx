@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import { CustomLink } from '../common/CustomLink';
 
 export const PrivacyPolicy = () => {
+    window.scrollTo(0, 0);
     return <>
         <section className="privacy_policy">
             <h1>{translate("PRIVACY_POLICY_PAGE.TITLE")}</h1>

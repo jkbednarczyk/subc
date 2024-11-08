@@ -95,7 +95,7 @@
 
 @media (max-width: 780px) {
     .about_us_page {
-        height: 2700px;
+        height: 2500px;
     }
 
     .about_us_content_container {
@@ -111,6 +111,7 @@
 
             figure.about_us_image_wrapper {
                 width: 100%;
+                visibility: collapse;
             }
 
             .about_us_photo {

@@ -5,7 +5,7 @@
 .about_us_text p {
     text-align: center;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: var(--text-font-size);
     padding: 15px 130px;
 }
 

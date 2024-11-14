@@ -20,8 +20,8 @@
   --body-font: "Montserrat", sans-serif;
   --subtitle-font: "Alata", normal;
   --title-font: "Great Vibes", normal;
-  --h2-font-size: 2.25rem;
-  --small-font-size: 0.813rem;
+  --h2-font-size: 35px;
+  --text-font-size: 18px;
   --font-semi-bold: 600;
   --z-tooltip: 10;
   --z-fixed: 100;

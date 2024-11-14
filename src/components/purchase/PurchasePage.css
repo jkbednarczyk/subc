@@ -8,7 +8,7 @@
     color: var(--body-color);
     font-family: var(--body-font);
     background: linear-gradient(to right, var(--body-color) 1%, var(--common-page-background) 50%, var(--common-page-background) 50%, var(--body-color) 99%);
-    padding-top: 45px;
+    padding-top: 25px;
 }
 
 .purchase_page_content {
@@ -20,12 +20,12 @@
     padding-top: 50px;
     margin-left: 150px;
     font-family: var(--subtitle-font);
-    font-size: 35px;
+    font-size: var(--h2-font-size);
 }
 
 .purchase p {
     font-family: var(--body-font);
-    font-size:18px;
+    font-size: var(--text-font-size);
     color: var(--text-color);
     padding: 15px 130px;
     letter-spacing: 1px;
@@ -38,9 +38,9 @@
     margin-left: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .purchase {
-        height: 1200px;
+        height: 1100px;
     }
 
     .purchase h1 {
@@ -53,6 +53,7 @@
 
     .purchase h2 {
         margin-left: 55px;
+        margin-right: 100px;
     }
 
     .purchase_contact {

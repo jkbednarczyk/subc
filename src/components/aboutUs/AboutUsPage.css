@@ -13,7 +13,7 @@
 .about_us_page h2 {
     padding-top: 50px;
     color: var(--text-color);
-    font-size: 35px;
+    font-size: var(--h2-font-size);
     align-self: center;
 }
 
@@ -80,7 +80,7 @@
 
 .about_us_content_text p {
     font-family: var(--body-font);
-    font-size:18px;
+    font-size: var(--text-font-size);
     padding-top: 20px;
     color: var(--text-color);
     letter-spacing: 1px;
@@ -88,7 +88,7 @@
 
 .about_us_comments_intro p {
     font-family: var(--body-font);
-    font-size:18px;
+    font-size: var(--text-font-size);
     padding-top: 15px;
     color: var(--text-color);
     letter-spacing: 1px;

@@ -12,7 +12,7 @@ h1 {
 .auctions p {
     text-align: center;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: var(--text-font-size);
     padding-bottom: 30px;
 }
 
@@ -88,12 +88,12 @@ h1 {
   
   .auctions_tile_text {
     color: #252e48;
-    font-size: 18px;
+    font-size: var(--text-font-size);
     line-height: 24px;
     text-align: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     
     .auctions_tile_link {
       margin-bottom: 25px;

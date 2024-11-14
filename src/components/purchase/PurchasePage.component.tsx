@@ -9,7 +9,7 @@ import { Footer } from '../footer/Footer.component';
 export const PurchasePage = () => {
     return <>
         <section className="purchase">
-            <h1>{translate("PURCHASE.TITLE")}</h1>
+            <h2>{translate("PURCHASE.TITLE")}</h2>
             <div className="purchase_page_content">
                 <p>{translate("PURCHASE.FIRST")}</p>
                 <p>{translate("PURCHASE.SECOND")}</p>

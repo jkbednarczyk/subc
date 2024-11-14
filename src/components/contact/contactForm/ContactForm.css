@@ -44,7 +44,7 @@ form button {
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--text-font-size);
     color: var(--text-color);
     font-weight: 500;
     margin-top: 25px;
@@ -57,7 +57,7 @@ form button:hover {
 
 textarea  {  
     font-family: Arial, sans-serif;
-    font-size: 16px;   
+    font-size: var(--text-font-size);   
 }
 
 @media (max-width: 768px) {

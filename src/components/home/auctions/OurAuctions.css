@@ -1,5 +1,5 @@
 .auctions {
-    padding-top: 4rem;
+    padding-top: 30px;
 }
 
 h1 {
@@ -94,6 +94,11 @@ h1 {
   }
 
   @media (max-width: 780px) {
+
+    .auctions_tiles {
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
     
     .auctions_tile_link {
       margin-bottom: 25px;

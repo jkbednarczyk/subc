@@ -42,11 +42,11 @@ export const AboutUsPage = () => {
     return <>
         <section className="about_us_page">
             <div className="about_us_content_container">
-                <div className='about_us_photo_tile'>
+                <ul className='about_us_photo_tile'>
                     <figure className="about_us_pic_wrap">
                         <img src={Camera} alt="" className="about_us_photo_tile_img"/>
                     </figure>
-                </div>
+                </ul>
                 <div className="about_us_content_text">
                     <p>{translate("ABOUT_US_PAGE.WELCOME")}</p>
                     <p>{translate("ABOUT_US_PAGE.MEMORIES")}</p>
@@ -54,7 +54,7 @@ export const AboutUsPage = () => {
                     <p>{translate("ABOUT_US_PAGE.INVITATION")}</p>
                 </div>
             </div>
-            <h1>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h1>
+            <h2>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h2>
             <div className="about_us_content_container">
                 <div className="about_us_comments_intro">
                     <p>

@@ -10,18 +10,29 @@
     background: linear-gradient(to right, var(--body-color) 1%, var(--common-page-background) 50%, var(--common-page-background) 50%, var(--body-color) 99%);
 }
 
+.about_us_page h2 {
+    padding-top: 50px;
+    color: var(--text-color);
+    font-size: 35px;
+    align-self: center;
+}
+
 .about_us_content_container {
-    padding: 50px 50px 40px 50px;
+    padding: 25px 50px 40px 50px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 35px;
 
     .about_us_comments_intro {
-        padding-top: 55px;
+        padding-top: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    } 
+    }
+    
+    .about_us_photo_tiles_wrap {
+        padding-top: 35px;
+    }
 }
 
 .about_us_content_container a {
@@ -109,7 +120,11 @@
 
 @media (max-width: 780px) {
     .about_us_page {
-        height: 2500px;
+        height: 2400px;
+    }
+
+    .about_us_page h2 {
+        margin-left: 45px;
     }
 
     .about_us_photo_tiles_wrap {

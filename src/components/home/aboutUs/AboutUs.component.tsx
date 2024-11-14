@@ -1,8 +1,8 @@
 import { translate } from "../../../lang/utils/TranslationUtils";
 import './AboutUs.css';
-import Teacups from '../../../assets/images/teacups2.jpg';
-import Clock from '../../../assets/images/clock2.jpg';
-import Meissen from '../../../assets/images/meissen2.jpg';
+import Camera from '../../../assets/images/camera.jpg';
+import Atmos from '../../../assets/images/atmos.jpg';
+import Lady from '../../../assets/images/lady.jpg';
 import { AnimatedPhotoTile } from "../../common/animatedPhotoTile/AnimatedPhotoTile.component";
 
 export const AboutUs  = () => {
@@ -16,11 +16,11 @@ export const AboutUs  = () => {
             <div className="about_us_photo_wrapper">
                 <ul className="about_us_photo_tiles">
                     <AnimatedPhotoTile
-                        imageLocation = {Teacups}/>
+                        imageLocation = {Camera}/>
                     <AnimatedPhotoTile
-                        imageLocation = {Meissen}/>
+                        imageLocation = {Atmos}/>
                     <AnimatedPhotoTile
-                        imageLocation = {Clock}/>
+                        imageLocation = {Lady}/>
                 </ul>
             </div>
         </div>

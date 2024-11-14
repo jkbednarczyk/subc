@@ -3,8 +3,9 @@ import { translate } from '../../lang/utils/TranslationUtils';
 import {Galleria, GalleriaResponsiveOptions} from 'primereact/galleria';
 import { useState, useEffect } from 'react';
 import { PhotoService } from './PhotoService.service';
-import Teacups from '../../assets/images/about_us.jpg';
-import Dog from '../../assets/images/about_us_2.jpg';
+import Camera from '../../assets/images/block_camera.jpg';
+import DancingLady from '../../assets/images/dancing_lady.jpg';
+import Napoleon from '../../assets/images/napoleonjpg.jpg';
 import { NavLink } from 'react-router-dom';
 import { CustomLink } from '../common/CustomLink';
 import { Footer } from '../footer/Footer.component';
@@ -41,9 +42,11 @@ export const AboutUsPage = () => {
     return <>
         <section className="about_us_page">
             <div className="about_us_content_container">
-                <figure className="about_us_image_wrapper">
-                    <img src={Teacups} alt="" className="about_us_photo"/>
-                </figure>
+                <div className='about_us_photo_tile'>
+                    <figure className="about_us_pic_wrap">
+                        <img src={Camera} alt="" className="about_us_photo_tile_img"/>
+                    </figure>
+                </div>
                 <div className="about_us_content_text">
                     <p>{translate("ABOUT_US_PAGE.WELCOME")}</p>
                     <p>{translate("ABOUT_US_PAGE.MEMORIES")}</p>
@@ -60,9 +63,18 @@ export const AboutUsPage = () => {
                             {translate("ABOUT_US_PAGE.COMMENTS_LINK")}
                         </NavLink>.
                     </p>
-                    <figure className="about_us_image_wrapper">
-                            <img src={Dog} alt="" className="about_us_photo"/>
-                    </figure>
+                    <ul className="about_us_photo_tiles_wrap">
+                        <div className='about_us_photo_tile'>
+                            <figure className="about_us_pic_wrap">
+                                <img src={DancingLady} alt="" className="about_us_photo_tile_img"/>
+                            </figure>
+                        </div>
+                        <div className='about_us_photo_tile'>
+                            <figure className="about_us_pic_wrap">
+                                <img src={Napoleon} alt="" className="about_us_photo_tile_img"/>
+                            </figure>
+                        </div>
+                    </ul> 
                 </div>
                 <div className="about_us_comments">
                     <Galleria 

@@ -1,7 +1,7 @@
 import './ContactPage.css';
 import { ContactForm } from "./contactForm/ContactForm.component";
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { translate } from "../../lang/utils/TranslationUtils";
 import { CustomContactItem } from '../common/customContactItem/CustomContactItem.component';
 import { Footer } from '../footer/Footer.component';
@@ -14,15 +14,6 @@ export const ContactPage = () => {
                 <li className="contact-item">
                     <p>{translate("CONTACT.CONTACT_PAGE_TEXT")}</p>
                 </li>
-                <CustomContactItem icon={faLocationDot}>
-                    <p>
-                        Salon Unikatów<br />
-                        NIP 6793272126<br />
-                        REGON 525857837<br />
-                        ul. Dekarzy 11<br />
-                        30-414 Kraków
-                    </p>
-                </CustomContactItem>
                 <CustomContactItem icon={faEnvelope}>
                     <a href="mailto:salonunikatow@gmail.com">salonunikatow@gmail.com</a>
                 </CustomContactItem>

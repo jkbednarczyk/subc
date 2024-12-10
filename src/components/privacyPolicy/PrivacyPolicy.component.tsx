@@ -18,6 +18,8 @@ export const PrivacyPolicy = () => {
             <CustomContactItem icon={faLocationDot}>
                     <p>
                         Salon Unikatów<br />
+                        NIP 6793272126<br />
+                        REGON 525857837<br />
                         ul. Dekarzy 11<br />
                         30-414 Kraków
                     </p>

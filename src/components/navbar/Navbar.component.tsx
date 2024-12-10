@@ -8,6 +8,7 @@ import {translate} from '../../lang/utils/TranslationUtils';
 import { useTranslation } from "react-i18next";
 import { CustomLink } from "../common/CustomLink";
 import {CustomNavLink} from "./CustomNavLink.component";
+import Logo from '../../assets/images/main_logo.png';
 
 interface NavbarProps {
   language: string;
@@ -38,7 +39,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          Salon Unikatów
+          <img src={Logo} alt="" className="nav_logo_img"/>
         </NavLink>
 
         <div

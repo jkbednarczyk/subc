@@ -21,6 +21,12 @@
   transition: color 0.4s;
   font-size: var(--h2-font-size);
   font-family: var(--title-font);
+  width: 50%;
+}
+
+.nav_logo_img {
+  width: 15%;
+  padding-top: 13px;
 }
 
 .nav__toggle,

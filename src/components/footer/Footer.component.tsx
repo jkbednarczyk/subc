@@ -17,10 +17,12 @@ export const Footer = () => {
                     <FontAwesomeIcon icon={faLocationDot}/> Kraków, Małopolska
                 </div>
                 <div className="footer-item">
-                    <FontAwesomeIcon icon={faEnvelope}/> salonunikatow@gmail.com
+                    <FontAwesomeIcon icon={faEnvelope}/>
+                    <a href="mailto:salonunikatow@gmail.com"> salonunikatow@gmail.com</a>
                 </div>
                 <div className="footer-item">
-                    <FontAwesomeIcon icon={faPhone}/> +48 662 921 155
+                    <FontAwesomeIcon icon={faPhone}/>
+                    <a href="tel:+48662921155"> +48 662 921 155</a>
                 </div>
                 <div className='footer-instagram'>
                     <NavLink to = {CustomLink.instagramPage} target="_blank">

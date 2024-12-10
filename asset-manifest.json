@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/subc/static/css/main.fecada3f.css",
-    "main.js": "/subc/static/js/main.a0a68d44.js",
+    "main.css": "/subc/static/css/main.cd1f8f8c.css",
+    "main.js": "/subc/static/js/main.83510e5c.js",
     "static/js/453.5c900a84.chunk.js": "/subc/static/js/453.5c900a84.chunk.js",
-    "static/media/teacup.png": "/subc/static/media/teacup.d271a3376aebc915d8cb.png",
+    "static/media/teacup.png": "/subc/static/media/teacup.902749b1ab288d408bd9.png",
     "static/media/camera.jpg": "/subc/static/media/camera.6987e767225e2cc35d3b.jpg",
     "static/media/atmos.jpg": "/subc/static/media/atmos.94c2ef03149c79d12146.jpg",
+    "static/media/main_logo.png": "/subc/static/media/main_logo.81aebb2907b9592ad354.png",
     "static/media/block_camera.jpg": "/subc/static/media/block_camera.330f1d50ee79a05fcd41.jpg",
     "static/media/primeicons.svg": "/subc/static/media/primeicons.6ed59f962963a4a73af2.svg",
     "static/media/clock.jpg": "/subc/static/media/clock.4c362cba401bfa5f3b67.jpg",
@@ -16,6 +17,7 @@
     "static/media/meissen.jpg": "/subc/static/media/meissen.70e0053f07d41339acb7.jpg",
     "static/media/figurines.jpg": "/subc/static/media/figurines.cacdcd361964464f1054.jpg",
     "static/media/rosenthal.jpg": "/subc/static/media/rosenthal.c4cf140929e3c84b4059.jpg",
+    "static/media/logo_redirect.jpg": "/subc/static/media/logo_redirect.463f9207acd0f07df159.jpg",
     "static/media/primeicons.eot": "/subc/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
     "static/media/primeicons.woff": "/subc/static/media/primeicons.8931fda1930c3bd21e96.woff",
     "static/media/primeicons.ttf": "/subc/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
@@ -28,12 +30,12 @@
     "static/media/comment5.png": "/subc/static/media/comment5.8681abed8f04aa46f80a.png",
     "static/media/allegro.svg": "/subc/static/media/allegro.a4f50cc0595a2c51eda96c0e521bd6ca.svg",
     "index.html": "/subc/index.html",
-    "main.fecada3f.css.map": "/subc/static/css/main.fecada3f.css.map",
-    "main.a0a68d44.js.map": "/subc/static/js/main.a0a68d44.js.map",
+    "main.cd1f8f8c.css.map": "/subc/static/css/main.cd1f8f8c.css.map",
+    "main.83510e5c.js.map": "/subc/static/js/main.83510e5c.js.map",
     "453.5c900a84.chunk.js.map": "/subc/static/js/453.5c900a84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fecada3f.css",
-    "static/js/main.a0a68d44.js"
+    "static/css/main.cd1f8f8c.css",
+    "static/js/main.83510e5c.js"
   ]
 }

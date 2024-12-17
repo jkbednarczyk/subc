@@ -31,7 +31,15 @@ h1 {
 }
 
 .auctions_tiles {
-    margin-bottom: 24px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.auctions_tiles li {
+  display: inline-block; 
 }
 
 .auctions_tile {
@@ -93,14 +101,8 @@ h1 {
     text-align: center;
   }
 
-  @media screen and (max-width: 430px) {
-
+  @media screen and (max-width: 1150px) {
     .auctions_tiles {
       margin-bottom: 0;
-      margin-left: 15px;
-    }
-    
-    .auctions_tile_link {
-      margin-bottom: 25px;
     }
   }

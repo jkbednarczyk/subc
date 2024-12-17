@@ -85,3 +85,9 @@
         margin: 0 0 20px 0;
     }
 }
+
+@media screen and (min-width: 431px) and (max-width: 1150px) {
+    .introduction {
+        height: 1900px;
+    }
+}

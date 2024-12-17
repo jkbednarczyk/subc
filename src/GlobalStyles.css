@@ -17,11 +17,12 @@
   --footer-background: #272626;
   --common-page-background: #424141;
   --button-hover: #1f4f17;
-  --body-font: "Montserrat", sans-serif;
-  --subtitle-font: "Alata", normal;
-  --title-font: "Great Vibes", normal;
+  --body-font: Arial, Helvetica, sans-serif;
+  --menu-font: "Montserrat", sans-serif;
+  --subtitle-font: Arial, Helvetica, sans-serif;
+  --title-font: 'Script MT Bold', cursive;
   --h2-font-size: 35px;
-  --text-font-size: 18px;
+  --text-font-size: 20px;
   --font-semi-bold: 600;
   --z-tooltip: 10;
   --z-fixed: 100;

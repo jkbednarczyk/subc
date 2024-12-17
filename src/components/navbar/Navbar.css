@@ -59,9 +59,13 @@
     padding: 6rem 3rem 0;
     transition: right 0.4s;
   }
+
+  .nav_logo_img {
+    width: 25%;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
   .nav__menu {
     padding: 4rem 1rem 2rem;
   }

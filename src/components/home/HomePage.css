@@ -62,7 +62,7 @@
     font-size: var(--text-font-size);
 }
 
-@media (max-width: 780px) {
+@media screen and (max-width: 430px) {
     .introduction {
         height: 2650px;
     }

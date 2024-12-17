@@ -60,7 +60,7 @@ textarea  {
     font-size: var(--text-font-size);   
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 430px) {
     form {
         margin: 0;
     }

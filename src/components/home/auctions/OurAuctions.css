@@ -93,7 +93,7 @@ h1 {
     text-align: center;
   }
 
-  @media (max-width: 780px) {
+  @media screen and (max-width: 430px) {
 
     .auctions_tiles {
       margin-bottom: 0;

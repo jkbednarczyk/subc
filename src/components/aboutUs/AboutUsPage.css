@@ -118,7 +118,7 @@
     }
 }
 
-@media (max-width: 780px) {
+@media screen and (max-width: 430px) {
     .about_us_page {
         height: 2400px;
     }

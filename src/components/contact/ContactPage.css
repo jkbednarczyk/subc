@@ -18,7 +18,8 @@
     padding: 0;
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 430px) {
     .contact-form {
         flex-direction: column;
         text-align: center;
@@ -33,7 +34,7 @@
     }
 
     .contact-data {
-        font-size: 15px;
+        /* font-size: var(--mobile-font-size); */
         width: 100%;
         margin: 0;
     }

@@ -5,6 +5,7 @@
     margin: 20px auto;
     color: var(--text-color);
     font-family: var(--menu-font);
+    background: var(--footer-background);
 }
 
 .footer-content {

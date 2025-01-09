@@ -4,8 +4,21 @@ import Camera from '../../../assets/images/camera.jpg';
 import Atmos from '../../../assets/images/atmos.jpg';
 import Lady from '../../../assets/images/lady.jpg';
 import { AnimatedPhotoTile } from "../../common/animatedPhotoTile/AnimatedPhotoTile.component";
+import { useEffect, useState } from "react";
 
 export const AboutUs  = () => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+            const handleResize = () => setWindowWidth(window.innerWidth);
+            window.addEventListener('resize', handleResize);
+    
+            // Cleanup event listener
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }, []);
+
     return <div className="about_us">
         <h1>{translate("ABOUT_US")}</h1>
         <div className="about_us_text">
@@ -14,6 +27,7 @@ export const AboutUs  = () => {
         </div>
         <div className="about_us_photo_container">
             <div className="about_us_photo_wrapper">
+            {windowWidth >= 1150 &&
                 <ul className="about_us_photo_tiles">
                     <AnimatedPhotoTile
                         imageLocation = {Camera}/>
@@ -21,7 +35,7 @@ export const AboutUs  = () => {
                         imageLocation = {Atmos}/>
                     <AnimatedPhotoTile
                         imageLocation = {Lady}/>
-                </ul>
+                </ul>}
             </div>
         </div>
     </div>

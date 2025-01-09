@@ -12,6 +12,8 @@ import { Footer } from '../footer/Footer.component';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     const responsiveOptions: GalleriaResponsiveOptions[] = [
         {
             breakpoint: '991px',
@@ -28,6 +30,16 @@ export const AboutUsPage = () => {
     ];
 
     useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup event listener
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
         PhotoService.getImages().then((data: any) => setImages(data));
     }, []);
 
@@ -41,42 +53,43 @@ export const AboutUsPage = () => {
 
     return <>
         <section className="about_us_page">
-            <div className="about_us_content_container">
-                <ul className='about_us_photo_tile'>
+            <ul className="about_us_content_container">
+                <li className='about_us_photo_tile'>
                     <figure className="about_us_pic_wrap">
                         <img src={Camera} alt="" className="about_us_photo_tile_img"/>
                     </figure>
-                </ul>
-                <div className="about_us_content_text">
+                </li>
+                <li className="about_us_content_text">
                     <p>{translate("ABOUT_US_PAGE.WELCOME")}</p>
                     <p>{translate("ABOUT_US_PAGE.MEMORIES")}</p>
                     <p>{translate("ABOUT_US_PAGE.APPROACH")}</p>
                     <p>{translate("ABOUT_US_PAGE.INVITATION")}</p>
-                </div>
-            </div>
+                </li>
+            </ul>
             <h2>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h2>
-            <div className="about_us_content_container">
-                <div className="about_us_comments_intro">
+            <ul className="about_us_content_container">
+                <li className="about_us_comments_intro">
                     <p>
                         {translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}
                         <NavLink to = {CustomLink.allegroComments} target="_blank">
                             {translate("ABOUT_US_PAGE.COMMENTS_LINK")}
                         </NavLink>.
                     </p>
+                    {windowWidth >= 1150 &&
                     <ul className="about_us_photo_tiles_wrap">
-                        <div className='about_us_photo_tile'>
+                        <li className='about_us_photo_tile'>
                             <figure className="about_us_pic_wrap">
                                 <img src={DancingLady} alt="" className="about_us_photo_tile_img"/>
                             </figure>
-                        </div>
-                        <div className='about_us_photo_tile'>
+                        </li>
+                        <li className='about_us_photo_tile'>
                             <figure className="about_us_pic_wrap">
                                 <img src={Napoleon} alt="" className="about_us_photo_tile_img"/>
                             </figure>
-                        </div>
-                    </ul> 
-                </div>
-                <div className="about_us_comments">
+                        </li>
+                    </ul> }
+                </li>
+                <li className="about_us_comments">
                     <Galleria 
                         value={images} 
                         responsiveOptions={responsiveOptions} 
@@ -86,8 +99,8 @@ export const AboutUsPage = () => {
                         autoPlay 
                         transitionInterval={4000}
                     />
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
         <Footer/>
     </>

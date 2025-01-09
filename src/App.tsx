@@ -14,7 +14,7 @@ interface AppProps {
 
 const App: FC<AppProps> = (props) => {
   return (
-    <Router basename="/subc">
+    <Router basename="/">
      <Navbar language={props.language}/>
      <main className="main-content">
        <Routes>

@@ -1,12 +1,11 @@
 import { AuctionsTile } from "./auctionsTile/AuctionsTile.component";
 import "./OurAuctions.css";
 import Teacups from '../../../assets/images/teacups.jpg';
-import Clock from '../../../assets/images/clock.jpg';
 import Meissen from '../../../assets/images/meissen.jpg';
 import Rosenthal from '../../../assets/images/rosenthal.jpg';
 import Watches from '../../../assets/images/clock.jpg';
 import Figurines from '../../../assets/images/figurines.jpg';
-import Logo from '../../../assets/images/logo_redirect.jpg';
+import Logo from '../../../assets/images/logo_redirect.png';
 import { CustomLink } from "../../common/CustomLink";
 import {translate} from '../../../lang/utils/TranslationUtils';
 

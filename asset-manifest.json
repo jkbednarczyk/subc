@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/subc/static/css/main.f94e4563.css",
-    "main.js": "/subc/static/js/main.df511aae.js",
+    "main.js": "/subc/static/js/main.93224ac5.js",
     "static/js/453.5c900a84.chunk.js": "/subc/static/js/453.5c900a84.chunk.js",
     "static/media/teacup.png": "/subc/static/media/teacup.841d113397921e1611c5.png",
     "static/media/camera.jpg": "/subc/static/media/camera.6987e767225e2cc35d3b.jpg",
+    "static/media/logo_redirect.png": "/subc/static/media/logo_redirect.5c51741ea7b18e0236d1.png",
     "static/media/atmos.jpg": "/subc/static/media/atmos.94c2ef03149c79d12146.jpg",
     "static/media/main_logo.png": "/subc/static/media/main_logo.81aebb2907b9592ad354.png",
     "static/media/block_camera.jpg": "/subc/static/media/block_camera.330f1d50ee79a05fcd41.jpg",
@@ -17,7 +18,6 @@
     "static/media/meissen.jpg": "/subc/static/media/meissen.70e0053f07d41339acb7.jpg",
     "static/media/figurines.jpg": "/subc/static/media/figurines.cacdcd361964464f1054.jpg",
     "static/media/rosenthal.jpg": "/subc/static/media/rosenthal.c4cf140929e3c84b4059.jpg",
-    "static/media/logo_redirect.jpg": "/subc/static/media/logo_redirect.463f9207acd0f07df159.jpg",
     "static/media/primeicons.eot": "/subc/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
     "static/media/primeicons.woff": "/subc/static/media/primeicons.8931fda1930c3bd21e96.woff",
     "static/media/primeicons.ttf": "/subc/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
@@ -31,11 +31,11 @@
     "static/media/allegro.svg": "/subc/static/media/allegro.a4f50cc0595a2c51eda96c0e521bd6ca.svg",
     "index.html": "/subc/index.html",
     "main.f94e4563.css.map": "/subc/static/css/main.f94e4563.css.map",
-    "main.df511aae.js.map": "/subc/static/js/main.df511aae.js.map",
+    "main.93224ac5.js.map": "/subc/static/js/main.93224ac5.js.map",
     "453.5c900a84.chunk.js.map": "/subc/static/js/453.5c900a84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f94e4563.css",
-    "static/js/main.df511aae.js"
+    "static/js/main.93224ac5.js"
   ]
 }

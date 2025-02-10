@@ -9,6 +9,8 @@ import Napoleon from '../../assets/images/napoleonjpg.jpg';
 import { NavLink } from 'react-router-dom';
 import { CustomLink } from '../common/CustomLink';
 import { Footer } from '../footer/Footer.component';
+import { Helmet } from 'react-helmet-async';
+import { Metadata } from '../common/utils/metadata';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
@@ -52,6 +54,12 @@ export const AboutUsPage = () => {
     }
 
     return <>
+        <Helmet>
+            <title>{Metadata.aboutUsTitle}</title>
+            <meta 
+                name = "description" 
+                content = {Metadata.aboutUsDescription} />
+        </Helmet>
         <section className="about_us_page">
             <ul className="about_us_content_container">
                 <li className='about_us_photo_tile'>

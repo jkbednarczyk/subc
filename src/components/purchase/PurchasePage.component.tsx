@@ -4,10 +4,18 @@ import {faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { CustomContactItem } from '../common/customContactItem/CustomContactItem.component';
 import { Footer } from '../footer/Footer.component';
+import { Helmet } from 'react-helmet-async';
+import { Metadata } from '../common/utils/metadata';
 
 
 export const PurchasePage = () => {
     return <>
+        <Helmet>
+            <title>{Metadata.purchaseTitle}</title>
+            <meta 
+                name = "description" 
+                content = {Metadata.purchaseDescription}/>
+        </Helmet>
         <section className="purchase">
             <h2>{translate("PURCHASE.TITLE")}</h2>
             <div className="purchase_page_content">

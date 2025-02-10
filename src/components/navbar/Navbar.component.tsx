@@ -59,7 +59,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
               target = "_blank"
             />
             <CustomNavLink 
-              to = "/aboutUs"
+              to = "/about"
               onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.ABOUT_US")}
             />

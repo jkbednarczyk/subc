@@ -5,10 +5,12 @@ import { useState, useEffect } from 'react';
 import { PhotoService } from './PhotoService.service';
 import Camera from '../../assets/images/block_camera.jpg';
 import DancingLady from '../../assets/images/dancing_lady.jpg';
-import Napoleon from '../../assets/images/napoleonjpg.jpg';
+import Napoleon from '../../assets/images/napoleon.jpg';
 import { NavLink } from 'react-router-dom';
 import { CustomLink } from '../common/CustomLink';
 import { Footer } from '../footer/Footer.component';
+import { Helmet } from 'react-helmet-async';
+import { METADATA } from '../common/utils/metadata';
 
 export const AboutUsPage = () => {
     const [images, setImages] = useState([]);
@@ -52,11 +54,17 @@ export const AboutUsPage = () => {
     }
 
     return <>
-        <section className="about_us_page">
-            <ul className="about_us_content_container">
-                <li className='about_us_photo_tile'>
-                    <figure className="about_us_pic_wrap">
-                        <img src={Camera} alt="" className="about_us_photo_tile_img"/>
+        <Helmet>
+            <title>{METADATA.ABOUT_TITLE}</title>
+            <meta 
+                name = "description" 
+                content = {METADATA.ABOUT_DESCRIPTION} />
+        </Helmet>
+        <section className = "about_us_page">
+            <ul className = "about_us_content_container">
+                <li className = 'about_us_photo_tile'>
+                    <figure className = "about_us_pic_wrap">
+                        <img src={Camera} alt = {translate("ALT.BLOCK_CAMERA")} className = "about_us_photo_tile_img"/>
                     </figure>
                 </li>
                 <li className="about_us_content_text">
@@ -67,8 +75,8 @@ export const AboutUsPage = () => {
                 </li>
             </ul>
             <h2>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h2>
-            <ul className="about_us_content_container">
-                <li className="about_us_comments_intro">
+            <ul className = "about_us_content_container">
+                <li className = "about_us_comments_intro">
                     <p>
                         {translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}
                         <NavLink to = {CustomLink.allegroComments} target="_blank">
@@ -76,28 +84,29 @@ export const AboutUsPage = () => {
                         </NavLink>.
                     </p>
                     {windowWidth >= 1150 &&
-                    <ul className="about_us_photo_tiles_wrap">
-                        <li className='about_us_photo_tile'>
-                            <figure className="about_us_pic_wrap">
-                                <img src={DancingLady} alt="" className="about_us_photo_tile_img"/>
+                    <ul className = "about_us_photo_tiles_wrap">
+                        <li className = 'about_us_photo_tile'>
+                            <figure className = "about_us_pic_wrap">
+                                <img src = {DancingLady} alt = {translate("ALT.DANCING_LADY")} className = "about_us_photo_tile_img"/>
                             </figure>
                         </li>
-                        <li className='about_us_photo_tile'>
-                            <figure className="about_us_pic_wrap">
-                                <img src={Napoleon} alt="" className="about_us_photo_tile_img"/>
+                        <li className = 'about_us_photo_tile'>
+                            <figure className = "about_us_pic_wrap">
+                                <img src={Napoleon} alt = {translate("ALT.NAPOLEON")} className = "about_us_photo_tile_img"/>
                             </figure>
                         </li>
                     </ul> }
                 </li>
-                <li className="about_us_comments">
+                <li className = "about_us_comments">
                     <Galleria 
-                        value={images} 
-                        responsiveOptions={responsiveOptions} 
-                        numVisible={3}  
-                        item={itemTemplate} thumbnail={thumbnailTemplate} 
+                        value = {images} 
+                        responsiveOptions = {responsiveOptions} 
+                        numVisible = {3}  
+                        item = {itemTemplate} 
+                        thumbnail = {thumbnailTemplate} 
                         circular 
                         autoPlay 
-                        transitionInterval={4000}
+                        transitionInterval = {4000}
                     />
                 </li>
             </ul>

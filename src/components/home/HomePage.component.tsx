@@ -4,11 +4,19 @@ import { translate } from '../../lang/utils/TranslationUtils';
 import { OurAuctions } from './auctions/OurAuctions.component';
 import { AboutUs } from './aboutUs/AboutUs.component';
 import { Footer } from '../footer/Footer.component';
+import { Helmet } from 'react-helmet-async';
+import { METADATA } from '../common/utils/metadata';
 
 
 export const HomePage = () => {
 
     return <>
+        <Helmet>
+            <title>{METADATA.HOME_TITLE}</title>
+            <meta 
+                name = "description" 
+                content = {METADATA.HOME_DESCRIPTION}/>
+        </Helmet>
         <section className="home">
             <div className="content">
                 <h1>Salon Unikatów</h1>

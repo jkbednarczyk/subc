@@ -19,22 +19,25 @@ export const AboutUs  = () => {
             };
         }, []);
 
-    return <div className="about_us">
+    return <div className = "about_us">
         <h1>{translate("ABOUT_US")}</h1>
-        <div className="about_us_text">
+        <div className = "about_us_text">
             <p>{translate("WHO_WE_ARE")}</p>
             <p>{translate("OUR_WORK")}</p>
         </div>
-        <div className="about_us_photo_container">
-            <div className="about_us_photo_wrapper">
+        <div className = "about_us_photo_container">
+            <div className = "about_us_photo_wrapper">
             {windowWidth >= 1150 &&
-                <ul className="about_us_photo_tiles">
+                <ul className = "about_us_photo_tiles">
                     <AnimatedPhotoTile
-                        imageLocation = {Camera}/>
+                        imageLocation = {Camera}
+                        alt = {translate("ALT.CAMERA")}/>
                     <AnimatedPhotoTile
-                        imageLocation = {Atmos}/>
+                        imageLocation = {Atmos}
+                        alt = {translate("ALT.ATMOS")}/>
                     <AnimatedPhotoTile
-                        imageLocation = {Lady}/>
+                        imageLocation = {Lady}
+                        alt = {translate("ALT.LADY")}/>
                 </ul>}
             </div>
         </div>

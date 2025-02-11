@@ -20,7 +20,7 @@ const App: FC<AppProps> = (props) => {
        <Routes>
          <Route path = "/" element = {<HomePage />} />
          <Route path = "/privacyPolicy" element = {<PrivacyPolicy />} />
-         <Route path = "/aboutUs" element = {<AboutUsPage />} />
+         <Route path = "/about" element = {<AboutUsPage />} />
          <Route path = "/purchase" element = {<PurchasePage />} />
          <Route path = "/contact" element = {<ContactPage />} />
        </Routes>

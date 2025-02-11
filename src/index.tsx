@@ -10,6 +10,7 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';    
 import 'primeicons/primeicons.css';  
 import './GlobalStyles.css';
+import { HelmetProvider } from 'react-helmet-async';
 
 i18next.init({
   interpolation: {escapeValue: true},
@@ -30,9 +31,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <I18nextProvider i18n={i18next}>
-      <App language={i18next.language}/>
-    </I18nextProvider>
+    <HelmetProvider>
+      <I18nextProvider i18n={i18next}>
+        <App language={i18next.language}/>
+      </I18nextProvider>
+    </HelmetProvider>
   </React.StrictMode>,
 );
 

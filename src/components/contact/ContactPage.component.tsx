@@ -5,10 +5,18 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { translate } from "../../lang/utils/TranslationUtils";
 import { CustomContactItem } from '../common/customContactItem/CustomContactItem.component';
 import { Footer } from '../footer/Footer.component';
+import { Helmet } from 'react-helmet-async';
+import { METADATA } from '../common/utils/metadata';
 
 
 export const ContactPage = () => {
     return <>
+        <Helmet>
+            <title>{METADATA.CONTACT_TITLE}</title>
+            <meta 
+                name = "description" 
+                content = {METADATA.CONTACT_DESCRIPTION}/>
+        </Helmet>
         <section className="contact-form">
             <ul className="contact-data">
                 <li className="contact-item">

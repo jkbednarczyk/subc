@@ -7,8 +7,7 @@ const pages = [
   "/", 
   "/about", 
   "/contact", 
-  "/purchase", 
-  "/privacyPolicy"
+  "/purchase"
 ];
 
 const stream = new SitemapStream({ hostname: SITE_URL });

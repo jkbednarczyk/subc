@@ -4,7 +4,7 @@ import { CustomContactItem } from '../common/customContactItem/CustomContactItem
 import { Footer } from '../footer/Footer.component';
 import './PrivacyPolicy.css';
 import { NavLink } from 'react-router-dom';
-import { CustomLink } from '../common/CustomLink';
+import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
 
 export const PrivacyPolicy = () => {
     window.scrollTo(0, 0);
@@ -33,13 +33,13 @@ export const PrivacyPolicy = () => {
                     <p>{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_1")}</p>
                 <h3>{translate("PRIVACY_POLICY_PAGE.SUBTITLE_2_2")}</h3>
                     <p className="outside_policy">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_2")}
-                        <NavLink to = {CustomLink.web3FormsPrivacyPolicy} target="_blank">
+                        <NavLink to = {EXTERNAL_LINKS.WEB3FORMS_PRIVACY_POLICY} target="_blank">
                             {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_LINK")}
                         </NavLink>.
                     </p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_3")}</h2>
                 <p className="outside_policy">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_1")}
-                    <NavLink to = {CustomLink.allegroHomePage} target="_blank">
+                    <NavLink to = {EXTERNAL_LINKS.ALLEGRO_HOME} target="_blank">
                         {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_LINK")}
                     </NavLink>
                     {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_2")}

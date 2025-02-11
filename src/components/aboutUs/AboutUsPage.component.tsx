@@ -7,7 +7,7 @@ import Camera from '../../assets/images/block_camera.jpg';
 import DancingLady from '../../assets/images/dancing_lady.jpg';
 import Napoleon from '../../assets/images/napoleon.jpg';
 import { NavLink } from 'react-router-dom';
-import { CustomLink } from '../common/CustomLink';
+import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
 import { Footer } from '../footer/Footer.component';
 import { Helmet } from 'react-helmet-async';
 import { METADATA } from '../common/utils/metadata';
@@ -79,7 +79,7 @@ export const AboutUsPage = () => {
                 <li className = "about_us_comments_intro">
                     <p>
                         {translate("ABOUT_US_PAGE.CUSTOMERS_TEXT")}
-                        <NavLink to = {CustomLink.allegroComments} target="_blank">
+                        <NavLink to = {EXTERNAL_LINKS.ALLEGRO_COMMENTS} target="_blank">
                             {translate("ABOUT_US_PAGE.COMMENTS_LINK")}
                         </NavLink>.
                     </p>

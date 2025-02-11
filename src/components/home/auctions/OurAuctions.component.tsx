@@ -6,7 +6,7 @@ import Rosenthal from '../../../assets/images/rosenthal.jpg';
 import Watches from '../../../assets/images/clock.jpg';
 import Figurines from '../../../assets/images/figurines.jpg';
 import Logo from '../../../assets/images/logo_redirect.png';
-import { CustomLink } from "../../common/CustomLink";
+import { EXTERNAL_LINKS } from "../../common/utils/externalLinks";
 import {translate} from '../../../lang/utils/TranslationUtils';
 
 
@@ -18,19 +18,19 @@ export const OurAuctions = () => {
             <p>{translate("OUR_OFFER_TEXT")}</p>
                 <ul className="auctions_tiles">
                     <AuctionsTile 
-                        to = {CustomLink.allegroFigurines}
+                        to = {EXTERNAL_LINKS.ALLEGRO_FIGURINES}
                         imageLocation = {Figurines}
                         text = {translate("FIGURINES")}
                         alt = {translate("ALT.FIGURINES")}
                     />
                     <AuctionsTile 
-                        to = {CustomLink.allegroRosenthal} 
+                        to = {EXTERNAL_LINKS.ALLERGO_ROSENTHAL} 
                         imageLocation = {Rosenthal}
                         text = {translate("ROSENTHAL")}
                         alt = {translate("ALT.ROSENTHAL")}
                     />
                     <AuctionsTile 
-                        to = {CustomLink.allegroClocksAndWatches} 
+                        to = {EXTERNAL_LINKS.ALLEGRO_CLOCKS_AND_WATCHES} 
                         imageLocation = {Watches}
                         text = {translate("CLOCKS_AND_WATCHES")}
                         alt = {translate("ALT.CLOCK")}
@@ -38,19 +38,19 @@ export const OurAuctions = () => {
                 </ul>
                 <ul className="auctions_tiles">
                     <AuctionsTile 
-                        to = {CustomLink.allegroMeissen} 
+                        to = {EXTERNAL_LINKS.ALLEGRO_MEISSEN} 
                         imageLocation = {Meissen}
                         text = {translate("MEISSEN")}
                         alt = {translate("ALT.MEISSEN")}
                     />
                     <AuctionsTile 
-                        to = {CustomLink.allegroCups}
+                        to = {EXTERNAL_LINKS.ALLEGRO_CUPS}
                         imageLocation = {Teacups}
                         text = {translate("CUPS")}
                         alt = {translate("ALT.TEACUPS")}
                     />
                     <AuctionsTile 
-                        to = {CustomLink.allegroAllAuctions} 
+                        to = {EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS} 
                         imageLocation = {Logo}
                         text = {translate("ALL_AUCTIONS")}
                         alt = {translate("ALT.LOGO_REDIRECT")}

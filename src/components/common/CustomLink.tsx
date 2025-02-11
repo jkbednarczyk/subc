@@ -9,5 +9,5 @@ export const CustomLink = {
     allegroHomePage: "https://allegro.pl/",
     instagramPage: "https://www.instagram.com/salon_unikatow/",
     web3FormsPrivacyPolicy: "https://web3forms.com/privacy",
-
+    facebook: "https://www.facebook.com/profile.php?id=61572886640141"
 }

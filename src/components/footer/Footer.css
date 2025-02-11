@@ -28,7 +28,7 @@
     color: var(--text-color);
 }
 
-.footer-instagram {
+.footer-social-media {
     height: 35px;
     font-size: 25px;
     margin-top: 10px;
@@ -38,8 +38,9 @@
     color: var(--first-color);
 }
 
-.footer-instagram a {
+.footer-social-media  a {
     color: var(--text-color);
+    margin: 10px;
 }
 
 .footer-copyright {

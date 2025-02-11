@@ -21,16 +21,19 @@ export const OurAuctions = () => {
                         to = {CustomLink.allegroFigurines}
                         imageLocation = {Figurines}
                         text = {translate("FIGURINES")}
+                        alt = {translate("ALT.FIGURINES")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroRosenthal} 
                         imageLocation = {Rosenthal}
                         text = {translate("ROSENTHAL")}
+                        alt = {translate("ALT.ROSENTHAL")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroClocksAndWatches} 
                         imageLocation = {Watches}
                         text = {translate("CLOCKS_AND_WATCHES")}
+                        alt = {translate("ALT.CLOCK")}
                     />
                 </ul>
                 <ul className="auctions_tiles">
@@ -38,16 +41,19 @@ export const OurAuctions = () => {
                         to = {CustomLink.allegroMeissen} 
                         imageLocation = {Meissen}
                         text = {translate("MEISSEN")}
+                        alt = {translate("ALT.MEISSEN")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroCups}
                         imageLocation = {Teacups}
                         text = {translate("CUPS")}
+                        alt = {translate("ALT.TEACUPS")}
                     />
                     <AuctionsTile 
                         to = {CustomLink.allegroAllAuctions} 
                         imageLocation = {Logo}
                         text = {translate("ALL_AUCTIONS")}
+                        alt = {translate("ALT.LOGO_REDIRECT")}
                     />
                 </ul>
             </div>

@@ -36,17 +36,17 @@ export const Navbar: FC<NavbarProps> = (props) => {
     }
   };
   return (
-    <header className="header">
-      <nav className="nav container">
-        <NavLink to="/" className="nav__logo">
-          <img src={Logo} alt="" className="nav_logo_img"/>
+    <header className = "header">
+      <nav className = "nav container">
+        <NavLink to = "/" className = "nav__logo">
+          <img src = {Logo} alt = {translate("ALT.MAIN_LOGO")} className = "nav_logo_img"/>
         </NavLink>
 
         <div
-          className={`nav__menu ${showMenu ? "show-menu" : ""}`}
-          id="nav-menu"
+          className = {`nav__menu ${showMenu ? "show-menu" : ""}`}
+          id = "nav-menu"
         >
-          <ul className="nav__list">
+          <ul className = "nav__list">
             <CustomNavLink 
               to = "/"
               onClick = {scrollToTopAndCloseMenuOnMobile}
@@ -73,18 +73,18 @@ export const Navbar: FC<NavbarProps> = (props) => {
               onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.CONTACT")}
             />
-            <li className="nav__item">
-              <button className="nav__lang" onClick={() => handleLanguageChange(currentLang)}>
-                <FontAwesomeIcon icon={faGlobe} className="button_icon" />
+            <li className = "nav__item">
+              <button className = "nav__lang" onClick={() => handleLanguageChange(currentLang)}>
+                <FontAwesomeIcon icon = {faGlobe} className="button_icon" />
                 <span>PL | ENG</span>
               </button>
             </li>
           </ul>
-          <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+          <div className = "nav__close" id = "nav-close" onClick = {toggleMenu}>
             <IoClose />
           </div>
         </div>
-        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+        <div className = "nav__toggle" id = "nav-toggle" onClick = {toggleMenu}>
           <IoMenu />
         </div>
       </nav>

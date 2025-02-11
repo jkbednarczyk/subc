@@ -5,17 +5,17 @@ import { OurAuctions } from './auctions/OurAuctions.component';
 import { AboutUs } from './aboutUs/AboutUs.component';
 import { Footer } from '../footer/Footer.component';
 import { Helmet } from 'react-helmet-async';
-import { Metadata } from '../common/utils/metadata';
+import { METADATA } from '../common/utils/metadata';
 
 
 export const HomePage = () => {
 
     return <>
         <Helmet>
-            <title>{Metadata.homeTitle}</title>
+            <title>{METADATA.HOME_TITLE}</title>
             <meta 
                 name = "description" 
-                content = {Metadata.homeDescription}/>
+                content = {METADATA.HOME_DESCRIPTION}/>
         </Helmet>
         <section className="home">
             <div className="content">

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import {translate} from '../../lang/utils/TranslationUtils';
 import { useTranslation } from "react-i18next";
-import { CustomLink } from "../common/CustomLink";
+import { EXTERNAL_LINKS } from "../common/utils/externalLinks";
 import {CustomNavLink} from "./CustomNavLink.component";
 import Logo from '../../assets/images/main_logo.png';
 
@@ -53,7 +53,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
               text = {translate("NAVBAR.HOME")}
             />
             <CustomNavLink 
-              to = {CustomLink.allegroAllAuctions}
+              to = {EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS}
               onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.OUR_AUCTIONS")}
               target = "_blank"

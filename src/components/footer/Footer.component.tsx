@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Footer.css';
 import { NavLink } from 'react-router-dom';
 import { translate } from '../../lang/utils/TranslationUtils';
-import { CustomLink } from '../common/CustomLink';
+import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
 import allegro from "../../assets/images/allegro.svg"
 import { faCopyright, faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -25,15 +25,15 @@ export const Footer = () => {
                     <a href = "tel:+48662921155"> +48 662 921 155</a>
                 </div>
                 <div className = 'footer-social-media'>
-                    <NavLink to = {CustomLink.facebook} target = "_blank">
+                    <NavLink to = {EXTERNAL_LINKS.FACEBOOK} target = "_blank">
                         <FontAwesomeIcon icon = {faSquareFacebook}/>
                     </NavLink>
-                    <NavLink to = {CustomLink.instagramPage} target = "_blank">
+                    <NavLink to = {EXTERNAL_LINKS.INSTAGRAM} target = "_blank">
                         <FontAwesomeIcon icon = {faInstagram}/>
                     </NavLink>
                 </div>
                 <div className = "footer-allegro">
-                     <NavLink to = {CustomLink.allegroAllAuctions} target = "_blank">
+                     <NavLink to = {EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS} target = "_blank">
                         <img src = {allegro} alt = "" className = "footer-allegro-icon"/>
                     </NavLink>
                 </div>

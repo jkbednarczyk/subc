@@ -1,49 +1,72 @@
-.auctions {
-    padding-top: 30px;
+.our-auctions {
+  padding-top: 30px;
+  opacity: 0;
+  transform: translateY(75px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.our-auctions.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1 {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 50px;
-    font-family: var(--subtitle-font);
+  text-align: center;
+  color: var(--text-color);
+  font-size: 50px;
+  font-family: var(--subtitle-font);
 }
 
-.auctions p {
-    text-align: center;
-    color: var(--text-color);
-    font-size: var(--text-font-size);
-    padding-bottom: 30px;
+.our-auctions p {
+  text-align: center;
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+  padding-bottom: 30px;
 }
 
 .auctions_container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .links_wrapper {
-    position: relative;
-    margin: 30px 0 45px;
+  position: relative;
+  margin: 30px 0 45px;
 }
 
 .links_tiles {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
 }
 
 .links_tiles li {
-  display: inline-block; 
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease, opacity 0.7s ease;
+  opacity: 0;
+  transform: scale(0.8);
 }
 
-  @media screen and (max-width: 1150px) {
-    .links_tiles {
-      margin-bottom: 0;
-    }
+.fade-in .links_tiles li {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.links_tiles li:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1150px) {
+  h1 {
+      font-size: 36px;
   }
+}

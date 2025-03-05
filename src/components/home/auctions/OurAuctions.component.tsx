@@ -20,20 +20,8 @@ const AUCTION_ITEMS = [
 ];
 
 export const OurAuctions = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 100) setAnimate(true);
-    };
-
-    window.addEventListener("scroll", onScroll);
-    
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <div className={`our-auctions ${animate ? "fade-in" : ""}`}>
+    <div className = "our_auctions">
       <h1>{translate("OUR_OFFER")}</h1>
       <div className = "auctions_container">
         <div className = "links_wrapper">

@@ -1,23 +1,13 @@
-.our-auctions {
+.our_auctions {
   padding-top: 30px;
-  opacity: 0;
-  transform: translateY(75px);
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 
-.our-auctions.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 h1 {
   text-align: center;
-  color: var(--text-color);
-  font-size: 50px;
-  font-family: var(--subtitle-font);
 }
 
-.our-auctions p {
+.our_auctions p {
   text-align: center;
   color: var(--text-color);
   font-size: var(--text-font-size);
@@ -51,22 +41,8 @@ h1 {
 .links_tiles li {
   display: flex;
   justify-content: center;
-  transition: transform 0.5s ease, opacity 0.7s ease;
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-.fade-in .links_tiles li {
-  opacity: 1;
-  transform: scale(1);
 }
 
 .links_tiles li:hover {
   transform: scale(1.1);
-}
-
-@media screen and (max-width: 1150px) {
-  h1 {
-      font-size: 36px;
-  }
 }

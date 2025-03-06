@@ -42,7 +42,3 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
-.links_tiles li:hover {
-  transform: scale(1.1);
-}

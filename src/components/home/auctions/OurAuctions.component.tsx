@@ -28,7 +28,7 @@ export const OurAuctions = () => {
           <p>{translate("OUR_OFFER_TEXT")}</p>
           <ul className = "links_tiles">
             {AUCTION_ITEMS.map((item, index) => (
-              <li key = {index} className = "fade-item">
+              <li key = {index}>
                 <LinkTile 
                   to = {item.to} 
                   imageLocation = {item.image} 

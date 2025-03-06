@@ -16,10 +16,14 @@
   margin: 1rem;
 }
 
+.nav__link {
+  font-size: var(--menu-font-size);
+}
+
 .nav__logo {
   color: var(--first-color);
   transition: color 0.4s;
-  font-size: var(--h2-font-size);
+  font-size: var(--smaller-h1-font-size);
   font-family: var(--title-font);
   width: 50%;
 }

@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
     return <>
         <form onSubmit={onSubmit}>
-            <h2>{translate("CONTACT.CONTACT_FORM")}</h2>
+            <h1>{translate("CONTACT.CONTACT_FORM")}</h1>
             <div className="input-box">
                 <label>{translate("CONTACT.NAME_AND_SURNAME")}</label>
                 <input type="text" className="field" placeholder={translate("CONTACT.NAME_AND_SURNAME_PLACEHOLDER")} name="name" required />

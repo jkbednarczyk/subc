@@ -118,10 +118,15 @@
   border: none;
   color: var(--text-color);
   font-weight: var(--font-semi-bold);
+  font-size: 15px;
+  font-family: initial;
+  display: flow-root;
+  margin-top: 3px;
 }
 
 .button_icon {
   margin-right: 10px;
+  font-size: 15px;
 }
 
 .nav__lang:hover {

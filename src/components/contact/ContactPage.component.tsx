@@ -17,20 +17,21 @@ export const ContactPage = () => {
                 name = "description" 
                 content = {METADATA.CONTACT_DESCRIPTION}/>
         </Helmet>
-        <section className="contact-form">
-            <ul className="contact-data">
-                <li className="contact-item">
+        <section className = "contact-page">
+            <ul className = "contact-data">
+                <h1>{translate("CONTACT.CONTACT_PAGE_TITLE")}</h1> 
+                <li className = "contact-item"> 
                     <p>{translate("CONTACT.CONTACT_PAGE_TEXT")}</p>
                 </li>
-                <CustomContactItem icon={faEnvelope}>
-                    <a href="mailto:salonunikatow@gmail.com">salonunikatow@gmail.com</a>
+                <CustomContactItem icon = {faEnvelope}>
+                    <a href = "mailto:salonunikatow@gmail.com">salonunikatow@gmail.com</a>
                 </CustomContactItem>
-                <CustomContactItem icon={faPhone}>
-                    <a href="tel:+48662921155">+48 662 921 155</a>
+                <CustomContactItem icon = {faPhone}>
+                    <a href = "tel:+48662921155">+48 662 921 155</a>
                 </CustomContactItem>
             </ul>
-            <ul className="contact-data">
-                <li className="contact-item">
+            <ul className = "contact-form">
+                <li className = "contact-item">
                     <ContactForm />
                 </li>
             </ul>

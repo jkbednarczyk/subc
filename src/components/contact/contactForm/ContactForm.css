@@ -1,18 +1,10 @@
 form {
     max-width: 600px;
     width: 100%;
-    background: var(--text-color);
+    background: var(-common-page-background);
     padding: 25px 25px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    color: var(--body-color);
+    color: var(--text-color);
     margin: 5px;
-}
-
-form h1 {
-    color: var(--body-color);
-    font-size: 30px;
-    text-align: center;
 }
 
 .input-box {
@@ -33,6 +25,10 @@ form h1 {
     font-family: var(--body-font);
 }
 
+.input-box .label {
+    font-size: 16px;
+}
+
 .input-box .field.message {
     height: 200px;
     resize: none;
@@ -41,7 +37,7 @@ form h1 {
 form button {
     width: 100%;
     height: 55px;
-    background: var(--common-page-background);
+    background: var(--footer-background);
     border: none;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -54,7 +50,7 @@ form button {
 }
 
 form button:hover {
-    background: var(--button-hover);
+    background: var(--first-color);
 }
 
 textarea  {  

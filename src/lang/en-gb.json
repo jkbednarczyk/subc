@@ -20,7 +20,8 @@
         "MESSAGE": "Message",
         "MESSAGE_PLACEHOLDER": "Enter your message",
         "SUBMIT_MESSAGE": "Send",
-        "CONTACT_PAGE_TEXT": "We invite you to get in touch! Whether you're looking for unique antiques, interested in selling valuable items, or have questions about our offerings, we're here to help. Simply fill out the contact form or reach out to us directly – we’ll be happy to assist and advise you. Our passion for antiques means we approach each client individually, ensuring a personalized experience every time.",
+        "CONTACT_PAGE_TITLE": "We invite you to get in touch!",
+        "CONTACT_PAGE_TEXT": "Whether you're looking for unique antiques, interested in selling valuable items, or have questions about our offerings, we're here to help. Simply fill out the contact form or reach out to us directly – we’ll be happy to assist and advise you. Our passion for antiques means we approach each client individually, ensuring a personalized experience every time.",
         "THANK_YOU": "Thank you!",
         "MESSAGE_SENT_SUCCESSFULLY": "Message has been sent successfully"
     },

@@ -20,7 +20,8 @@
         "MESSAGE": "Wiadomość",
         "MESSAGE_PLACEHOLDER": "Wpisz swoją wiadomość",
         "SUBMIT_MESSAGE": "Wyślij",
-        "CONTACT_PAGE_TEXT": "Zapraszamy do kontaktu! Jeśli poszukują Państwo wyjątkowych antyków, chcą sprzedać swoje cenne przedmioty lub mają pytania dotyczące naszej oferty, jesteśmy do Państwa dyspozycji. Wystarczy wypełnić prosty formularz kontaktowy lub skontaktować się z nami bezpośrednio – chętnie pomożemy i doradzimy. Nasza pasja do antyków sprawia, że każde spotkanie z klientem traktujemy indywidualnie.",
+        "CONTACT_PAGE_TITLE": "Zapraszamy do kontaktu!",
+        "CONTACT_PAGE_TEXT": "Jeśli poszukują Państwo wyjątkowych antyków, chcą sprzedać swoje cenne przedmioty lub mają pytania dotyczące naszej oferty, jesteśmy do Państwa dyspozycji. Wystarczy wypełnić prosty formularz kontaktowy lub skontaktować się z nami bezpośrednio – chętnie pomożemy i doradzimy. Nasza pasja do antyków sprawia, że każde spotkanie z klientem traktujemy indywidualnie.",
         "THANK_YOU": "Dziękujemy!",
         "MESSAGE_SENT_SUCCESSFULLY": "Wiadomość została wysłana"
     },

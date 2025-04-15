@@ -6,9 +6,14 @@ import { AboutUs } from './aboutUs/AboutUs.component';
 import { Footer } from '../footer/Footer.component';
 import { Helmet } from 'react-helmet-async';
 import { METADATA } from '../common/utils/metadata';
+import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
 
 
 export const HomePage = () => {
+
+    const handleClick = () => {
+        window.open(EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS, "_blank");
+      };
 
     return <>
         <Helmet>
@@ -17,13 +22,18 @@ export const HomePage = () => {
                 name = "description" 
                 content = {METADATA.HOME_DESCRIPTION}/>
         </Helmet>
-        <section className="home">
-            <div className="content">
+        <section className = "home">
+            <div className = "content">
                 <h1>Salon Unikatów</h1>
                 <p>{translate("MOTTO")}</p>
+                <button 
+                    className = "home-button"
+                    onClick = {handleClick}>
+                    {translate("OUR_OFFER")}
+                </button>
             </div>
         </section>
-        <section className="introduction">
+        <section className = "introduction">
             <OurAuctions/>
             <AboutUs />
         </section>

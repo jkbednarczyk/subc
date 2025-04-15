@@ -121,7 +121,8 @@
   font-size: 15px;
   font-family: initial;
   display: flow-root;
-  margin-top: 3px;
+  margin-top: 5px;
+  transition: .5s;
 }
 
 .button_icon {

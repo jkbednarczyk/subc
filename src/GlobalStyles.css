@@ -17,12 +17,12 @@
  :root * {
   --header-height: 3rem;
   --first-color: #d4af37;
-  --title-color: #FFFFFF;
-  --text-color: #FFFFFF;
+  --title-color: #F5F5F5;
+  --text-color: #F5F5F5;
   --body-color: #1d1c1c;
   --footer-background: #131313;
   --common-page-background: #1d1c1c;
-  --button-hover: #1f4f17;
+  --button-hover: #8baaad;
   --body-font: "Lora", sans-serif;
   --menu-font: "Lora", sans-serif;
   --subtitle-font: "Montserrat", sans-serif;

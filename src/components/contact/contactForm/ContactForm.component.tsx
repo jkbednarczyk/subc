@@ -28,7 +28,10 @@ export const ContactForm = () => {
             Swal.fire({
                 title: POPUP_TITLE,
                 text: POPUP_MESSAGE,
-                icon: "success"
+                icon: "success",
+                background: '#010101',
+                color: '#F5F5F5',
+                confirmButtonColor: '#d4af37'
             });
             event.target.reset();   
         }

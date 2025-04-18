@@ -2,8 +2,11 @@ import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ErrorPage.css";
 import { translate } from "../../../lang/utils/TranslationUtils";
+import { Helmet } from "react-helmet-async";
 
 interface ErrorPageProps {
+    metaTitle: string;
+    metaDescription: string;
     errorNumber: number;
     errorNameCode: string;
     messageCode: string;
@@ -12,7 +15,16 @@ interface ErrorPageProps {
 export const ErrorPage: FC<ErrorPageProps> = (props) => {
     const navigate = useNavigate(); 
 
-    return (
+    return <>
+        <Helmet>
+            <title>{props.metaTitle}</title>
+            <meta 
+                name = "robots"    
+                content = "noindex" />
+            <meta 
+                name = "description" 
+                content = {props.metaDescription}/>
+        </Helmet>
         <section className = "error-page">
             <div className = "error-page-content">
                 <h1>{props.errorNumber}</h1>
@@ -25,5 +37,5 @@ export const ErrorPage: FC<ErrorPageProps> = (props) => {
                 </button>
             </div>
         </section>      
-    );
+    </>
 };

@@ -2,7 +2,6 @@ import { LinkTile } from "../../common/linkTile/LinkTile.component";
 import "./OurAuctions.css";
 import { EXTERNAL_LINKS } from "../../common/utils/externalLinks";
 import { translate } from "../../../lang/utils/TranslationUtils";
-import { useEffect, useState } from "react";
 import Teacups from "../../../assets/images/teacups.jpg";
 import Meissen from "../../../assets/images/meissen.jpg";
 import Rosenthal from "../../../assets/images/rosenthal.jpg";

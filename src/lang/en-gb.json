@@ -110,5 +110,11 @@
         "LOGO_REDIRECT": "Salon Unikatów - Antiques, Porcelain, Collectibles - Online Sales",
         "ENS": "LOREM IPSUM",
         "ALBERT_CLOCK": "LOREM IPSUM"
+    },
+
+    "ERROR": {
+        "BACK_BUTTON": "Back to the main page",
+        "404_NAME": "Page Not Found",
+        "404_MESSAGE": "Sorry, the page with the specified address could not be found."
     }
 }

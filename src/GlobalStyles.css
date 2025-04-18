@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gwendolyn:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Great+Vibes&family=Gwendolyn:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Dancing+Script:wght@700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+Oriya:wght@400..700&family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/b1f909b1cb3adb801a92229ea92613e1?family=Script+MT+Bold'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,19 +16,20 @@
  
  :root * {
   --header-height: 3rem;
-  --first-color: #c6ac3f;
-  --title-color: #FFFFFF;
-  --text-color: #FFFFFF;
+  --first-color: #d4af37;
+  --title-color: #F5F5F5;
+  --text-color: #F5F5F5;
   --body-color: #1d1c1c;
   --footer-background: #131313;
   --common-page-background: #1d1c1c;
-  --button-hover: #1f4f17;
-  --body-font: Arial, Helvetica, sans-serif;
-  --menu-font: "Montserrat", sans-serif;
-  --subtitle-font: Arial, Helvetica, sans-serif;
+  --button-hover: #8baaad;
+  --body-font: "Lora", sans-serif;
+  --menu-font: "Lora", sans-serif;
+  --subtitle-font: "Montserrat", sans-serif;
   --title-font: "Script MT Bold";
-  --h2-font-size: 35px;
+  --smaller-h1-font-size: 40px;
   --text-font-size: 20px;
+  --menu-font-size: 18px;
   --mobile-font-size: 20px;
   --font-semi-bold: 600;
   --z-tooltip: 10;
@@ -35,6 +40,12 @@
   background-color: var(--body-color);
   color: var(--text-color);
   font-family: var(--body-font);
+ }
+
+ h1 {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: 45px;
  }
  
  ul {
@@ -47,4 +58,10 @@
 
  .main-content {
   padding-top: 5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  h1 {
+      font-size: 36px;
+  }
 }

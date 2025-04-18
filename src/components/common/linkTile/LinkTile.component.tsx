@@ -11,7 +11,7 @@ interface LinkTileProps {
 
 export const LinkTile: FC<LinkTileProps> = (props) => {
     return <>
-        <li className = "link_tile">
+        <div className = "link_tile">
             <NavLink className = "link_tile_link" to = {props.to} target = "_blank">
                 <figure className = "link_tile_pic_wrap">
                     <img src = {props.imageLocation} alt = {props.alt} className = "link_tile_img" />
@@ -22,6 +22,6 @@ export const LinkTile: FC<LinkTileProps> = (props) => {
                     </h5>
                 </div>
             </NavLink>
-        </li>
+        </div>
     </>
 }

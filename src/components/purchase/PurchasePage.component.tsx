@@ -17,7 +17,7 @@ export const PurchasePage = () => {
                 content = {METADATA.PURCHASE_DESCRIPTION}/>
         </Helmet>
         <section className="purchase">
-            <h2>{translate("PURCHASE.TITLE")}</h2>
+            <h1>{translate("PURCHASE.TITLE")}</h1>
             <div className="purchase_page_content">
                 <p>{translate("PURCHASE.FIRST")}</p>
                 <p>{translate("PURCHASE.SECOND")}</p>
@@ -25,7 +25,7 @@ export const PurchasePage = () => {
                 <p>{translate("PURCHASE.FOURTH")}</p>
                 <p>{translate("PURCHASE.FIFTH")}</p>      
             </div>
-            <h2>{translate("PURCHASE.CONTACT")}</h2>
+            <h1>{translate("PURCHASE.CONTACT")}</h1>
             <ul className="purchase_contact">
                 <CustomContactItem icon={faEnvelope}>
                     <a href="mailto:salonunikatow@gmail.com">salonunikatow@gmail.com</a>

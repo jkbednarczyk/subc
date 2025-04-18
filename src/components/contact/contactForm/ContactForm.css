@@ -1,17 +1,10 @@
 form {
     max-width: 600px;
     width: 100%;
-    background: var(--text-color);
+    background: var(-common-page-background);
     padding: 25px 25px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    color: var(--body-color);
+    color: var(--text-color);
     margin: 5px;
-}
-
-form h2 {
-    font-size: 30px;
-    text-align: center;
 }
 
 .input-box {
@@ -22,13 +15,24 @@ form h2 {
     width: 100%;
     height: 50px;
     background: transparent;
-    border: 2px solid #dddddd;
+    border: 2px solid var(--first-color);
     outline: none;
     border-radius: 6px;
+    transition: box-shadow 0.2s ease;
     padding: 15px;
     font-size: 16px;
-    color: var(--body-color);
+    color: var(--text-color);
     margin-top: 8px;
+    font-family: var(--body-font);
+}
+
+.input-box .field:focus {
+    box-shadow: 0 0 4px 1px var(--first-color);
+    outline: none;
+}
+
+.input-box .label {
+    font-size: 16px;
 }
 
 .input-box .field.message {
@@ -39,7 +43,7 @@ form h2 {
 form button {
     width: 100%;
     height: 55px;
-    background: var(--common-page-background);
+    background: var(--footer-background);
     border: none;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -52,11 +56,11 @@ form button {
 }
 
 form button:hover {
-    background: var(--button-hover);
+    background: var(--first-color);
 }
 
 textarea  {  
-    font-family: Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: var(--text-font-size);   
 }
 

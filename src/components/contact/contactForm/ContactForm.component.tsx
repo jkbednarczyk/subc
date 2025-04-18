@@ -28,7 +28,10 @@ export const ContactForm = () => {
             Swal.fire({
                 title: POPUP_TITLE,
                 text: POPUP_MESSAGE,
-                icon: "success"
+                icon: "success",
+                background: '#010101',
+                color: '#F5F5F5',
+                confirmButtonColor: '#d4af37'
             });
             event.target.reset();   
         }
@@ -36,17 +39,17 @@ export const ContactForm = () => {
 
     return <>
         <form onSubmit={onSubmit}>
-            <h2>{translate("CONTACT.CONTACT_FORM")}</h2>
+            <h1>{translate("CONTACT.CONTACT_FORM")}</h1>
             <div className="input-box">
-                <label>{translate("CONTACT.NAME_AND_SURNAME")}</label>
+                <label className="label">{translate("CONTACT.NAME_AND_SURNAME")}</label>
                 <input type="text" className="field" placeholder={translate("CONTACT.NAME_AND_SURNAME_PLACEHOLDER")} name="name" required />
             </div>
             <div className="input-box">
-                <label>{translate("CONTACT.EMAIL")}</label>
+                <label className="label">{translate("CONTACT.EMAIL")}</label>
                 <input type="email" className="field" placeholder={translate("CONTACT.EMAIL_PLACEHOLDER")} name="email" required />
             </div>
             <div className="input-box">
-                <label>{translate("CONTACT.MESSAGE")}</label>
+                <label className="label">{translate("CONTACT.MESSAGE")}</label>
                 <textarea name="message" className="field message" placeholder={translate("CONTACT.MESSAGE_PLACEHOLDER")} required></textarea>
             </div>
             <button type="submit">{translate("CONTACT.SUBMIT_MESSAGE")}</button>

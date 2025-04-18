@@ -74,7 +74,7 @@ export const AboutUsPage = () => {
                     <p>{translate("ABOUT_US_PAGE.INVITATION")}</p>
                 </li>
             </ul>
-            <h2>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h2>
+            <h1>{translate("ABOUT_US_PAGE.CUSTOMERS")}</h1>
             <ul className = "about_us_content_container">
                 <li className = "about_us_comments_intro">
                     <p>

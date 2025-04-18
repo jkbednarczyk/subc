@@ -33,15 +33,38 @@
 .content h1 {
     font-size: 86px;
     font-family: var(--title-font);
+    color: var(--first-color);
 }
 
 .content p {
     font-family: var(--subtitle-font);
     font-style: italic;
     font-size:24px;
-    margin: 5px 0;
+    margin: 20px 0;
     max-width: 550px;
     letter-spacing: 1px;
+}
+
+.content button {
+    background-color: var(--first-color);
+    width: 175px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: var(--footer-background);
+    font-size: var(--menu-font-size);
+    font-family: var(--subtitle-font);
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.content button:hover {
+    background-color: var(--text-color);
 }
 
 .introduction {
@@ -80,7 +103,7 @@
     }
 
     .introduction {
-        height: 2650px;
+        height: 2950px;
     }
 
     .content h1 {
@@ -104,7 +127,7 @@
 
 @media screen and (min-width: 431px) and (max-width: 1150px) {
     .introduction {
-        height: 1900px;
+        height: 1800px;
     }
 
     .home {

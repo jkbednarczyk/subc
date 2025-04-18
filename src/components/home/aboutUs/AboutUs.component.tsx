@@ -2,10 +2,10 @@ import { translate } from "../../../lang/utils/TranslationUtils";
 import './AboutUs.css';
 import Camera from '../../../assets/images/camera.jpg';
 import Atmos from '../../../assets/images/atmos.jpg';
-import Lady from '../../../assets/images/lady.jpg';
-import Ens from '../../../assets/images/ens.jpg';
-import AlbertClock from '../../../assets/images/albert_clock.jpg';
-import { AnimatedPhotoTile } from "../../common/animatedPhotoTile/AnimatedPhotoTile.component";
+// import Lady from '../../../assets/images/lady.jpg';
+// import Ens from '../../../assets/images/ens.jpg';
+// import AlbertClock from '../../../assets/images/albert_clock.jpg';
+// import { AnimatedPhotoTile } from "../../common/animatedPhotoTile/AnimatedPhotoTile.component";
 import { useEffect, useState } from "react";
 import { ContentSection } from "../../common/contentSection/ContentSection.component";
 
@@ -35,7 +35,7 @@ export const AboutUs  = () => {
             alt = {translate("ALT.ATMOS")}
             reverse        
             />
-        <div className = "about_us_photo_container">
+        {/* <div className = "about_us_photo_container">
             <div className = "about_us_photo_wrapper">
             {windowWidth >= 1150 &&
                 <ul className = "about_us_photo_tiles">
@@ -50,6 +50,6 @@ export const AboutUs  = () => {
                         alt = {translate("ALT.LADY")}/>
                 </ul>}
             </div>
-        </div>
+        </div> */}
     </div>
 }

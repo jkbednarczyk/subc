@@ -55,7 +55,7 @@
     margin: 20px 0;
     letter-spacing: 1px;
     font-style: italic;
-    color: var(--footer-background);
+    color: var(--text-color);
     font-size: var(--menu-font-size);
     font-family: var(--subtitle-font);
     cursor: pointer;
@@ -65,6 +65,7 @@
 
 .content button:hover {
     background-color: var(--text-color);
+    color: var(--footer-background);
 }
 
 .introduction {

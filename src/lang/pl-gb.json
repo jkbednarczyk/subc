@@ -110,5 +110,11 @@
         "LOGO_REDIRECT": "Salon Unikatów - Antyki, Porcelana, Starocie - sprzedaż internetowa",
         "ENS": "LOREM IPSUM",
         "ALBERT_CLOCK": "LOREM IPSUM"
+    },
+
+    "ERROR": {
+        "BACK_BUTTON": "Powrót do strony głównej",
+        "404_NAME": "Nie znaleziono strony",
+        "404_MESSAGE": "Przepraszamy, strona o podanym adresie nie została odnaleziona."
     }
 }

@@ -7,6 +7,8 @@ import { PrivacyPolicy } from './components/privacyPolicy/PrivacyPolicy.componen
 import { ContactPage } from './components/contact/ContactPage.component';
 import { AboutUsPage } from './components/aboutUs/AboutUsPage.component';
 import { PurchasePage } from './components/purchase/PurchasePage.component';
+import { ErrorPage } from './components/common/errorPage/ErrorPage.component';
+import { METADATA } from './components/common/utils/metadata';
 
 interface AppProps {
   language: string;
@@ -23,6 +25,13 @@ const App: FC<AppProps> = (props) => {
          <Route path = "/about" element = {<AboutUsPage />} />
          <Route path = "/purchase" element = {<PurchasePage />} />
          <Route path = "/contact" element = {<ContactPage />} />
+         <Route path="*" element={
+            <ErrorPage 
+              errorNumber={404}
+              errorNameCode={"ERROR.404_NAME"}
+              messageCode={"ERROR.404_MESSAGE"} 
+              metaTitle={METADATA.ERROR_404_TITLE} 
+              metaDescription={METADATA.ERROR_404_DESCRIPTION}/>} />
        </Routes>
      </main>
    </Router>

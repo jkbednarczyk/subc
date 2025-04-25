@@ -50,13 +50,17 @@
     },
 
     "PURCHASE": {
-        "TITLE": "We will buy your antiques",
+        "TITLE": "Let history live on — sell your antiques to professionals",
         "FIRST": "Don't know where to go with an old item found in your attic or basement?",
         "SECOND": "Are you planning to rearrange your collection?",
         "THIRD": "You've come to the right place - contact us!",
         "FOURTH": "We buy old stuff, antiques - porcelain, clocks, silverware, coins, old glass and many others...",
         "FIFTH": "We guarantee full transparency of transactions and security, treating everyone with respect.",
-        "CONTACT": "Please, contact us!"
+        "WHY": "What makes us different?",
+        "SAFETY": "Transaction safety and transparency",
+        "PROFESSIONALISM": "Professionalism and experience",
+        "CLIENT": "Individual approach to the Client",
+        "CONTACT": "Write to us — we'll take care of the rest!"
     },
 
     "PRIVACY_POLICY_PAGE": {

@@ -1,8 +1,29 @@
+.purchase_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../../assets/images/purchase_background.png');
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.purchase_hero h1 {
+    color: var(--first-color);
+    text-align: center;
+    font-family: var(--body-font);
+    font-style: italic;
+    font-size: 40px;
+    width: 65%;
+}
+
 .purchase {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 750px;
+    height: 950px;
     margin: 0 auto;
     max-width: 1300px;
     color: var(--body-color);
@@ -11,32 +32,71 @@
     padding-top: 25px;
 }
 
-.purchase_page_content {
-    padding-top: 35px;
-}
-
-.purchase h1 {
-    color: var(--text-color);
-    text-align: left;
-    padding-top: 50px;
-    margin-left: 150px;
-    font-size: var(--smaller-h1-font-size);
-}
-
 .purchase p {
     font-family: var(--body-font);
     font-size: var(--text-font-size);
     color: var(--text-color);
-    padding: 15px 130px;
-    letter-spacing: 1px;
-    text-align: left;
+    padding: 0 120px;
+    text-align: justify;
+    line-height: 3;
+    margin: auto;
 }
+
+.purchase_additional_info {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .purchse_why, .purchase_contact {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .purchse_why {
+    margin: 30px 25px 30px 50px;
+  }
+
+  .purchse_why h1 {
+    color: var(--first-color);
+    font-family: var(--body-font);
+    font-size: 40px;
+    margin: 30px 40px;
+    text-align: left;
+  }
 
 .purchase_contact {
     color: var(--text-color);
-    padding-top: 25px;
-    margin-left: 100px;
+    margin: 40px;
     font-size: var(--text-font-size);
+}
+
+.purchase_contact .contact-item {
+  padding: 40px;
+}
+
+.purchase_contact button {
+    background-color: var(--first-color);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: var(--text-color);
+    font-size: var(--menu-font-size);
+    font-family: var(--subtitle-font);
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.purchase_contact button:hover {
+    background-color: var(--text-color);
+    color: var(--footer-background);
 }
 
 @media screen and (max-width: 430px) {
@@ -50,14 +110,38 @@
 
     .purchase p {
         padding: 15px 30px;
-    }
-
-    .purchase h2 {
-        margin-left: 55px;
-        margin-right: 100px;
+        text-align: center;
+        line-height: 1.5;
     }
 
     .purchase_contact {
         margin-left: 5px;  
     }
+
+    .purchase_additional_info {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+    
+      .purchse_why, .purchase_contact {
+        margin: 20px 0;
+        max-width: 50%;
+        text-align: center;
+      }
+    
+      .purchse_why h1 {
+        font-size: 32px;
+        margin: 20px 0;
+        text-align: center;
+      }
+    
+      .purchase_contact {
+        margin: 40px 0;
+      }
+    
+      .purchase_contact button {
+        width: 100%;
+        font-size: 1rem;
+      }
 }

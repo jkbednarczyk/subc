@@ -50,13 +50,17 @@
     },
 
     "PURCHASE": {
-        "TITLE": "Skup antyków i staroci",
+        "TITLE": "Pozwól historii żyć dalej — sprzedaj swoje antyki profesjonalistom",
         "FIRST": "Nie wiesz gdzie zgłosić się ze starą rzeczą znalezioną na strychu, czy piwnicy?",
         "SECOND": "Planujesz przearanżowanie swojej kolekcji?",
         "THIRD": "Dobrze trafiłeś – skontaktuj się z nami!",
         "FOURTH": "Zajmujemy się skupem staroci, antyków – porcelany, zegarów, sreber, monet, starych szkieł oraz wielu innych…",
         "FIFTH": "Gwarantujemy pełną przejrzystość transakcji oraz bezpieczeństwo, traktując każdego z szacunkiem.",
-        "CONTACT": "Zapraszamy do kontaktu!"
+        "WHY": "Dlaczego my?",
+        "SAFETY": "Bezpieczeństwo i przejrzystość transakcji",
+        "PROFESSIONALISM": "Profesjonalizm i doświadczenie",
+        "CLIENT": "Indywidualne podejście do Klienta",
+        "CONTACT": "Napisz do nas - resztą zajmiemy się my!"
     },
 
     "PRIVACY_POLICY_PAGE": {

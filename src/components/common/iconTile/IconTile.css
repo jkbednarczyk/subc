@@ -1,0 +1,42 @@
+.icon-tile {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 120px;
+    background-color: var(--common-page-background);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.icon-tile:hover {
+    transform: translateY(-4px);
+}
+
+.icon-tile {
+    font-size: var(--text-font-size);
+    color: var(--text-color);
+    
+}
+
+.icon-tile-icon {
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+}
+
+.icon-tile-icon svg {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1150px) {
+    .icon-tile {
+        font-size: var(--mobile-font-size);
+    }
+}

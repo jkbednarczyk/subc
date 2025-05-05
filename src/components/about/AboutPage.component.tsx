@@ -3,6 +3,9 @@ import { METADATA } from "../common/utils/metadata";
 import "./AboutPage.css";
 import { Footer } from "../footer/Footer.component";
 import Napoleon from "../../assets/images/napoleon.jpg"
+import { IconTile } from "../common/iconTile/IconTIle.component";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { FaDolly, FaMagnifyingGlass, FaHandshake } from "react-icons/fa6";
 
 export const AboutPage = () => {
     return <>
@@ -33,6 +36,20 @@ export const AboutPage = () => {
                     <img src = {Napoleon} alt = "About Us" className = "about__image" />  
                     <p>"Każdy przedmiot ma swoją historię. My pomagamy ją opowiedzieć."</p> 
                 </div>
+            </div>
+            <div className = "about__tiles-container">
+                <IconTile 
+                    icon = {<FaMagnifyingGlass/>} 
+                    title = {"Autentyczność"} />
+                <IconTile 
+                    icon = {<FaDolly/>} 
+                    title = {"Bezpieczne pakowanie"} />
+                <IconTile 
+                    icon = {<FaHandshake/>} 
+                    title = {"Bezpośredni kontakt"} /> 
+                <IconTile 
+                    icon = {<IoMdCheckmarkCircleOutline/>} 
+                    title = {"Zaufanie kolekcjonerów"} />            
             </div>
         </section>
         <Footer/>

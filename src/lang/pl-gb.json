@@ -39,14 +39,23 @@
     "WHO_WE_ARE": "Jesteśmy rodzinnym biznesem, który z pasją zajmuje się antykami, szczególnie porcelaną. W naszej ofercie znajdziecie Państwo piękne figurki, filiżanki i unikatowe bibeloty, które wniosą do Państwa domów odrobinę magii.",
     "OUR_WORK": "Nasze skarby pozyskujemy z giełd i domów aukcyjnych w całej Europie. Każdy przedmiot jest starannie wyselekcjonowany, aby zapewnić najwyższą jakość. Dbamy o to, aby każdy klient czuł się wyjątkowo, oferując indywidualne podejście i bezpieczne pakowanie przesyłek.",
 
-    "ABOUT_US_PAGE" : {
-        "WELCOME": "Witamy na naszej stronie! Jesteśmy małym, rodzinnym biznesem, który z pasją zajmuje się antykami, a szczególnie porcelaną. W naszej ofercie znajdziecie Państwo piękne figurki, filiżanki i unikatowe bibeloty, które wniosą do Państwa domów odrobinę magii i historii.",
-        "MEMORIES": "Nasze skarby pozyskujemy na giełdach i w domach aukcyjnych w całej Europie. Każdy przedmiot, który oferujemy, jest starannie wyselekcjonowany, aby zapewnić Państwu autentyczność i najwyższą jakość. Wierzymy, że antyki to nie tylko element dekoracyjny, ale także nośnik wspomnień i emocji.",
-        "APPROACH": "Jako rodzinna firma, dbamy o to, aby każdy klient czuł się u nas wyjątkowo. Zapewniamy indywidualne podejście oraz bezpieczne pakowanie naszych przesyłek abyście Państwo mogli mieć pewność, że  zakupione przedmioty dotrą do Państwa w idealnym stanie!",
-        "INVITATION": "Zapraszamy do odkrywania naszej kolekcji i wspólnego poszukiwania unikatów, które staną się częścią Waszego życia. Dziękujemy, że jesteście z nami!",
-        "CUSTOMERS": "Co mówią nasi Klienci?",
-        "CUSTOMERS_TEXT": "Zadowolenie naszych Klientów to dla nas najwyższa wartość. Każda opinia, którą otrzymujemy, jest dla nas cennym dowodem zaufania i źródłem motywacji do dalszej pracy. Dziękujemy za wszystkie ciepłe słowa i liczymy, że nasze unikaty będą towarzyszyć Państwu przez długie lata. Tutaj prezentujemy Państwu tylko wybrane komentarze, natomiast wszystkie opinie możecie Państwo znaleźć pod ",
-        "COMMENTS_LINK": "tym linkiem"
+    "ABOUT_PAGE": {
+        "TITLE": "Nasza historia i pasja",
+        "SUBTITLE": "Piękno przeszłości w sercu współczesności.",
+        "MISSION_TITLE": "Nasza misja",
+        "MISSION_1": "Salon Unikatów to rodzinna firma stworzona z pasji do piękna, historii i przedmiotów z duszą. Wierzymy, że antyki to nie tylko dekoracje – to opowieści, wspomnienia i wyjątkowy klimat, który mogą Państwo zaprosić do swojego domu.",
+        "MISSION_2": "Chcemy dzielić się tą pasją, oferując Państwu unikatowe przedmioty, które łączą estetykę z historią. Naszym celem jest, aby każdy klient poczuł, że otrzymuje coś więcej niż tylko przedmiot – część dziedzictwa.",
+        "COLLECTION_ORIGIN_TITLE": "Skąd pochodzą nasze unikaty",
+        "COLLECTION_ORIGIN_1": "Nasze kolekcje powstają dzięki starannej selekcji. Odwiedzamy giełdy staroci, domy aukcyjne i prywatne kolekcje w całej Europie, by odnaleźć prawdziwe perełki.",
+        "COLLECTION_ORIGIN_2": "Każdy przedmiot trafiający do naszego salonu przechodzi dokładną weryfikację pod względem autentyczności, jakości i stanu zachowania. Tylko wtedy trafia do naszej oferty – z myślą o tym, by stał się częścią Państwa kolekcji.",
+        "CHARACTERISTICS_TITLE": "Co nas wyróżnia",
+        "CHARACTERISTICS_1": "Jesteśmy małą firmą i to właśnie daje nam przewagę. Zapewniamy indywidualne podejście do każdego klienta, szybki kontakt i pełne zaangażowanie w realizację zamówień.",
+        "CHARACTERISTICS_2": "Dbamy o bezpieczeństwo zakupów: każdy przedmiot pakujemy z najwyższą starannością, by dotarł w nienaruszonym stanie. Zadowolenie klientów jest dla nas najważniejsze – to ono motywuje nas do dalszego działania.",
+        "QUOTE": "\"Każdy przedmiot ma swoją historię. My pomagamy ją opowiedzieć.\"",
+        "TILE_1": "Autentyczność",
+        "TILE_2": "Bezpieczne pakowanie",
+        "TILE_3": "Bezpośredni kontakt",
+        "TILE_4": "Zaufanie kolekcjonerów"
     },
 
     "PURCHASE": {

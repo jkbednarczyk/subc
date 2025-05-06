@@ -15,8 +15,9 @@ export const PurchasePage = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-            navigate("/contact");
-          };
+        navigate("/contact");
+        window.scrollTo(0, 0);
+    };
 
     return <>
         <Helmet>

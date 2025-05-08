@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage } from './components/home/HomePage.component';
 import { PrivacyPolicy } from './components/privacyPolicy/PrivacyPolicy.component';
 import { ContactPage } from './components/contact/ContactPage.component';
-import { AboutUsPage } from './components/aboutUs/AboutUsPage.component';
 import { PurchasePage } from './components/purchase/PurchasePage.component';
 import { ErrorPage } from './components/common/errorPage/ErrorPage.component';
 import { METADATA } from './components/common/utils/metadata';
+import { AboutPage } from './components/about/AboutPage.component';
 
 interface AppProps {
   language: string;
@@ -22,7 +22,7 @@ const App: FC<AppProps> = (props) => {
        <Routes>
          <Route path = "/" element = {<HomePage />} />
          <Route path = "/privacyPolicy" element = {<PrivacyPolicy />} />
-         <Route path = "/about" element = {<AboutUsPage />} />
+         <Route path = "/about" element = {<AboutPage />} />
          <Route path = "/purchase" element = {<PurchasePage />} />
          <Route path = "/contact" element = {<ContactPage />} />
          <Route path="*" element={

@@ -2,10 +2,6 @@
     padding-top: 0;
 }
 
-.about_us h1 {
-    padding-bottom: 30px;
-}
-
 .about_us_text p {
     text-align: center;
     color: var(--text-color);
@@ -33,10 +29,6 @@
 }
 
 @media (max-width: 780px) { 
-    .about_us {
-        height: 150px;
-    }
-
     .about_us_text p {
         padding: 25px 30px;
     }

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { METADATA } from "../common/utils/metadata";
 import "./AboutPage.css";
 import { Footer } from "../footer/Footer.component";
-import Napoleon from "../../assets/images/napoleon.jpg"
+import Things from "../../assets/images/things_about.png"
 import { IconTile } from "../common/iconTile/IconTIle.component";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { FaDolly, FaMagnifyingGlass, FaHandshake } from "react-icons/fa6";
@@ -34,7 +34,7 @@ export const AboutPage = () => {
                     <p>{translate("ABOUT_PAGE.CHARACTERISTICS_2")}</p>
                 </div>
                 <div className = "about__image-container">
-                    <img src = {Napoleon} alt = "About Us" className = "about__image" />  
+                    <img src = {Things} alt = {translate("ALT.THINGS_ABOUT_PAGE")} className = "about__image" />  
                     <p>{translate("ABOUT_PAGE.QUOTE")}</p> 
                 </div>
             </div>

@@ -35,9 +35,14 @@
     "CUPS": "Filiżanki",
     "ALL_AUCTIONS": "Wszystkie aukcje",
 
-    "ABOUT_US": "O nas",
-    "WHO_WE_ARE": "Jesteśmy rodzinnym biznesem, który z pasją zajmuje się antykami, szczególnie porcelaną. W naszej ofercie znajdziecie Państwo piękne figurki, filiżanki i unikatowe bibeloty, które wniosą do Państwa domów odrobinę magii.",
-    "OUR_WORK": "Nasze skarby pozyskujemy z giełd i domów aukcyjnych w całej Europie. Każdy przedmiot jest starannie wyselekcjonowany, aby zapewnić najwyższą jakość. Dbamy o to, aby każdy klient czuł się wyjątkowo, oferując indywidualne podejście i bezpieczne pakowanie przesyłek.",
+    "WELCOME": "Witamy na naszej stronie!",
+    "WHO_WE_ARE": "Jesteśmy małym, rodzinnym biznesem, który z pasją zajmuje się antykami, a szczególnie porcelaną. W naszej ofercie znajdziecie Państwo piękne figurki, filiżanki i unikatowe bibeloty, które wniosą do Państwa domów odrobinę magii i historii.",
+    "OUR_WORK": "Nasze skarby pozyskujemy na giełdach i w domach aukcyjnych w całej Europie. Każdy przedmiot, który oferujemy, jest starannie wyselekcjonowany, aby zapewnić Państwu autentyczność i najwyższą jakość. Wierzymy, że antyki to nie tylko element dekoracyjny, ale także nośnik wspomnień i emocji.",
+    "APPROACH": "Jako rodzinna firma, dbamy o to, aby każdy klient czuł się u nas wyjątkowo. Zapewniamy indywidualne podejście oraz bezpieczne pakowanie naszych przesyłek abyście Państwo mogli mieć pewność, że  zakupione przedmioty dotrą do Państwa w idealnym stanie! Zapraszamy do odkrywania naszej kolekcji i wspólnego poszukiwania unikatów, które staną się częścią Waszego życia.",
+    "CUSTOMERS": "Zadowolenie naszych Klientów to dla nas najwyższa wartość. Każda opinia, którą otrzymujemy, jest dla nas cennym dowodem zaufania i źródłem motywacji do dalszej pracy. Dziękujemy za wszystkie ciepłe słowa i liczymy, że nasze unikaty będą towarzyszyć Państwu przez długie lata. ",
+    "CUSTOMERS_COMMENTS": "Tutaj prezentujemy Państwu tylko wybrane komentarze, natomiast wszystkie opinie możecie Państwo znaleźć pod ",
+    "COMMENTS_LINK": "tym linkiem",
+    "THANK_YOU": "Dziękujemy, że jesteście z nami!",
 
     "ABOUT_PAGE": {
         "TITLE": "Nasza historia i pasja",

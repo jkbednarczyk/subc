@@ -35,9 +35,14 @@
     "CUPS": "Cups",
     "ALL_AUCTIONS": "All auctions",
 
-    "ABOUT_US": "About us",
-    "WHO_WE_ARE": "We are a family-owned business that passionately deals with antiques, especially porcelain. In our offer, you will find beautiful figurines, teacups, and unique trinkets that will add a touch of magic to your homes.",
-    "OUR_WORK": "We source our treasures from fairs and auction houses across Europe. Each item is carefully selected to ensure the highest quality. We strive to make every customer feel special by offering a personalized approach and secure packaging for our shipments.",
+    "WELCOME": "Welcome to our website!",
+    "WHO_WE_ARE": "We are a small, family-owned business that passionately deals with antiques, especially porcelain. In our offer, you will find beautiful figurines, cups, and unique trinkets that will bring a touch of magic and history into your homes.",
+    "OUR_WORK": "We source our treasures from fairs and auction houses across Europe. Each item we offer is carefully selected to ensure authenticity and the highest quality. We believe that antiques are not just decorative elements, but also carriers of memories and emotions.",
+    "APPROACH": "As a family business, we strive to make every customer feel special. We provide a personalized approach and secure packaging for our shipments, so you can be confident that your purchases will arrive in perfect condition! We invite you to explore our collection and join us in the search for unique items that will become a part of your life.",
+    "CUSTOMERS": "The satisfaction of our customers is our highest value. Every opinion we receive is a valuable proof of trust and a source of motivation for further work. Thank you for all the warm words and we hope that our unique items will accompany you for many years.",
+    "CUSTOMERS_COMMENTS": "Here we present you only selected comments, but you can find all opinions at ",
+    "COMMENTS_LINK": "this link",
+    "THANK_YOU": "Thank you for being with us!",
 
     "ABOUT_PAGE": {
     "TITLE": "Our History and Passion",

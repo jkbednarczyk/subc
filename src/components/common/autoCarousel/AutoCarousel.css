@@ -1,0 +1,38 @@
+.carousel-wrapper {
+  overflow-x: hidden;
+  padding: 30px 40px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-image {
+  background-color: var(--allegro-comment-background);
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .carousel-wrapper {
+    padding: 20px 10px;
+  }
+
+  .carousel-image {
+    width: 335px;
+    height: 325px;
+  }
+}

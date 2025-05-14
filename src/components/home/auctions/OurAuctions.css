@@ -7,6 +7,7 @@
   color: var(--text-color);
   font-size: var(--text-font-size);
   padding-bottom: 30px;
+  margin: 0 100px;
 }
 
 .auctions_container {
@@ -36,4 +37,10 @@
 .links_tiles li {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 780px) { 
+  .our_auctions p {
+    margin: 0;
+  }
 }

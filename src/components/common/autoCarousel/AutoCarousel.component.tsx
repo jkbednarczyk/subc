@@ -3,10 +3,9 @@ import './AutoCarousel.css';
 
 interface AutoCarouselProps {
     images: string[];
-    interval?: number;
 }
 
-export const AutoCarousel: FC<AutoCarouselProps> = ({ images, interval = 136 }) => {
+export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
 
     const containerRef = useRef<HTMLDivElement>(null);
     const [paused, setPaused] = useState(false);
@@ -15,19 +14,19 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images, interval = 136 }) 
 
     useEffect(() => {
         let animationFrameId: number;
-        let lastTimestamp = performance.now();
+        let lastTimestamp: DOMHighResTimeStamp = performance.now();
 
-        const scrollSpeed = 0.06; // pixels per ms, so 0.5px every millisecond
+        const scrollSpeed: number = 0.06;
 
         const animate = (timestamp: number) => {
             if (!containerRef.current || paused) return;
 
-            const delta = timestamp - lastTimestamp;
+            const delta: number = timestamp - lastTimestamp;
             lastTimestamp = timestamp;
 
             containerRef.current.scrollLeft += scrollSpeed * delta;
 
-            const scrollLimit = containerRef.current.scrollWidth / 2;
+            const scrollLimit: number = containerRef.current.scrollWidth / 2;
             if (containerRef.current.scrollLeft >= scrollLimit) {
                 containerRef.current.scrollLeft -= scrollLimit;
             }

@@ -61,4 +61,8 @@
     width: 335px;
     height: 325px;
   }
+
+  .carousel-control {
+    visibility: hidden;
+  }
 }

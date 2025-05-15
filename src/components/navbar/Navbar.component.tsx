@@ -73,6 +73,11 @@ export const Navbar: FC<NavbarProps> = (props) => {
               onClick = {scrollToTopAndCloseMenuOnMobile}
               text = {translate("NAVBAR.CONTACT")}
             />
+            <CustomNavLink 
+              to = "/blog"
+              onClick = {scrollToTopAndCloseMenuOnMobile}
+              text = {translate("NAVBAR.BLOG")}
+            />
             <li className = "nav__item">
               <button className = "nav__lang" onClick={() => handleLanguageChange(currentLang)}>
                 <FontAwesomeIcon icon = {faGlobe} className="button_icon" />

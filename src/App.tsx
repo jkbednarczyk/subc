@@ -9,6 +9,7 @@ import { PurchasePage } from './components/purchase/PurchasePage.component';
 import { ErrorPage } from './components/common/errorPage/ErrorPage.component';
 import { METADATA } from './components/common/utils/metadata';
 import { AboutPage } from './components/about/AboutPage.component';
+import { BlogPage } from './components/blogPage/BlogPage.component';
 
 interface AppProps {
   language: string;
@@ -20,12 +21,13 @@ const App: FC<AppProps> = (props) => {
      <Navbar language={props.language}/>
      <main className="main-content">
        <Routes>
-         <Route path = "/" element = {<HomePage />} />
-         <Route path = "/privacyPolicy" element = {<PrivacyPolicy />} />
-         <Route path = "/about" element = {<AboutPage />} />
-         <Route path = "/purchase" element = {<PurchasePage />} />
-         <Route path = "/contact" element = {<ContactPage />} />
-         <Route path="*" element={
+          <Route path = "/" element = {<HomePage />} />
+          <Route path = "/privacyPolicy" element = {<PrivacyPolicy />} />
+          <Route path = "/about" element = {<AboutPage />} />
+          <Route path = "/purchase" element = {<PurchasePage />} />
+          <Route path = "/contact" element = {<ContactPage />} />
+          <Route path = "/blog" element = {<BlogPage />} />
+          <Route path="*" element={
             <ErrorPage 
               errorNumber={404}
               errorNameCode={"ERROR.404_NAME"}

@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 430px) {
     .purchase h1 {
-        margin: 15px;
+        text-align: center;
     }
 
     .purchase p {
@@ -127,7 +127,6 @@
     
       .purchse_why h1 {
         font-size: 32px;
-        margin: 20px 0;
         text-align: center;
       }
     
@@ -148,7 +147,7 @@
   }
 
   .purchse_why h1 {
-    margin: 20px;
+    text-align: center;
   }
 
   .purchase_contact .contact-item a {

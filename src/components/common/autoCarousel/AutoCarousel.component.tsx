@@ -6,11 +6,14 @@ interface AutoCarouselProps {
 }
 
 export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
+    const [paused, setPaused] = useState(false);
+    const [showControls, setShowControls] = useState(false);
 
     const containerRef = useRef<HTMLDivElement>(null);
-    const [paused, setPaused] = useState(false);
     const touchStartX = useRef(0);
     const scrollStart = useRef(0);
+
+    const IMAGE_WIDTH: number = 400;
 
     useEffect(() => {
         let animationFrameId: number;
@@ -39,6 +42,30 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
         return () => cancelAnimationFrame(animationFrameId);
     }, [paused]);
 
+    const handlePrev = () => {
+        containerRef.current?.scrollBy({
+            left: -containerRef.current.offsetWidth / 3,
+            behavior: 'smooth',
+        });
+    };
+
+    const handleNext = () => {
+        containerRef.current?.scrollBy({
+            left: containerRef.current.offsetWidth / 3,
+            behavior: 'smooth',
+        });
+    };
+
+    const handleMouseEnter = () => {
+        setPaused(true);
+        setShowControls(true);
+    };
+
+    const handleMouseLeave = () => {
+        setPaused(false);
+        setShowControls(false);
+    };
+
     const handleTouchStart = (e: React.TouchEvent) => {
         touchStartX.current = e.touches[0].clientX;
         scrollStart.current = containerRef.current?.scrollLeft || 0;
@@ -56,12 +83,14 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
     };
 
     return (
-        <div className = "carousel-wrapper">
+        <div 
+            className = "carousel-wrapper"
+            onMouseEnter = {handleMouseEnter}
+            onMouseLeave = {handleMouseLeave}>
             <div
                 className = "carousel-track"
                 ref = {containerRef}
-                onMouseEnter = {() => setPaused(true)}
-                onMouseLeave = {() => setPaused(false)}
+                
                 onTouchStart = {handleTouchStart}
                 onTouchMove = {handleTouchMove}
                 onTouchEnd = {handleTouchEnd}
@@ -70,6 +99,12 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
                     <img key={i} src={src} alt={`comment-${i}`} className="carousel-image" />
             ))}
             </div>
+            {showControls && (
+            <>
+                <button className="carousel-control prev" onClick={handlePrev}>‹</button>
+                <button className="carousel-control next" onClick={handleNext}>›</button>
+            </>
+        )}
         </div>
     );
 }

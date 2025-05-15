@@ -15,7 +15,6 @@
     color: var(--first-color);
     font-size: 50px;
     align-self: center;
-    text-transform: capitalize;
 }
 
 .about_hero h2 {
@@ -94,6 +93,7 @@
 @media screen and (max-width: 430px) {
     .about_hero h1 {
         padding: 30px;
+        text-align: center;
     }
 
     .about__content-wrapper {

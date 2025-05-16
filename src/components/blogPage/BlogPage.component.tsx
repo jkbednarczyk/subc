@@ -1,10 +1,19 @@
 import { Helmet } from 'react-helmet-async';
 import { METADATA } from '../common/utils/metadata';
 import './BlogPage.css';
+import { useState, useEffect } from 'react';
+import { fetchBlogPostSummaries } from './BlogPage.service';
+import { BlogPostSummary } from './BlogPage.utils';
 
 
 export const BlogPage = () => {
-  
+  const [postsSummaries, setPostsSummaries] = useState<BlogPostSummary[]>([]);
+
+  useEffect(() => {
+    fetchBlogPostSummaries().then((data) => {
+      setPostsSummaries(data);
+    });
+  }, []);
 
   return <>
     <Helmet>

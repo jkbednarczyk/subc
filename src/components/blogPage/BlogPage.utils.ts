@@ -14,7 +14,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "porcelana-z-xix-wieku",
     createdAt: "2024-05-15T12:00:00",
     excerpt: "Filiżanka z Miśni, ręcznie zdobiona, pochodzi z 1870 roku...",
-    coverImageLocation: "/images/blog/porcelana-1.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "rosenthal-historia",
     createdAt: "2024-05-14T10:30:00",
     excerpt: "Poznaj wyjątkowe serie Rosenthal z XX wieku...",
-    coverImageLocation: "/images/blog/rosenthal.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "znaki-na-porcelanie",
     createdAt: "2024-05-13T08:15:00",
     excerpt: "Dowiedz się, jak rozszyfrować znaki wytwórni i datowanie porcelany.",
-    coverImageLocation: "/images/blog/znaki.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "zegary-antyczne",
     createdAt: "2024-05-12T11:45:00",
     excerpt: "Francuskie zegary kominkowe i ich wartość kolekcjonerska.",
-    coverImageLocation: "/images/blog/zegar-1.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "jak-dbac-o-porcelane",
     createdAt: "2024-05-11T13:20:00",
     excerpt: "Sprawdzone metody pielęgnacji starych filiżanek i figurek.",
-    coverImageLocation: "/images/blog/pielegnacja.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "filizanki-secesja",
     createdAt: "2024-05-10T17:00:00",
     excerpt: "Secesyjne zdobienia, złocenia i inspiracje naturą w porcelanie.",
-    coverImageLocation: "/images/blog/secesja.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "figury-porcelanowe",
     createdAt: "2024-05-09T15:10:00",
     excerpt: "Mistrzowie rzeźby w porcelanie – figurki z Miśni i Volkstedt.",
-    coverImageLocation: "/images/blog/figurki.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "porcelana-empire",
     createdAt: "2024-05-08T09:25:00",
     excerpt: "Jak rozpoznać porcelanę empire i co ją wyróżnia?",
-    coverImageLocation: "/images/blog/empire.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "porcelana-cmielow",
     createdAt: "2024-05-07T10:50:00",
     excerpt: "Legendarna polska marka z ponad 200-letnią historią.",
-    coverImageLocation: "/images/blog/cmielow.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 10,
@@ -86,7 +86,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "jak-ocenic-antyk",
     createdAt: "2024-05-06T08:40:00",
     excerpt: "Czynniki wpływające na cenę antyków: wiek, sygnatura, stan.",
-    coverImageLocation: "/images/blog/ocena.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 11,
@@ -94,7 +94,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "mity-o-porcelanie",
     createdAt: "2024-05-05T13:30:00",
     excerpt: "Czy każda stara filiżanka jest cenna? Obalamy mity.",
-    coverImageLocation: "/images/blog/mity.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 12,
@@ -102,7 +102,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "filizanka-na-prezent",
     createdAt: "2024-05-04T12:00:00",
     excerpt: "Elegancki prezent z duszą: jak wybrać filiżankę z historią?",
-    coverImageLocation: "/images/blog/prezent.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 13,
@@ -110,7 +110,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "meissen-sygnatury",
     createdAt: "2024-05-03T16:10:00",
     excerpt: "Podwójny miecz i inne znaki wytwórni z Miśni.",
-    coverImageLocation: "/images/blog/meissen.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 14,
@@ -118,7 +118,7 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "rosenthal-top-serie",
     createdAt: "2024-05-02T09:45:00",
     excerpt: "Które kolekcje Rosenthal cieszą się największym uznaniem?",
-    coverImageLocation: "/images/blog/rosenthal-serie.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
   {
     id: 15,
@@ -126,6 +126,6 @@ export const mockPostsSummaries: BlogPostSummary[] = [
     slug: "porcelana-recznie-malowana",
     createdAt: "2024-05-01T10:20:00",
     excerpt: "Porady dla początkujących kolekcjonerów i miłośników detali.",
-    coverImageLocation: "/images/blog/recznie.jpg",
+    coverImageLocation: "/images/blog/postCover.png"
   },
 ];

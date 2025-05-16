@@ -26,5 +26,15 @@ export const BlogPage = () => {
       <h1>Z miłości do rzeczy pięknych i niepowtarzalnych</h1>
       <h2>Blog o sztuce kolekcjonowania i pasji do antyków.</h2>
     </section>
+    <section className="blog_posts">
+      {postsSummaries.map((post) => (
+        <article key={post.id} className="blog_post">
+          <img src={post.coverImageLocation} alt={post.title} />
+          <h3>{post.title}</h3>
+          <p>{post.excerpt}</p>
+          <a href={`/blog/${post.slug}`}>Czytaj więcej</a>
+        </article>
+      ))} 
+    </section>
   </>
 }

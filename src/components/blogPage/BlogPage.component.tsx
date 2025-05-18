@@ -4,6 +4,8 @@ import './BlogPage.css';
 import { useState, useEffect } from 'react';
 import { fetchBlogPostSummaries } from './BlogPage.service';
 import { BlogPostSummary } from './BlogPage.utils';
+import { BlogList } from './blogList/BlogList.component';
+import { Footer } from '../footer/Footer.component';
 
 
 export const BlogPage = () => {
@@ -19,22 +21,14 @@ export const BlogPage = () => {
     <Helmet>
       <title>ADD TEXT AND METADATA</title>
       <meta 
-        name="description" 
-        content={METADATA.ABOUT_DESCRIPTION} />
+        name = "description" 
+        content = {METADATA.ABOUT_DESCRIPTION} />
     </Helmet>
-    <section className="blog_hero">
+    <section className = "blog_hero">
       <h1>Z miłości do rzeczy pięknych i niepowtarzalnych</h1>
       <h2>Blog o sztuce kolekcjonowania i pasji do antyków.</h2>
     </section>
-    <section className="blog_posts">
-      {postsSummaries.map((post) => (
-        <article key={post.id} className="blog_post">
-          <img src={post.coverImageLocation} alt={post.title} />
-          <h3>{post.title}</h3>
-          <p>{post.excerpt}</p>
-          <a href={`/blog/${post.slug}`}>Czytaj więcej</a>
-        </article>
-      ))} 
-    </section>
+    <BlogList posts = {postsSummaries} />
+    <Footer />
   </>
 }

@@ -28,3 +28,37 @@
     font-style: italic;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }   
+
+@media screen and (max-width: 430px) {
+    .blog_hero h1 {
+        padding: 30px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: var(--smaller-h1-font-size);
+    }
+
+    .blog_hero h2 {
+        padding: 30px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: var(--mobile-font-size);
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 1150px) {
+    .blog_hero {
+        height: 60vh;
+    }
+
+    .blog_hero h1 {
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .blog_hero h2 {
+        padding: 30px;
+        text-align: center;
+        margin: 0 auto
+    }
+}

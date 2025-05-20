@@ -55,25 +55,21 @@
   transform: translateX(0);
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-  gap: 0.5rem;
-}
-
-.pagination button {
-  padding: 0.5rem 1rem;
-  border: none;
+.p-paginator, .p-component {
   background: transparent;
-  color: var(--first-color);
-  cursor: pointer;
 }
 
-.pagination .active {
-  background: #333;
-  border-radius: 25px;;
+.p-paginator-element {
   color: var(--first-color);
+}
+
+.p-paginator-element:hover {
+  background: transparent;
+}
+
+.p-highlight, .p-highlight:hover {
+  background: var(--blog-grey);
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 430px) {

@@ -4,7 +4,8 @@
         "ABOUT_US": "About Us",
         "OUR_AUCTIONS": "Our Auctions",
         "CONTACT": "Contact",
-        "PURCHASE": "Purchase"
+        "PURCHASE": "Purchase",
+        "BLOG": "Blog"
     },
     
     "MOTTO": "With Us You Will Discover the Beauty of the Past",
@@ -135,5 +136,10 @@
         "BACK_BUTTON": "Back to the main page",
         "404_NAME": "Page Not Found",
         "404_MESSAGE": "Sorry, the page with the specified address could not be found."
+    },
+
+    "BLOG": {
+        "TITLE": "For the love of beautiful and unique things",
+        "SUBTITLE": "A blog about the art of collecting and a passion for antiques."
     }
 }

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 import "./ErrorPage.css";
 import { translate } from "../../../lang/utils/TranslationUtils";
 import { Helmet } from "react-helmet-async";
@@ -13,7 +13,7 @@ interface ErrorPageProps {
 }
 
 export const ErrorPage: FC<ErrorPageProps> = (props) => {
-    const navigate = useNavigate(); 
+    const navigate: NavigateFunction = useNavigate(); 
 
     return <>
         <Helmet>

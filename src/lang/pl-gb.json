@@ -4,7 +4,8 @@
         "ABOUT_US": "O Nas",
         "OUR_AUCTIONS": "Nasze Aukcje",
         "CONTACT": "Kontakt",
-        "PURCHASE": "Skup"
+        "PURCHASE": "Skup",
+        "BLOG": "Blog"
     },
     
     "MOTTO": "Z Nami Odkryjesz Piękno Przeszłości",
@@ -135,5 +136,10 @@
         "BACK_BUTTON": "Powrót do strony głównej",
         "404_NAME": "Nie znaleziono strony",
         "404_MESSAGE": "Przepraszamy, strona o podanym adresie nie została odnaleziona."
+    },
+
+    "BLOG": {
+        "TITLE": "Z miłości do rzeczy pięknych i niepowtarzalnych",
+        "SUBTITLE": "Blog o sztuce kolekcjonowania i pasji do antyków."
     }
 }

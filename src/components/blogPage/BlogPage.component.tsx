@@ -6,6 +6,7 @@ import { fetchBlogPostSummaries } from './BlogPage.service';
 import { BlogPostSummary } from './BlogPage.utils';
 import { BlogList } from './blogList/BlogList.component';
 import { Footer } from '../footer/Footer.component';
+import { translate } from '../../lang/utils/TranslationUtils';
 
 
 export const BlogPage = () => {
@@ -19,14 +20,14 @@ export const BlogPage = () => {
 
   return <>
     <Helmet>
-      <title>ADD TEXT AND METADATA</title>
+      <title>{METADATA.BLOG_TITLE}</title>
       <meta 
         name = "description" 
-        content = {METADATA.ABOUT_DESCRIPTION} />
+        content = {METADATA.BLOG_DESCRIPTION} />
     </Helmet>
     <section className = "blog_hero">
-      <h1>Z miłości do rzeczy pięknych i niepowtarzalnych</h1>
-      <h2>Blog o sztuce kolekcjonowania i pasji do antyków.</h2>
+      <h1>{translate("BLOG.TITLE")}</h1>
+      <h2>{translate("BLOG.SUBTITLE")}</h2>
     </section>
     <BlogList posts = {postsSummaries} />
     <Footer />

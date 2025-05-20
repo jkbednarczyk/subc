@@ -68,7 +68,7 @@
 }
 
 .p-highlight, .p-highlight:hover {
-  background: var(--blog-grey);
+  background: var(--blog-hover-grey);
   border-radius: 25px;
 }
 

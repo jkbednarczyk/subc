@@ -9,4 +9,6 @@ export const METADATA = {
     CONTACT_DESCRIPTION: "Potrzebujesz więcej informacji o naszych produktach? Skontaktuj się z Salonem Unikatów – na stronie znajdziesz wszystkie niezbędne dane kontaktowe.",
     ERROR_404_TITLE: "Strona nie została odnaleziona | Salon Unikatów",
     ERROR_404_DESCRIPTION: "Ta strona nie istnieje lub została usunięta. Wróć na stronę główną, aby kontynuować.",
+    BLOG_TITLE: "Blog | Salon Unikatów - Sekrety porcelany i unikatowych przedmiotów",
+    BLOG_DESCRIPTION: "Blog o sztuce kolekcjonowania i pasji do antyków.",
 }

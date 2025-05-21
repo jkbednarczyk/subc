@@ -1,0 +1,40 @@
+.post_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../../../assets/images/post_hero.png');
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.post_hero h1 {
+    color: var(--first-color);
+    font-size: 40px;
+    align-self: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 430px) {
+    .post_hero h1 {
+        padding: 30px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: var(--smaller-h1-font-size);
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 1150px) {
+    .post_hero {
+        height: 60vh;
+    }
+
+    .post_hero h1 {
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

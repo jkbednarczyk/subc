@@ -17,6 +17,26 @@ export interface Post {
   content: string;
 }
 
+export interface FullPostResponse {
+  post: {
+    id: number;
+    title: string;
+    slug: string;
+    createdAt: string;
+    coverImageLocation: string;
+    excerpt: string;
+    content: string;
+  };
+  previous: {
+    title: string;
+    slug: string;
+  } | null;
+  next: {
+    title: string;
+    slug: string;
+  } | null;
+}
+
 export const mockPostsSummaries: BlogPostSummary[] = [
   {
     id: 1,
@@ -140,34 +160,43 @@ export const mockPostsSummaries: BlogPostSummary[] = [
   },
 ];
 
-export const mockFullPost: Post[] = [
+export const mockFullPost: FullPostResponse[] = [
   {
-    id: 1,
-    title: "Porcelanowe opowieści: Meissen i tajemnice manufaktury",
-    slug: "meissen-tajemnice-manufaktury",
-    createdAt: "2024-05-15T12:00:00",
-    coverImageLocation: "/images/blog/meissen.png",
-    excerpt: "Porady dla początkujących kolekcjonerów i miłośników detali.",
-    content: `
-      <p>
-        Manufaktura w Miśni (Meissen) to nie tylko pierwsze europejskie centrum produkcji porcelany, ale także miejsce,
-        gdzie przez wieki tworzono przedmioty będące połączeniem sztuki i rzemiosła. Historia jej powstania to fascynująca opowieść o alchemikach,
-        sekretach formuły na „białe złoto” i królewskich ambicjach.
-      </p>
-      <img src="/images/blog/meissen-wazon.png" alt="Porcelanowy wazon z Meissen" />
-      <p>
-        W XVIII wieku Augustus II Mocny zapragnął uniezależnić się od chińskich importów i uczynić Saksonię centrum europejskiej porcelany.
-        Zatrudnił Johanna Böttgera, który jako pierwszy w Europie opracował prawdziwą, twardą porcelanę. Tak narodziła się Meissen –
-        z charakterystycznym znakiem podwójnych mieczy, który do dziś świadczy o oryginalności wyrobu.
-      </p>
-      <img src="/images/blog/meissen-miecz.png" alt="Znak podwójnych mieczy Meissen" />
-      <p>
-        Dziś figurki, filiżanki i wazony z Meissen są obiektami pożądania kolekcjonerów z całego świata.
-        Każdy detal – od ręcznego malowania po złocenia – jest wykonywany z niezwykłą precyzją.
-        Wybierając porcelanę z Miśni, obcujemy z historią i tradycją, która przetrwała wieki.
-      </p>
-    `},
-    {
+    post: {
+      id: 1,
+      title: "Porcelanowe opowieści: Meissen i tajemnice manufaktury",
+      slug: "meissen-tajemnice-manufaktury",
+      createdAt: "2024-05-15T12:00:00",
+      coverImageLocation: "/images/blog/meissen.png",
+      excerpt: "Porady dla początkujących kolekcjonerów i miłośników detali.",
+      content: `
+        <p>
+          Manufaktura w Miśni (Meissen) to nie tylko pierwsze europejskie centrum produkcji porcelany, ale także miejsce,
+          gdzie przez wieki tworzono przedmioty będące połączeniem sztuki i rzemiosła. Historia jej powstania to fascynująca opowieść o alchemikach,
+          sekretach formuły na „białe złoto” i królewskich ambicjach.
+        </p>
+        <img src="/images/blog/meissen-wazon.png" alt="Porcelanowy wazon z Meissen" />
+        <p>
+          W XVIII wieku Augustus II Mocny zapragnął uniezależnić się od chińskich importów i uczynić Saksonię centrum europejskiej porcelany.
+          Zatrudnił Johanna Böttgera, który jako pierwszy w Europie opracował prawdziwą, twardą porcelanę. Tak narodziła się Meissen –
+          z charakterystycznym znakiem podwójnych mieczy, który do dziś świadczy o oryginalności wyrobu.
+        </p>
+        <img src="/images/blog/meissen-miecz.png" alt="Znak podwójnych mieczy Meissen" />
+        <p>
+          Dziś figurki, filiżanki i wazony z Meissen są obiektami pożądania kolekcjonerów z całego świata.
+          Każdy detal – od ręcznego malowania po złocenia – jest wykonywany z niezwykłą precyzją.
+          Wybierając porcelanę z Miśni, obcujemy z historią i tradycją, która przetrwała wieki.
+        </p>
+      `
+    },
+    previous: null,
+    next: {
+      title: "Historia porcelany w Europie",
+      slug: "rosenthal-historia"
+    }
+  },
+  {
+    post: {
       id: 16,
       title: "Historia porcelany w Europie",
       slug: "rosenthal-historia",
@@ -190,26 +219,40 @@ export const mockFullPost: Post[] = [
         <h2>Porcelana dziś</h2>
         <p>Współcześnie porcelana to nie tylko sztuka użytkowa, ale także przedmiot kolekcjonerski. Zachwyca nadal precyzją wykonania i bogactwem wzorów. Historyczne egzemplarze osiągają wysokie ceny na aukcjach, a współczesne manufaktury łączą tradycję z nowoczesnym designem. Powstają zarówno repliki dawnych modeli, jak i zupełnie nowe kolekcje wpisujące się w aktualne trendy. Porcelana znajduje swoje miejsce nie tylko w muzeach i domach kolekcjonerów, ale także w restauracjach, galeriach i nowoczesnych wnętrzach. Jej urok jest ponadczasowy, a jakość – nie do podrobienia.</p>
       `
-
+    },
+    previous: {
+      title: "Porcelanowe opowieści: Meissen i tajemnice manufaktury",
+      slug: "meissen-tajemnice-manufaktury"
+    },
+    next: {
+      title: "Zegar kominkowy z brązu – klasyka XIX wieku",
+      slug: "znaki-na-porcelanie"
+    }
   },
   {
-    id: 17,
-    title: "Zegar kominkowy z brązu – klasyka XIX wieku",
-    slug: "znaki-na-porcelanie",
-    createdAt: "2024-05-16T14:30:00",
-    coverImageLocation: "/images/blog/meissen.png",
-    excerpt: "Odkryj elegancję zegarów kominkowych z epoki wiktoriańskiej.",
-    content: `
-      <p>Zegary kominkowe z brązu były nieodłącznym elementem XIX-wiecznych salonów. Ich masywna konstrukcja i finezyjne zdobienia przyciągają uwagę kolekcjonerów do dziś. Zdobione często motywami mitologicznymi, roślinnymi lub klasycznymi kolumnami, zegary te stanowiły centralny punkt w wystroju pomieszczeń. Niektóre modele były również wyposażone w figurki przedstawiające sceny rodzajowe lub alegoryczne postaci. Złocenia i zastosowanie marmuru w podstawach nadawały im dodatkowego prestiżu, czyniąc je przedmiotami pożądania nie tylko wśród arystokracji, ale również zamożnego mieszczaństwa.</p>
+    post: {
+      id: 17,
+      title: "Zegar kominkowy z brązu – klasyka XIX wieku",
+      slug: "znaki-na-porcelanie",
+      createdAt: "2024-05-16T14:30:00",
+      coverImageLocation: "/images/blog/meissen.png",
+      excerpt: "Odkryj elegancję zegarów kominkowych z epoki wiktoriańskiej.",
+      content: `
+        <p>Zegary kominkowe z brązu były nieodłącznym elementem XIX-wiecznych salonów. Ich masywna konstrukcja i finezyjne zdobienia przyciągają uwagę kolekcjonerów do dziś. Zdobione często motywami mitologicznymi, roślinnymi lub klasycznymi kolumnami, zegary te stanowiły centralny punkt w wystroju pomieszczeń. Niektóre modele były również wyposażone w figurki przedstawiające sceny rodzajowe lub alegoryczne postaci. Złocenia i zastosowanie marmuru w podstawach nadawały im dodatkowego prestiżu, czyniąc je przedmiotami pożądania nie tylko wśród arystokracji, ale również zamożnego mieszczaństwa.</p>
 
-      <p>W epoce wiktoriańskiej takie zegary stanowiły wyznacznik statusu społecznego. Często były wykonywane ręcznie, z dbałością o każdy detal – od mechanizmu po reliefy zdobiące obudowę. Wytwarzano je w renomowanych warsztatach zegarmistrzowskich, gdzie mistrzowie rzemiosła poświęcali tygodnie pracy, aby dopracować każdy element. Wzornictwo inspirowane było często klasycyzmem francuskim, co czyniło je nie tylko urządzeniami do pomiaru czasu, ale i prawdziwymi dziełami sztuki. Dodatkowo, zegary często uzupełniano o pasujące lichtarze lub lustra, tworząc kompleksowe zestawy dekoracyjne dla eleganckich wnętrz.</p>
+        <p>W epoce wiktoriańskiej takie zegary stanowiły wyznacznik statusu społecznego. Często były wykonywane ręcznie, z dbałością o każdy detal – od mechanizmu po reliefy zdobiące obudowę. Wytwarzano je w renomowanych warsztatach zegarmistrzowskich, gdzie mistrzowie rzemiosła poświęcali tygodnie pracy, aby dopracować każdy element. Wzornictwo inspirowane było często klasycyzmem francuskim, co czyniło je nie tylko urządzeniami do pomiaru czasu, ale i prawdziwymi dziełami sztuki. Dodatkowo, zegary często uzupełniano o pasujące lichtarze lub lustra, tworząc kompleksowe zestawy dekoracyjne dla eleganckich wnętrz.</p>
 
-      <img src="/images/blog/meissen-miecz.png" alt="Zegar kominkowy z brązu" />
+        <img src="/images/blog/meissen-miecz.png" alt="Zegar kominkowy z brązu" />
 
-      <p>Mechanizm zegara zazwyczaj był nakręcany ręcznie i potrafił działać przez wiele dni bez ponownego nakręcania. Zegary te były nie tylko precyzyjne, ale również niezwykle dekoracyjne. Ich mechanizmy opierały się na precyzyjnie kalibrowanych kołach zębatych i balansach, które zapewniały niezawodne odmierzanie czasu. W niektórych modelach zastosowano również funkcję bicia godzin i półgodzin, a niekiedy także melodyjne kuranty. Mechanizmy często były sygnowane przez znanych zegarmistrzów, co znacznie zwiększało ich wartość kolekcjonerską. Obudowy, często otwierane na klucz, skrywały misterne wnętrza z grawerowanymi tabliczkami producentów i numerami seryjnymi.</p>
+        <p>Mechanizm zegara zazwyczaj był nakręcany ręcznie i potrafił działać przez wiele dni bez ponownego nakręcania. Zegary te były nie tylko precyzyjne, ale również niezwykle dekoracyjne. Ich mechanizmy opierały się na precyzyjnie kalibrowanych kołach zębatych i balansach, które zapewniały niezawodne odmierzanie czasu. W niektórych modelach zastosowano również funkcję bicia godzin i półgodzin, a niekiedy także melodyjne kuranty. Mechanizmy często były sygnowane przez znanych zegarmistrzów, co znacznie zwiększało ich wartość kolekcjonerską. Obudowy, często otwierane na klucz, skrywały misterne wnętrza z grawerowanymi tabliczkami producentów i numerami seryjnymi.</p>
 
-      <p>Dziś takie egzemplarze są poszukiwane na aukcjach i przez kolekcjonerów na całym świecie. Ich wartość zależy od stanu zachowania, sygnatury oraz pochodzenia. Zegary zachowane w oryginalnym stanie, z pełnym mechanizmem i nienaruszoną obudową, mogą osiągać wysokie ceny na międzynarodowych rynkach antyków. Renomowani kolekcjonerzy zwracają uwagę na detale, takie jak jakość odlewu, kunszt wykończenia czy obecność dokumentacji historycznej. Współczesne renowacje mogą podnieść lub obniżyć wartość zegara – wszystko zależy od tego, czy zachowano zgodność z pierwotnym stylem i materiałami. Zegary kominkowe z XIX wieku to nie tylko świadectwo czasu, ale i trwały symbol luksusu oraz wysublimowanego gustu.</p>
-`
-
+        <p>Dziś takie egzemplarze są poszukiwane na aukcjach i przez kolekcjonerów na całym świecie. Ich wartość zależy od stanu zachowania, sygnatury oraz pochodzenia. Zegary zachowane w oryginalnym stanie, z pełnym mechanizmem i nienaruszoną obudową, mogą osiągać wysokie ceny na międzynarodowych rynkach antyków. Renomowani kolekcjonerzy zwracają uwagę na detale, takie jak jakość odlewu, kunszt wykończenia czy obecność dokumentacji historycznej. Współczesne renowacje mogą podnieść lub obniżyć wartość zegara – wszystko zależy od tego, czy zachowano zgodność z pierwotnym stylem i materiałami. Zegary kominkowe z XIX wieku to nie tylko świadectwo czasu, ale i trwały symbol luksusu oraz wysublimowanego gustu.</p>
+      `
+    },
+    previous: {
+      title: "Historia porcelany w Europie",
+      slug: "rosenthal-historia"
+    },
+    next: null
   }
 ];

@@ -1,4 +1,4 @@
-import { BlogPostSummary, mockFullPost, mockPostsSummaries, Post } from "./BlogPage.utils"
+import { BlogPostSummary, FullPostResponse, mockFullPost, mockPostsSummaries, Post } from "./BlogPage.utils"
 
 export const fetchBlogPostSummaries= async (): Promise<BlogPostSummary[]> => {
     return new Promise((resolve) => {
@@ -8,10 +8,10 @@ export const fetchBlogPostSummaries= async (): Promise<BlogPostSummary[]> => {
     });
 };
 
-export const fetchBlogPost = async (slug: string): Promise<Post | null> => {
+export const fetchBlogPost = async (slug: string): Promise<FullPostResponse | null> => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            const post = mockFullPost.find((post) => post.slug === slug);
+            const post = mockFullPost.find((post) => post.post.slug === slug);
             resolve(post || null);
         }, 300); // Optional: simulate network delay
     });

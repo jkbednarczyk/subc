@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import './PostPage.css';
-import { FullPostResponse, Post } from '../BlogPage.utils';
+import { FullPostResponse } from '../BlogPage.utils';
 import { fetchBlogPost } from '../BlogPage.service';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
@@ -47,7 +47,6 @@ export const PostPage = () => {
 
     const formattedCreationDate: string = dayjs("2024-05-16T14:30:00").format("D MMMM YYYY");
 
-
     return (
         <>
             <Helmet>
@@ -62,28 +61,26 @@ export const PostPage = () => {
                 <div className = 'post_content' dangerouslySetInnerHTML={{ __html: post.post.content }} />
             </article>
             <nav className="post_navigation">
-                {previousPost && (
-                    <button
-                        className="nav_button prev"
-                        onClick={() => navigate(`/blog/${previousPost.slug}`)}>
+                <button
+                    className="nav_button prev"
+                    style={{ visibility: previousPost ? 'visible' : 'hidden' }}
+                    onClick={() => previousPost && navigate(`/blog/${previousPost.slug}`)}>
                         <IoIosArrowBack className="arrow" />
-                        <div className="nav_text">
+                        <div className="nav_text prev">
                             <span className="nav_label">POPRZEDNI POST</span>
-                            <span className="nav_title">{previousPost.title}</span>
+                            <span className="nav_title">{previousPost?.title ?? ""}</span>
                         </div>
-                    </button>
-                )}
-                {nextPost && (
-                    <button
-                        className="nav_button next"
-                        onClick={() => navigate(`/blog/${nextPost.slug}`)}>
-                        <IoIosArrowForward className="arrow" />
-                        <div className="nav_text">
+                </button>
+                <button
+                    className="nav_button next"
+                    style={{ visibility: nextPost ? 'visible' : 'hidden' }}
+                    onClick={() => nextPost && navigate(`/blog/${nextPost.slug}`)}>
+                        <div className="nav_text next">
                             <span className="nav_label">NASTĘPNY POST</span>
-                            <span className="nav_title">{nextPost.title}</span>
+                            <span className="nav_title">{nextPost?.title ?? ""}</span>
                         </div>
-                    </button>
-                )}
+                        <IoIosArrowForward className="arrow" />
+                </button>
             </nav>
             <Footer />
         </>

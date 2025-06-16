@@ -7,9 +7,12 @@ import { Footer } from '../footer/Footer.component';
 import { Helmet } from 'react-helmet-async';
 import { METADATA } from '../common/utils/metadata';
 import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
+import { InfoModal } from '../common/infoModal/InfoModal.component';
+import { useState } from 'react';
 
 
 export const HomePage = () => {
+    const [isModalOpen, setModalOpen] = useState(true);
 
     const handleClick = () => {
         window.open(EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS, "_blank");
@@ -37,6 +40,8 @@ export const HomePage = () => {
             <OurAuctions/>
             <AboutUs />
         </section>
+        {isModalOpen && <InfoModal 
+            onClose = {() => setModalOpen(false)}/>}
         <Footer/>
     </>
 };

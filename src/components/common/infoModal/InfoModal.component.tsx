@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import './InfoModal.css';
 import { IoClose } from "react-icons/io5";
 import { NavigateFunction, useNavigate } from 'react-router-dom';
@@ -9,16 +9,31 @@ interface InfoModalProps {
 
 export const InfoModal: FC<InfoModalProps> = (props) => {
   const navigate: NavigateFunction = useNavigate(); 
+  const [isClosing, setIsClosing] = useState(false);
 
   const handleGoToBlog = () => {
     props.onClose();
     navigate("/blog");
   }
 
+  const handleClose = () => {
+    setIsClosing(true);
+  };
+
+  useEffect(() => {
+    if (isClosing) {
+      const timer = setTimeout(() => {
+        props.onClose();
+      }, 600);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isClosing, props, props.onClose]);
+
   return (
-    <div className="modal-backdrop">
-      <div className="modal">
-        <button className="modal-close" onClick={props.onClose}>
+    <div className={`modal-backdrop ${isClosing ? 'fade-out' : ''}`}>
+      <div className={`modal ${isClosing ? 'fade-out' : ''}`}>
+        <button className="modal-close" onClick={handleClose}>
           <IoClose />
         </button>
         <div className="modal-content">

@@ -10,6 +10,7 @@ import { ErrorPage } from './components/common/errorPage/ErrorPage.component';
 import { METADATA } from './components/common/utils/metadata';
 import { AboutPage } from './components/about/AboutPage.component';
 import { BlogPage } from './components/blogPage/BlogPage.component';
+import { PostPage } from './components/blogPage/blogPost/PostPage.component';
 
 interface AppProps {
   language: string;
@@ -27,6 +28,7 @@ const App: FC<AppProps> = (props) => {
           <Route path = "/purchase" element = {<PurchasePage />} />
           <Route path = "/contact" element = {<ContactPage />} />
           <Route path = "/blog" element = {<BlogPage />} />
+          <Route path="/blog/:slug" element={<PostPage />} />
           <Route path="*" element={
             <ErrorPage 
               errorNumber={404}

@@ -22,7 +22,7 @@ export const HomePage = () => {
     }, []);
 
     const handleCloseModal = () => {
-        Cookies.set('infoModalSeen', 'true');
+        Cookies.set('infoModalSeen', 'true', { expires: 365 });
         setModalOpen(false);
     }
 

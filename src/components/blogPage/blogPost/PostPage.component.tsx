@@ -60,7 +60,8 @@ export const PostPage = () => {
             <article>
                 <div className = 'post_content' dangerouslySetInnerHTML={{ __html: post.post.content }} />
             </article>
-            <nav className="post_navigation">
+            { previousPost || nextPost ? (
+                <nav className="post_navigation">
                 <button
                     className="nav_button prev"
                     style={{ visibility: previousPost ? 'visible' : 'hidden' }}
@@ -81,7 +82,7 @@ export const PostPage = () => {
                         </div>
                         <IoIosArrowForward className="arrow" />
                 </button>
-            </nav>
+            </nav>) : null}
             <Footer />
         </>
     )

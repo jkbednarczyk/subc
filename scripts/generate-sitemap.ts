@@ -6,8 +6,9 @@ const SITE_URL = "https://salonunikatow.pl";
 const pages = [
   "/", 
   "/about", 
+  "/purchase",
   "/contact", 
-  "/purchase"
+  "/blog"
 ];
 
 const stream = new SitemapStream({ hostname: SITE_URL });

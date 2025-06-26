@@ -23,13 +23,16 @@
   --footer-background: #131313;
   --common-page-background: #1d1c1c;
   --allegro-comment-background: #222222;
-  --button-hover: #8baaad;
+  --blog-cream: #f8f0bf;
+  --blog-grey: #717070;
+  --blog-hover-grey: #393939;
   --body-font: "Lora", sans-serif;
   --menu-font: "Lora", sans-serif;
   --subtitle-font: "Montserrat", sans-serif;
   --title-font: "Script MT Bold";
   --smaller-h1-font-size: 35px;
   --text-font-size: 20px;
+  --blog-text-font-size: 18px;
   --smaller-text-font-size: 18px;
   --menu-font-size: 18px;
   --mobile-font-size: 20px;

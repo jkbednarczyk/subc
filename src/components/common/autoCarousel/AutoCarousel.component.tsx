@@ -13,8 +13,6 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
     const touchStartX = useRef(0);
     const scrollStart = useRef(0);
 
-    const IMAGE_WIDTH: number = 400;
-
     useEffect(() => {
         let animationFrameId: number;
         let lastTimestamp: DOMHighResTimeStamp = performance.now();

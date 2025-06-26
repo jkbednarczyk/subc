@@ -4,7 +4,8 @@
         "ABOUT_US": "About Us",
         "OUR_AUCTIONS": "Our Auctions",
         "CONTACT": "Contact",
-        "PURCHASE": "Purchase"
+        "PURCHASE": "Purchase",
+        "BLOG": "Blog"
     },
     
     "MOTTO": "With Us You Will Discover the Beauty of the Past",
@@ -97,7 +98,9 @@
         "PARAGRAPH_3_1": "Our website contains links to the website ",
         "PARAGRAPH_3_LINK": "Allegro.pl",
         "PARAGRAPH_3_2": ", where our auctions are located. By clicking on these links, you are redirected to an external site that has its own privacy policy. We recommend that you read the privacy policy of Allegro, available on their website, because Salon Unikatów has no influence on the way data is processed by this service.",
-        "PARAGRAPH_4_1": "Our website does not use cookies or other tracking technologies to monitor user activity.",
+        "PARAGRAPH_4_1": "Our website uses cookies to remember whether the user has already seen the information displayed in a modal window (pop-up). A cookie is a small text file stored in the user's browser that allows the website to recognize the user during subsequent visits.",
+        "PARAGRAPH_4_2": "The cookie related to the modal window does not contain any personal data and is used solely to improve the user experience by preventing the repeated display of the same information.",
+        "PARAGRAPH_4_3": "You can delete cookies at any time using your browser settings.",
         "PARAGRAPH_5_1": "Data collected via the contact form may be shared with a third party – Web3Forms – to provide a messaging service. This data is not shared with other parties for marketing or commercial purposes.",
         "PARAGRAPH_6_1": "Every user has the right to:",
         "PARAGRAPH_6_LIST_1": "- access their personal data,",
@@ -108,7 +111,7 @@
         "PARAGRAPH_6_2": "To exercise these rights, please contact us via e-mail: salonnikatow@gmail.com.",
         "PARAGRAPH_7_1": "We make every effort to ensure that your data is safe. Data sent via the contact form is protected by appropriate technical and organizational measures that are designed to prevent access by unauthorized persons.",
         "PARAGRAPH_8_1": "Salon Unikatów reserves the right to make changes to this privacy policy. Any changes will be published on this page. Using our site after changes are made constitutes acceptance of the new privacy policy.",
-        "DATE": "Last updated: January 9th, 2025",
+        "DATE": "Last updated: June 26th, 2025",
         "CLOSURE": "If you have any questions about our privacy policy, please contact us."
     },
 
@@ -135,5 +138,12 @@
         "BACK_BUTTON": "Back to the main page",
         "404_NAME": "Page Not Found",
         "404_MESSAGE": "Sorry, the page with the specified address could not be found."
+    },
+
+    "BLOG": {
+        "TITLE": "For the love of beautiful and unique things",
+        "SUBTITLE": "A blog about the art of collecting and a passion for antiques",
+        "AUTHOR": "Author: ",
+        "READ_MORE": "Read more"
     }
 }

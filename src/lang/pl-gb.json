@@ -4,7 +4,8 @@
         "ABOUT_US": "O Nas",
         "OUR_AUCTIONS": "Nasze Aukcje",
         "CONTACT": "Kontakt",
-        "PURCHASE": "Skup"
+        "PURCHASE": "Skup",
+        "BLOG": "Blog"
     },
     
     "MOTTO": "Z Nami Odkryjesz Piękno Przeszłości",
@@ -97,7 +98,9 @@
         "PARAGRAPH_3_1": "Nasza strona zawiera linki prowadzące do serwisu ",
         "PARAGRAPH_3_LINK": "Allegro.pl",
         "PARAGRAPH_3_2":", gdzie znajdują się nasze aukcje. Klikając te linki, zostajesz przekierowany na zewnętrzną stronę, która posiada własną politykę prywatności. Zalecamy zapoznanie się z polityką prywatności Allegro, dostępną na ich stronie internetowej, ponieważ firma Salon Unikatów nie ma wpływu na sposób przetwarzania danych przez ten serwis.",
-        "PARAGRAPH_4_1": "Nasza strona internetowa nie korzysta z plików cookies ani innych technologii śledzenia w celu monitorowania aktywności użytkowników.",
+        "PARAGRAPH_4_1": "Nasza strona internetowa wykorzystuje pliki cookies w celu zapamiętania, czy użytkownik widział już wyświetlane informacje w formie modalnego okna (pop-up). Cookie to niewielki plik tekstowy przechowywany w przeglądarce użytkownika, który pozwala stronie internetowej na rozpoznanie użytkownika przy kolejnych odwiedzinach.",
+        "PARAGRAPH_4_2": "Cookie związany z modalnym oknem nie zawiera żadnych danych osobowych i jest wykorzystywany wyłącznie w celu poprawy komfortu korzystania ze strony poprzez uniknięcie wielokrotnego wyświetlania tych samych informacji.",
+        "PARAGRAPH_4_3": "Możesz w każdej chwili usunąć pliki cookies za pomocą ustawień swojej przeglądarki internetowej.",
         "PARAGRAPH_5_1": "Dane zbierane za pośrednictwem formularza kontaktowego mogą być udostępniane podmiotowi trzeciemu – Web3Forms – w celu zapewnienia usługi przesyłania wiadomości. Dane te nie są udostępniane innym podmiotom w celach marketingowych ani handlowych.",
         "PARAGRAPH_6_1": "Każdemu użytkownikowi przysługuje prawo do:",
         "PARAGRAPH_6_LIST_1": "- dostępu do swoich danych osobowych,",
@@ -108,7 +111,7 @@
         "PARAGRAPH_6_2": "W celu skorzystania z tych praw, prosimy o kontakt za pośrednictwem adresu e-mail: salonunikatow@gmail.com.",
         "PARAGRAPH_7_1": "Dokładamy wszelkich starań, aby Twoje dane były bezpieczne. Dane przesyłane za pośrednictwem formularza kontaktowego są chronione przez stosowanie odpowiednich środków technicznych i organizacyjnych, które mają na celu zapobieganie dostępowi nieuprawnionych osób.",
         "PARAGRAPH_8_1": "Firma Salon Unikatów zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Wszelkie zmiany będą publikowane na tej stronie. Korzystanie z naszej strony po wprowadzeniu zmian oznacza akceptację nowej polityki prywatności.",
-        "DATE": "Data ostatniej aktualizacji: 9 stycznia 2025 r.",
+        "DATE": "Data ostatniej aktualizacji: 26 czerwca 2025 r.",
         "CLOSURE": "Jeśli masz jakiekolwiek pytania dotyczące naszej polityki prywatności, prosimy o kontakt."
     },
 
@@ -135,5 +138,12 @@
         "BACK_BUTTON": "Powrót do strony głównej",
         "404_NAME": "Nie znaleziono strony",
         "404_MESSAGE": "Przepraszamy, strona o podanym adresie nie została odnaleziona."
+    },
+
+    "BLOG": {
+        "TITLE": "Z miłości do rzeczy pięknych i niepowtarzalnych",
+        "SUBTITLE": "Blog o sztuce kolekcjonowania i pasji do antyków",
+        "AUTHOR": "Autor: ",
+        "READ_MORE": "Czytaj więcej"
     }
 }

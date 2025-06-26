@@ -46,6 +46,8 @@ export const PrivacyPolicy = () => {
                 </p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_4")}</h2>
                 <p>{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_4_1")}</p>
+                <p>{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_4_2")}</p>
+                <p>{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_4_3")}</p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_5")}</h2>
                 <p>{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_5_1")}</p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_6")}</h2>

@@ -12,6 +12,7 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import { ErrorPage } from '../../common/errorPage/ErrorPage.component';
 import { METADATA } from '../../common/utils/metadata';
+import { translate } from '../../../lang/utils/TranslationUtils';
 
 export const PostPage = () => {
     const { slug } = useParams();
@@ -19,6 +20,8 @@ export const PostPage = () => {
 
     const [post, setPost] = useState<FullPostResponse | null>(null);
     const [loading, setLoading] = useState(true);
+
+    const AUTHOR: string = translate("BLOG.AUTHOR");
 
     useEffect(() => {
         setLoading(true);
@@ -45,7 +48,7 @@ export const PostPage = () => {
     dayjs.extend(localizedFormat);
     dayjs.locale("pl");
 
-    const formattedCreationDate: string = dayjs("2024-05-16T14:30:00").format("D MMMM YYYY");
+    const formattedCreationDate: string = dayjs(post.post.createdAt).format("D MMMM YYYY");
 
     return (
         <>
@@ -59,6 +62,10 @@ export const PostPage = () => {
             </section>
             <article>
                 <div className = 'post_content' dangerouslySetInnerHTML={{ __html: post.post.content }} />
+                <p className="post_author">
+                    {AUTHOR}
+                    <span>{post.post.author}</span>    
+                </p>
             </article>
             { previousPost || nextPost ? (
                 <nav className="post_navigation">

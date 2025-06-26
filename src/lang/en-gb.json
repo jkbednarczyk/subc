@@ -111,7 +111,7 @@
         "PARAGRAPH_6_2": "To exercise these rights, please contact us via e-mail: salonnikatow@gmail.com.",
         "PARAGRAPH_7_1": "We make every effort to ensure that your data is safe. Data sent via the contact form is protected by appropriate technical and organizational measures that are designed to prevent access by unauthorized persons.",
         "PARAGRAPH_8_1": "Salon Unikatów reserves the right to make changes to this privacy policy. Any changes will be published on this page. Using our site after changes are made constitutes acceptance of the new privacy policy.",
-        "DATE": "Last updated: June 16th, 2025",
+        "DATE": "Last updated: June 26th, 2025",
         "CLOSURE": "If you have any questions about our privacy policy, please contact us."
     },
 
@@ -142,6 +142,8 @@
 
     "BLOG": {
         "TITLE": "For the love of beautiful and unique things",
-        "SUBTITLE": "A blog about the art of collecting and a passion for antiques."
+        "SUBTITLE": "A blog about the art of collecting and a passion for antiques",
+        "AUTHOR": "Author: ",
+        "READ_MORE": "Read more"
     }
 }

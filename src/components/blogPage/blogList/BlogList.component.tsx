@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { BlogPostSummary } from "../BlogPage.utils";
 import './BlogList.css';
 import { Paginator } from "primereact/paginator";
+import { translate } from "../../../lang/utils/TranslationUtils";
 
 interface BlogListProps {
   posts: BlogPostSummary[];
@@ -16,6 +17,8 @@ export const BlogList: FC<BlogListProps> = ({ posts }) => {
     const startIndex: number = (currentPage - 1) * POSTS_PER_PAGE;
     const currentPosts = posts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
+    const REAR_MORE: string = translate("BLOG.READ_MORE");
+
     return (
         <>
             <section className="blog_posts">
@@ -24,7 +27,7 @@ export const BlogList: FC<BlogListProps> = ({ posts }) => {
                         <img src={post.coverImageLocation} alt={post.title} />
                         <h3>{post.title}</h3>
                         <p>{post.excerpt}</p>
-                        <a className="blog_read_more" href={`/blog/${post.slug}`}>Czytaj więcej</a>
+                        <a className="blog_read_more" href={`/blog/${post.slug}`}>{REAR_MORE}</a>
                     </article>
                 ))}
             </section>

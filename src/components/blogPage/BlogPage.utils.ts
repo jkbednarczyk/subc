@@ -131,7 +131,7 @@ export const mockFullPost: FullPostResponse[] = [
           <img src="/images/blog/0001/night.png" alt="Ciepła, czerwcowa noc w londyńskim mieszkaniu lprzy pełni księżyca" />
         </figure>
         
-        <p>Jej wzrok przykuła stara drewniana witrynka, w której trzymała swoją kolekcję porcelany. Miała już ją dawno wymienić stary mebel, bo nie pasował do reszty.<br>
+        <p>Jej wzrok przykuła stara drewniana witrynka, w której trzymała swoją kolekcję porcelany. Już dawno miała wymienić stary mebel, bo nie pasował do reszty.<br>
             Ale teraz jej wzrok przykuła nie witrynka, a filiżanka.<br>
             Jej pierwszy okaz – podarowany przez mamę. Wyglądała odmiennie. W mroku nocy, oświetlona blaskiem wpadającego księżyca, już nie przypominała jej sielskiej i ciepłej angielskiej wsi, którą znała z młodości. Była cicha, chłodna i elegancka. W tej chwili wiedziała już, że to nie nowy motyw jest potrzebny, ale nowa interpretacja tego, co dobrze znane.</p>
 

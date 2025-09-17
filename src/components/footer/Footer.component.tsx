@@ -25,15 +25,15 @@ export const Footer = () => {
                     <a href = "tel:+48662921155"> +48 662 921 155</a>
                 </div>
                 <div className = 'footer-social-media'>
-                    <NavLink to = {EXTERNAL_LINKS.FACEBOOK} target = "_blank">
+                    <NavLink to = {EXTERNAL_LINKS.FACEBOOK} target = "_blank" aria-label='Facebook'>
                         <FontAwesomeIcon icon = {faSquareFacebook}/>
                     </NavLink>
-                    <NavLink to = {EXTERNAL_LINKS.INSTAGRAM} target = "_blank">
+                    <NavLink to = {EXTERNAL_LINKS.INSTAGRAM} target = "_blank" aria-label='Instagram'>
                         <FontAwesomeIcon icon = {faInstagram}/>
                     </NavLink>
                 </div>
                 <div className = "footer-allegro">
-                     <NavLink to = {EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS} target = "_blank">
+                     <NavLink to = {EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS} target = "_blank" aria-label='Allegro'>
                         <img src = {allegro} alt = "" className = "footer-allegro-icon"/>
                     </NavLink>
                 </div>

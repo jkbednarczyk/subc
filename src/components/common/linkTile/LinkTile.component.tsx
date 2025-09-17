@@ -17,9 +17,9 @@ export const LinkTile: FC<LinkTileProps> = (props) => {
                     <img src = {props.imageLocation} alt = {props.alt} className = "link_tile_img" />
                 </figure>
                 <div className = "link_tile_info">
-                    <h5 className = "link_tile_text">
+                    <h2 className = "link_tile_text">
                         {props.text}
-                    </h5>
+                    </h2>
                 </div>
             </NavLink>
         </div>

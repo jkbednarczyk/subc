@@ -10,6 +10,7 @@ import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
 import { InfoModal } from '../common/infoModal/InfoModal.component';
 import { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
+import Banckground  from '../../assets/images/background_set.webp';
 
 export const HomePage = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -38,6 +39,14 @@ export const HomePage = () => {
                 content = {METADATA.HOME_DESCRIPTION}/>
         </Helmet>
         <section className = "home">
+            <img 
+                src = {Banckground}
+                alt = "Antique porcelain background" 
+                className = "home-bg" 
+                decoding = "async" 
+                fetchPriority = 'high'
+            />
+            <div className="home-overlay"></div>
             <div className = "content">
                 <h1>Salon Unikatów</h1>
                 <p>{translate("MOTTO")}</p>

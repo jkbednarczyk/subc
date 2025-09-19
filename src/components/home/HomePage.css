@@ -1,22 +1,44 @@
 .home {
-    display: flex;
-    height: 100vh;
-    background-image: url('../../assets/images/background_set.webp');
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-    background-position: center bottom; 
-    animation: homeAnimation 10s infinite alternate;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  z-index: -2;
+  animation: homeAnimation 10s infinite alternate;
+  filter: brightness(0.5);
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 @keyframes homeAnimation {
-    0% {
-        background-size: 100%; 
-        filter: brightness(100%);
-    }
-    100% {
-        background-size: 110%; 
-        filter: brightness(80%);
-    }
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+  }
 }
 
 .content {

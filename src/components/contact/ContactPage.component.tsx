@@ -17,10 +17,10 @@ export const ContactPage = () => {
                 name = "description" 
                 content = {METADATA.CONTACT_DESCRIPTION}/>
         </Helmet>
-        <section className = "contact-page">
-            <ul className = "contact-data">
+        <section className = "contact__page">
+            <ul className = "contact__data">
                 <h1>{translate("CONTACT.CONTACT_PAGE_TITLE")}</h1> 
-                <li className = "contact-item"> 
+                <li className = "contact__item"> 
                     <p>{translate("CONTACT.CONTACT_PAGE_TEXT")}</p>
                 </li>
                 <CustomContactItem icon = {faEnvelope}>
@@ -30,7 +30,7 @@ export const ContactPage = () => {
                     <a href = "tel:+48662921155">+48 662 921 155</a>
                 </CustomContactItem>
             </ul>
-            <ul className = "contact-form">
+            <ul className = "contact__form">
                 <li className = "contact-item">
                     <ContactForm />
                 </li>

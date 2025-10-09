@@ -1,4 +1,4 @@
-.contact-page {
+.contact__page {
     display: flex;
     justify-content: center;
     min-height: 80vh;
@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-.contact-data, .contact-form {
+.contact__data, .contact__form {
     font-size: var(--text-font-size);
     max-width: 650px;
     width: 100%;
@@ -16,11 +16,11 @@
     list-style: none;
 }
 
-.contact-data {
+.contact__data {
     padding-top: 50px;
 }
 
-.contact-page h1 {
+.contact__page h1 {
     color: var(--first-color);
     font-size: 30px;
     text-align: left;
@@ -33,7 +33,7 @@
 
 
 @media screen and (max-width: 430px) {
-    .contact-page {
+    .contact__page {
         flex-direction: column;
         text-align: center;
     }
@@ -52,21 +52,21 @@
         padding-top: 4px;
     }
 
-    .contact-data, .contact-form {
+    .contact__data, .contact__form {
         width: 100%;
         margin: 0;
         padding-top: 25px;
     }
 
-    .contact-page h1 {
+    .contact__page h1 {
         padding-left: 10px;
     }
 
-    .contact-form h1 {
+    .contact__form h1 {
         margin-left: 0;
     }
 
-    .contact-item {
+    .contact__item {
         padding: 15px;
     }
 }

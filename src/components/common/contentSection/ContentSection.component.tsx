@@ -15,9 +15,9 @@ export const ContentSection: FC<ContentSectionProps> = ({
     reverse = false,
     }) => {
     return (
-      <div className = {`content-section ${reverse ? 'content-section-reverse' : ''}`}>
-        <div className = "content-section-text">{text}</div>
-        <img className = "content-section-image" src = {imgSrc} alt = {alt} />
+      <div className = {`content-section ${reverse ? 'content-section__reverse' : ''}`}>
+        <div className = "content-section__text">{text}</div>
+        <img className = "content-section__image" src = {imgSrc} alt = {alt} />
       </div>
     );
   };

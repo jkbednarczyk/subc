@@ -31,16 +31,16 @@ export const InfoModal: FC<InfoModalProps> = (props) => {
   }, [isClosing, props, props.onClose]);
 
   return (
-    <div className={`modal-backdrop ${isClosing ? 'fade-out' : ''}`}>
+    <div className={`modal__backdrop ${isClosing ? 'fade-out' : ''}`}>
       <div className={`modal ${isClosing ? 'fade-out' : ''}`}>
-        <button className="modal-close" onClick={handleClose}>
+        <button className="modal__close" onClick={handleClose}>
           <IoClose />
         </button>
-        <div className="modal-content">
-          <p className='modal-content-new'>Nowość!</p>
+        <div className="modal__content">
+          <p className='modal__content-new'>Nowość!</p>
           <h2>Blog Salonu Unikatów</h2>
           <p>Odkrywaj historie, porady i ciekawostki związane z porcelaną i antykami.</p>
-          <button className='modal-button' onClick = {handleGoToBlog}>
+          <button className='modal__button' onClick = {handleGoToBlog}>
             Przejdź do bloga
           </button>
         </div>

@@ -1,4 +1,4 @@
-import { BlogPostSummary, FullPostResponse, mockFullPost, mockPostsSummaries, Post } from "./BlogPage.utils"
+import { BlogPostSummary, FullPostResponse, mockFullPost, mockPostsSummaries} from "./BlogPage.utils"
 
 export const fetchBlogPostSummaries= async (): Promise<BlogPostSummary[]> => {
     return new Promise((resolve) => {

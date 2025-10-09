@@ -25,7 +25,7 @@ export const BlogPage = () => {
         name = "description" 
         content = {METADATA.BLOG_DESCRIPTION} />
     </Helmet>
-    <section className = "blog_hero">
+    <section className = "blog__hero">
       <h1>{translate("BLOG.TITLE")}</h1>
       <h2>{translate("BLOG.SUBTITLE")}</h2>
     </section>

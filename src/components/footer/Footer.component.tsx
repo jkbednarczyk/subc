@@ -12,19 +12,19 @@ export const Footer = () => {
 
     return <>
         <section className = "footer">
-            <div className = "footer-content">
-                <div className = "footer-item">
+            <div className = "footer__content">
+                <div className = "footer__item">
                     <FontAwesomeIcon icon = {faLocationDot}/> Kraków, Małopolska
                 </div>
-                <div className = "footer-item">
+                <div className = "footer__item">
                     <FontAwesomeIcon icon = {faEnvelope}/>
                     <a href = "mailto:salonunikatow@gmail.com"> salonunikatow@gmail.com</a>
                 </div>
-                <div className = "footer-item">
+                <div className = "footer__item">
                     <FontAwesomeIcon icon = {faPhone}/>
                     <a href = "tel:+48662921155"> +48 662 921 155</a>
                 </div>
-                <div className = 'footer-social-media'>
+                <div className = 'footer__social-media'>
                     <NavLink to = {EXTERNAL_LINKS.FACEBOOK} target = "_blank" aria-label='Facebook'>
                         <FontAwesomeIcon icon = {faSquareFacebook}/>
                     </NavLink>
@@ -32,12 +32,12 @@ export const Footer = () => {
                         <FontAwesomeIcon icon = {faInstagram}/>
                     </NavLink>
                 </div>
-                <div className = "footer-allegro">
+                <div className = "footer__allegro">
                      <NavLink to = {EXTERNAL_LINKS.ALLEGRO_ALL_AUCTIONS} target = "_blank" aria-label='Allegro'>
-                        <img src = {allegro} alt = "" className = "footer-allegro-icon"/>
+                        <img src = {allegro} alt = "" className = "footer__allegro-icon"/>
                     </NavLink>
                 </div>
-                <div className = "footer-copyright">
+                <div className = "footer__copyright">
                     <FontAwesomeIcon icon = {faCopyright}/> {translate("COPYRIGHT")}
                     <NavLink to = "/privacyPolicy">
                         {translate("PRIVACY_POLICY")}

@@ -1,4 +1,4 @@
-.privacy_policy {
+.privacy-policy {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -14,44 +14,44 @@
     margin-left: 15px;
 }
 
-.privacy_policy h1 {
+.privacy-policy h1 {
     padding-top: 30px;
     font-family: var(--menu-font);
 }
 
-.privacy_policy h2 {
+.privacy-policy h2 {
     padding-top: 20px;
     color: var(--text-color);
 }
 
-.privacy_policy h3 {
+.privacy-policy h3 {
     padding-top: 15px;
     color: var(--text-color);
     margin-left: 15px;
 }
 
-.privacy_policy p {
+.privacy-policy p {
     padding-top: 10px;
     color: var(--text-color);
     margin-left: 15px;
 }
 
-.outside_policy a {
+.privacy-policy__outside-link a {
     color: var(--first-color);
 }
 
 @media screen and (max-width: 430px) {
-    .privacy_policy h2 {
+    .privacy-policy h2 {
         margin-left: 20px;
         margin-right: 15px;
     }
     
-    .privacy_policy h3 {
+    .privacy-policy h3 {
         margin-left: 25px;
         margin-right: 15px;
     }
 
-    .privacy_policy p {
+    .privacy-policy p {
         margin-left: 25px;
         margin-right: 15px;
     }

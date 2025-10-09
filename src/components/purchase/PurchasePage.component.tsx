@@ -26,19 +26,19 @@ export const PurchasePage = () => {
                 name = "description" 
                 content = {METADATA.PURCHASE_DESCRIPTION}/>
         </Helmet>
-        <section className="purchase_hero">
+        <section className="purchase__hero">
             <h1>{translate("PURCHASE.TITLE")}</h1>
         </section>
         <section className="purchase">
-            <div className="purchase_page_content">
+            <div className="purchase__page-content">
                 <p>{translate("PURCHASE.FIRST")}</p>
                 <p>{translate("PURCHASE.SECOND")}</p>
                 <p>{translate("PURCHASE.THIRD")}</p>
                 <p>{translate("PURCHASE.FOURTH")}</p>
                 <p>{translate("PURCHASE.FIFTH")}</p>      
             </div>
-            <div className = "purchase_additional_info">
-                <div className = "purchse_why">
+            <div className = "purchase__additional-info">
+                <div className = "purchse__why">
                     <h1>{translate("PURCHASE.WHY")}</h1>
                     <IconTile 
                         icon = {<IoShieldCheckmark/>} 
@@ -50,7 +50,7 @@ export const PurchasePage = () => {
                         icon = {<IoPersonSharp />} 
                         title = {translate("PURCHASE.CLIENT")}/>
                 </div>
-                <div className="purchase_contact">
+                <div className="purchase__contact">
                     <button 
                         onClick = {handleClick}>
                             {translate("PURCHASE.CONTACT")}

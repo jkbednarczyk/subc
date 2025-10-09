@@ -16,7 +16,7 @@ export const HomePage = () => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const hasSeenModal = Cookies.get('infoModalSeen');
+        const hasSeenModal: string | undefined = Cookies.get('infoModalSeen');
         if (!hasSeenModal) {
             setModalOpen(true);
         }

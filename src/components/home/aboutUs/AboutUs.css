@@ -13,11 +13,6 @@
     color: var(--first-color);
 }
 
-.about_us_photo {
-    text-align: center;
-    color: var(--text-color);
-}
-
 .about_us  .about_us__thanks {
     text-align: center;
     color: var(--first-color);

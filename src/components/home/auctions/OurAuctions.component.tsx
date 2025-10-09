@@ -23,9 +23,9 @@ export const OurAuctions = () => {
     <div className = "our_auctions">
       <h1>{translate("OUR_OFFER")}</h1>
       <div className = "auctions_container">
-        <div className = "links_wrapper">
+        <div className = "links__wrapper">
           <p>{translate("OUR_OFFER_TEXT")}</p>
-          <ul className = "links_tiles">
+          <ul className = "links__tiles">
             {AUCTION_ITEMS.map((item, index) => (
               <li key = {index}>
                 <LinkTile 

@@ -82,11 +82,11 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
 
     return (
         <div 
-            className = "carousel-wrapper"
+            className = "carousel__wrapper"
             onMouseEnter = {handleMouseEnter}
             onMouseLeave = {handleMouseLeave}>
             <div
-                className = "carousel-track"
+                className = "carousel__track"
                 ref = {containerRef}
                 
                 onTouchStart = {handleTouchStart}
@@ -94,13 +94,13 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
                 onTouchEnd = {handleTouchEnd}
             >
                 {[...images, ...images].map((src, i) => (
-                    <img key={i} src={src} alt={`comment-${i}`} className="carousel-image" />
+                    <img key={i} src={src} alt={`comment-${i}`} className="carousel__image" />
             ))}
             </div>
             {showControls && (
             <>
-                <button className="carousel-control prev" onClick={handlePrev}>‹</button>
-                <button className="carousel-control next" onClick={handleNext}>›</button>
+                <button className="carousel__control prev" onClick={handlePrev}>‹</button>
+                <button className="carousel__control next" onClick={handleNext}>›</button>
             </>
         )}
         </div>

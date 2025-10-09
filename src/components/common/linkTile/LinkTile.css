@@ -1,4 +1,4 @@
-.link_tile {
+.link-tile {
   width: 250px;
   height: 250px;
   display: inline flow-root list-item;
@@ -7,7 +7,7 @@
   border-radius: 10px;
 }
 
-.link_tile_link {
+.link-tile__link {
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -19,14 +19,14 @@
   text-decoration: none;
 }
 
-.link_tile_pic_wrap {
+.link-tile__pic-wrap {
   position: relative;
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
 }
 
-.link_tile_img {
+.link-tile__img {
   position: absolute;
   top: 0;
   right: 0;
@@ -41,16 +41,16 @@
   transition: all 0.2s linear;
 }
 
-.link_tile_img:hover {
+.link-tile__img:hover {
   transform: scale(1.1);
 }
 
-.link_tile_info {
+.link-tile__info {
   background: var(--text-color);
   padding: 20px 27px 27px;
 }
 
-.link_tile_text {
+.link-tile__text {
   color: #252e48;
   font-size: var(--text-font-size);
   line-height: 20px;

@@ -1,4 +1,4 @@
-.photo_tile {
+.photo__tile {
     width: 275px;
     height: 275px;
     display: inline flow-root list-item;
@@ -6,7 +6,7 @@
     margin: 0 1rem;
   }
 
-  .photo_tile_pic_wrap {
+  .photo__tile-pic-wrap {
     position: relative;
     width: 100%;
     padding-top: 100%;
@@ -14,7 +14,7 @@
     border-radius: 10px;
   }
 
-  .photo_tile_img {
+  .photo__tile-img {
     position: absolute;
     top: 0;
     right: 0;
@@ -29,6 +29,6 @@
     transition: all 0.2s linear;
   }
   
-  .photo_tile_img:hover {
+  .photo__tile-img:hover {
     transform: scale(1.1);
   }

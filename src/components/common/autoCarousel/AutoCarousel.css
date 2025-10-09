@@ -1,9 +1,9 @@
-.carousel-wrapper {
+.carousel__wrapper {
   overflow-x: hidden;
   padding: 30px 40px;
 }
 
-.carousel-track {
+.carousel__track {
   display: flex;
   gap: 16px;
   overflow-x: hidden;
@@ -12,11 +12,11 @@
   -ms-overflow-style: none;
 }
 
-.carousel-track::-webkit-scrollbar {
+.carousel__track::-webkit-scrollbar {
   display: none;
 }
 
-.carousel-image {
+.carousel__image {
   background-color: var(--allegro-comment-background);
   height: 400px;
   width: 400px;
@@ -26,12 +26,12 @@
   flex-shrink: 0;
 }
 
-.carousel-wrapper {
+.carousel__wrapper {
     position: relative;
     overflow: hidden;
 }
 
-.carousel-control {
+.carousel__control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -44,25 +44,25 @@
     z-index: 10;
 }
 
-.carousel-control.prev {
+.carousel__control.prev {
     left: 50px;
 }
 
-.carousel-control.next {
+.carousel__control.next {
     right: 50px;
 }
 
 @media screen and (max-width: 1150px) {
-  .carousel-wrapper {
+  .carousel__wrapper {
     padding: 20px 10px;
   }
 
-  .carousel-image {
+  .carousel__image {
     width: 335px;
     height: 325px;
   }
 
-  .carousel-control {
+  .carousel__control {
     visibility: hidden;
   }
 }

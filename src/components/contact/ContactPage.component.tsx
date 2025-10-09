@@ -20,7 +20,7 @@ export const ContactPage = () => {
         <section className = "contact__page">
             <ul className = "contact__data">
                 <h1>{translate("CONTACT.CONTACT_PAGE_TITLE")}</h1> 
-                <li className = "contact__item"> 
+                <li className = "contact__data-item"> 
                     <p>{translate("CONTACT.CONTACT_PAGE_TEXT")}</p>
                 </li>
                 <CustomContactItem icon = {faEnvelope}>

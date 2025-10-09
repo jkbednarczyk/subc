@@ -20,6 +20,12 @@
     padding-top: 50px;
 }
 
+.contact__data-item {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+}
+
 .contact__page h1 {
     color: var(--first-color);
     font-size: 30px;
@@ -66,7 +72,7 @@
         margin-left: 0;
     }
 
-    .contact__item {
+    .contact__data-item {
         padding: 15px;
     }
 }

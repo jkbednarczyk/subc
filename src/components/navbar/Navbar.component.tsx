@@ -35,6 +35,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
       setShowMenu(false);
     }
   };
+  
   return (
     <header className = "header">
       <nav className = "nav container">

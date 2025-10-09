@@ -8,7 +8,7 @@
     background: var(--footer-background);
 }
 
-.footer-content {
+.footer__content {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -19,36 +19,36 @@
     text-align: center;
 }
 
-.footer-item {
+.footer__item {
     font-size: 20px;
     margin-top: 10px;
 }
 
-.footer-item a {
+.footer__item a {
     color: var(--text-color);
 }
 
-.footer-social-media {
+.footer__social-media {
     height: 35px;
     font-size: 25px;
     margin-top: 10px;
 }
 
-.footer-copyright a {
+.footer__copyright a {
     color: var(--first-color);
 }
 
-.footer-social-media  a {
+.footer__social-media  a {
     color: var(--text-color);
     margin: 10px;
 }
 
-.footer-copyright {
+.footer__copyright {
     height: 50px;
     margin-top: 30px;
 }
 
-.footer-allegro-icon {
+.footer__allegro-icon {
     margin-top: 4px;
     height: 25px;
 }

@@ -26,12 +26,12 @@ export const ErrorPage: FC<ErrorPageProps> = (props) => {
                 content = {props.metaDescription}/>
         </Helmet>
         <section className = "error-page">
-            <div className = "error-page-content">
+            <div className = "error-page__content">
                 <h1>{props.errorNumber}</h1>
                 <h2>{translate(props.errorNameCode)}</h2>
                 <p>{translate(props.messageCode)}</p>
                 <button 
-                    className = "error-page-button" 
+                    className = "error-page__button" 
                     onClick={() => navigate("/")}>
                     {translate("ERROR.BACK_BUTTON")}
                 </button>

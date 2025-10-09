@@ -6,7 +6,7 @@
     height: calc(100vh - var(--header-height) - 2rem);
 }
 
-.error-page-content {
+.error-page__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
     padding: 25px 0 10px;
 }
 
-.error-page-button {
+.error-page__button {
     background-color: transparent;
     color: var(--text-color);
     padding: 15px 20px;
@@ -47,7 +47,7 @@
     transition: background-color 0.3s ease;
 }
 
-.error-page-button:hover {
+.error-page__button:hover {
     background-color: var(--first-color);
 }
 
@@ -65,7 +65,7 @@
         padding: 15px 15px 5px;
     }
 
-    .error-page-button {
+    .error-page__button {
         font-size: 16px;
         padding: 10px 15px;
     }
@@ -85,7 +85,7 @@
         padding: 20px 0 10px;
     }
 
-    .error-page-button {
+    .error-page__button {
         font-size: 18px;
         padding: 12px 18px;
     }

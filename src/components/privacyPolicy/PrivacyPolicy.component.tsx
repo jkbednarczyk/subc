@@ -9,7 +9,7 @@ import { EXTERNAL_LINKS } from '../common/utils/externalLinks';
 export const PrivacyPolicy = () => {
     window.scrollTo(0, 0);
     return <>
-        <section className="privacy_policy">
+        <section className="privacy-policy">
             <h1>{translate("PRIVACY_POLICY_PAGE.TITLE")}</h1>
                 <p>{translate("PRIVACY_POLICY_PAGE.INTRODUCTION")}</p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_1")}</h2>
@@ -32,13 +32,13 @@ export const PrivacyPolicy = () => {
                 <h3>{translate("PRIVACY_POLICY_PAGE.SUBTITLE_2_1")}</h3>
                     <p>{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_1")}</p>
                 <h3>{translate("PRIVACY_POLICY_PAGE.SUBTITLE_2_2")}</h3>
-                    <p className="outside_policy">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_2")}
+                    <p className="privacy-policy__outside-link">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_2")}
                         <NavLink to = {EXTERNAL_LINKS.WEB3FORMS_PRIVACY_POLICY} target="_blank">
                             {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_2_LINK")}
                         </NavLink>.
                     </p>
             <h2>{translate("PRIVACY_POLICY_PAGE.TITLE_3")}</h2>
-                <p className="outside_policy">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_1")}
+                <p className="privacy-policy__outside-link">{translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_1")}
                     <NavLink to = {EXTERNAL_LINKS.ALLEGRO_HOME} target="_blank">
                         {translate("PRIVACY_POLICY_PAGE.PARAGRAPH_3_LINK")}
                     </NavLink>

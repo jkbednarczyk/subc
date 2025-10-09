@@ -17,17 +17,17 @@ export const BlogList: FC<BlogListProps> = ({ posts }) => {
     const startIndex: number = (currentPage - 1) * POSTS_PER_PAGE;
     const currentPosts = posts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
-    const REAR_MORE: string = translate("BLOG.READ_MORE");
+    const READ_MORE: string = translate("BLOG.READ_MORE");
 
     return (
         <>
-            <section className="blog_posts">
+            <section className="blog__posts">
                 {currentPosts.map((post) => (
-                    <article key={post.id} className="blog_post">
+                    <article key={post.id} className="blog__post">
                         <img src={post.coverImageLocation} alt={post.title} />
                         <h3>{post.title}</h3>
                         <p>{post.excerpt}</p>
-                        <a className="blog_read_more" href={`/blog/${post.slug}`}>{REAR_MORE}</a>
+                        <a className="blog__read-more" href={`/blog/${post.slug}`}>{READ_MORE}</a>
                     </article>
                 ))}
             </section>

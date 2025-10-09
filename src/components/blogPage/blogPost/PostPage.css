@@ -1,4 +1,4 @@
-.post_hero {
+.post__hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,21 +11,21 @@
     background-position: center bottom;
 }
 
-.post_hero h1 {
+.post__hero h1 {
     color: var(--first-color);
     font-size: 40px;
     align-self: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.post_hero p {
+.post__hero p {
     padding-top: 35px;
     font-style: italic;
     font-size: var(--text-font-size);
     color: var(--first-color);
 }
 
-.post_content {
+.post__content {
   max-width: 1100px;
   margin: 0 auto;
   font-size: var(--blog-text-font-size);
@@ -33,21 +33,21 @@
   padding: 3rem 1rem 1rem;
 }
 
-.post_content h2 {
+.post__content h2 {
   font-size: 25px;
   margin-bottom: 1rem;
   color: var(--first-color);
 }
 
-.post_content p {
+.post__content p {
   margin-bottom: 1.5rem;
 }
 
-.post_content figure {
+.post__content figure {
     margin: 2rem;
 }
 
-.post_content figure img {
+.post__content figure img {
     display: block;
     margin: 0 auto;
     max-width: 500px;
@@ -57,7 +57,7 @@
     border-radius: 8px;
 }
 
-.post_content figure figcaption {
+.post__content figure figcaption {
     margin: 0 auto;
     padding: 0 10px;
     font-size: 12px;
@@ -67,7 +67,7 @@
     width: 100%;
 }
 
-.post_author {
+.post__content-author {
   font-style: italic;
   text-align: end;
   margin: 0 auto;
@@ -76,7 +76,7 @@
   color: var(--blog-grey);
 }
 
-.post_navigation {
+.post__navigation {
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
@@ -151,18 +151,18 @@
 }
 
 @media screen and (max-width: 430px) {
-    .post_hero h1 {
+    .post__hero h1 {
         padding: 30px;
         text-align: center;
         margin: 0 auto;
         font-size: var(--smaller-h1-font-size);
     }
 
-    .post_content figure {
+    .post__content figure {
       margin: 1rem 0;
     }
 
-    .post_navigation {
+    .post__navigation {
     flex-direction: column;
     align-items: stretch;
     }
@@ -179,11 +179,11 @@
 }
 
 @media screen and (min-width: 430px) and (max-width: 1150px) {
-    .post_hero {
+    .post__hero {
         height: 60vh;
     }
 
-    .post_hero h1 {
+    .post__hero h1 {
         padding: 20px;
         text-align: center;
         margin: 0 auto;

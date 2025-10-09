@@ -10,6 +10,7 @@ export interface BlogPostSummary {
 export interface Post {
   id: number;
   title: string;
+  author: string;
   slug: string;
   createdAt: string;
   coverImageLocation: string;
@@ -17,25 +18,16 @@ export interface Post {
   content: string;
 }
 
+export interface PostNeighbor {
+  title: string;
+  slug: string;
+}
+
+
 export interface FullPostResponse {
-  post: {
-    id: number;
-    title: string;
-    author: string;
-    slug: string;
-    createdAt: string;
-    coverImageLocation: string;
-    excerpt: string;
-    content: string;
-  };
-  previous: {
-    title: string;
-    slug: string;
-  } | null;
-  next: {
-    title: string;
-    slug: string;
-  } | null;
+  post: Post;
+  previous?: PostNeighbor;
+  next?: PostNeighbor;
 }
 
 export const mockPostsSummaries: BlogPostSummary[] = [
@@ -158,8 +150,6 @@ export const mockFullPost: FullPostResponse[] = [
         </figure>
 
       `
-    },
-    previous: null,
-    next: null
+    }
   }
 ];

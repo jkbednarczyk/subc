@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import './PostPage.css';
-import { FullPostResponse } from '../BlogPage.utils';
+import { FullPostResponse, PostNeighbor } from '../BlogPage.utils';
 import { fetchBlogPost } from '../BlogPage.service';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
@@ -32,8 +32,8 @@ export const PostPage = () => {
     }, [slug]);
 
 
-    const previousPost = post?.previous;
-    const nextPost = post?.next;
+    const previousPost: PostNeighbor | undefined = post?.previous;
+    const nextPost: PostNeighbor | undefined  = post?.next;
 
     if (loading) return <div>Loading...</div>;
     if (!post) {
@@ -56,19 +56,19 @@ export const PostPage = () => {
                 <title>{post.post.title}</title>
                 <meta name="description" content={post.post.excerpt} />
             </Helmet>
-            <section className = "post_hero">
+            <section className = "post__hero">
                 <h1>{post.post.title}</h1>
                 <p>{formattedCreationDate}</p>
             </section>
             <article>
-                <div className = 'post_content' dangerouslySetInnerHTML={{ __html: post.post.content }} />
-                <p className="post_author">
+                <div className = 'post__content' dangerouslySetInnerHTML={{ __html: post.post.content }} />
+                <p className="post__content-author">
                     {AUTHOR}
                     <span>{post.post.author}</span>    
                 </p>
             </article>
             { previousPost || nextPost ? (
-                <nav className="post_navigation">
+                <nav className="post__navigation">
                 <button
                     className="nav_button prev"
                     style={{ visibility: previousPost ? 'visible' : 'hidden' }}

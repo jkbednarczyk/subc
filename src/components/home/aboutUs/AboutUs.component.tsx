@@ -15,6 +15,8 @@ import { ContentSection } from "../../common/contentSection/ContentSection.compo
 import { NavLink } from "react-router-dom";
 import { EXTERNAL_LINKS } from "../../common/utils/externalLinks";
 import { AutoCarousel } from "../../common/autoCarousel/AutoCarousel.component";
+import { RefObject, useRef } from "react";
+import { useScrollAnimation } from "../../../hooks/useScrollAnimation";
 
 export const AboutUs  = () => {
 
@@ -29,27 +31,91 @@ export const AboutUs  = () => {
         Comment8
     ];
 
-    return <div className = "about_us">
-        <h1>{translate("WELCOME")}</h1>
-        <p>{translate("WHO_WE_ARE")}</p>
-        <ContentSection 
-            text = {translate("OUR_WORK")}  
-            imgSrc = {Camera}
-            alt = {translate("ALT.CAMERA")}         
+    const containerRef: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+    const headerRef: RefObject<HTMLHeadingElement> = useRef<HTMLHeadingElement>(null);
+    const introRef: RefObject<HTMLParagraphElement> = useRef<HTMLParagraphElement>(null);
+    const section1Ref: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+    const section2Ref: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+    const section3Ref: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+
+    useScrollAnimation(headerRef, {
+        fadeIn: true,
+        slideDirection: 'down',
+        distance: 30,
+        duration: 0.8,
+        start: 'top 80%',
+        end: 'top 60%',
+        scrub: 1,
+    });
+
+    useScrollAnimation(introRef, {
+        fadeIn: true,
+        slideDirection: 'up',
+        distance: 20,
+        duration: 0.8,
+        delay: 0.2,
+        start: 'top 80%',
+        end: 'top 60%',
+        scrub: 1,
+    });
+
+    useScrollAnimation(section1Ref, {
+        fadeIn: true,
+        slideDirection: 'left',
+        distance: 100,
+        duration: 1.5,
+        start: 'top 75%',
+        end: 'top 50%',
+        scrub: 1,
+    });
+
+    useScrollAnimation(section2Ref, {
+        fadeIn: true,
+        slideDirection: 'right',
+        distance: 100,
+        duration: 1.5,
+        start: 'top 75%',
+        end: 'top 50%',
+        scrub: 1,
+    });
+
+    useScrollAnimation(section3Ref, {
+        fadeIn: true,
+        slideDirection: 'left',
+        distance: 100,
+        duration: 1.5,
+        start: 'top 75%',
+        end: 'top 50%',
+        scrub: 1,
+    });
+
+    return <div className = "about_us" ref={containerRef}>
+        <h1 ref={headerRef}>{translate("WELCOME")}</h1>
+        <p ref={introRef}>{translate("WHO_WE_ARE")}</p>
+        <div ref={section1Ref}>
+            <ContentSection
+                text={translate("OUR_WORK")}
+                imgSrc={Camera}
+                alt={translate("ALT.CAMERA")}
             />
-        <ContentSection 
-            text = {translate("APPROACH")}  
-            imgSrc={Atmos}
-            alt = {translate("ALT.ATMOS")}
-            reverse        
+        </div>
+        <div ref={section2Ref}>
+            <ContentSection
+                text={translate("APPROACH")}
+                imgSrc={Atmos}
+                alt={translate("ALT.ATMOS")}
+                reverse
             />
-        <ContentSection 
-            text = {translate("CUSTOMERS")}  
-            imgSrc = {Lady}
-            alt = {translate("ALT.LADY")}         
+        </div>
+        <div ref={section3Ref}>
+            <ContentSection
+                text={translate("CUSTOMERS")}
+                imgSrc={Lady}
+                alt={translate("ALT.LADY")}
             />
-        <AutoCarousel 
-            images = {imagesSrc}/>
+        </div>
+        <AutoCarousel
+            images={imagesSrc} />
         <p>
             {translate("CUSTOMERS_COMMENTS")}
             <NavLink to = {EXTERNAL_LINKS.ALLEGRO_COMMENTS} target="_blank">

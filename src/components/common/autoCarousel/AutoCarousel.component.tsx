@@ -17,7 +17,7 @@ export const AutoCarousel: FC<AutoCarouselProps> = ({ images }) => {
         let animationFrameId: number;
         let lastTimestamp: DOMHighResTimeStamp = performance.now();
 
-        const scrollSpeed: number = 0.02;
+        const scrollSpeed: number = 0.03;
 
         const animate = (timestamp: number) => {
             if (!containerRef.current || paused) return;

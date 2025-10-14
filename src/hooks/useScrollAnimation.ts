@@ -51,7 +51,7 @@ export const useScrollAnimation = (ref: RefObject<HTMLElement>, config: ScrollAn
             distance: distance * 0.5
           };
         }
-        return { direction: slideDirection, distance: distance * 0.4 };
+        return { direction: slideDirection, distance: distance * 0.6 };
       }
       
       if (width < 1024) return { direction: slideDirection, distance: distance * 0.6 };

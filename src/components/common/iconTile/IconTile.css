@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 450px;
     height: 120px;
-    background-color: var(--common-page-background);
+    background-color: transparent;
     border-radius: 8px;
     transition: transform 0.2s ease;
     text-align: center;

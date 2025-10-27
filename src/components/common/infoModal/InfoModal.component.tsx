@@ -30,6 +30,24 @@ export const InfoModal: FC<InfoModalProps> = (props) => {
     }
   }, [isClosing, props, props.onClose]);
 
+  // return (
+  //   <div className={`modal__backdrop ${isClosing ? 'fade-out' : ''}`}>
+  //     <div className={`modal ${isClosing ? 'fade-out' : ''}`}>
+  //       <button className="modal__close" onClick={handleClose}>
+  //         <IoClose />
+  //       </button>
+  //       <div className="modal__content">
+  //         <p className='modal__content-new'>Nowość!</p>
+  //         <h2>Blog Salonu Unikatów</h2>
+  //         <p>Odkrywaj historie, porady i ciekawostki związane z porcelaną i antykami.</p>
+  //         <button className='modal__button' onClick = {handleGoToBlog}>
+  //           Przejdź do bloga
+  //         </button>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
+
   return (
     <div className={`modal__backdrop ${isClosing ? 'fade-out' : ''}`}>
       <div className={`modal ${isClosing ? 'fade-out' : ''}`}>
@@ -37,12 +55,10 @@ export const InfoModal: FC<InfoModalProps> = (props) => {
           <IoClose />
         </button>
         <div className="modal__content">
-          <p className='modal__content-new'>Nowość!</p>
-          <h2>Blog Salonu Unikatów</h2>
-          <p>Odkrywaj historie, porady i ciekawostki związane z porcelaną i antykami.</p>
-          <button className='modal__button' onClick = {handleGoToBlog}>
-            Przejdź do bloga
-          </button>
+          <p className='modal__content-new'>Przerwa w sprzedaży!</p>
+          <h2>Od 28 października do 14 listopada sprzedaż internetowa będzie wstrzymana.</h2>
+          <p>Wracamy po przerwie z nowymi, wyjątkowymi antykami!</p>
+          <p>Dziękujemy za cierpliwość i do zobaczenia wkrótce!</p>
         </div>
       </div>
     </div>

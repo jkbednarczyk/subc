@@ -15,15 +15,23 @@ import Banckground  from '../../assets/images/background_set.webp';
 export const HomePage = () => {
     const [isModalOpen, setModalOpen] = useState(false);
 
+    // useEffect(() => {
+    //     const hasSeenModal: string | undefined = Cookies.get('infoModalSeen');
+    //     if (!hasSeenModal) {
+    //         setModalOpen(true);
+    //     }
+    // }, []);
+
     useEffect(() => {
-        const hasSeenModal: string | undefined = Cookies.get('infoModalSeen');
+        const hasSeenModal = sessionStorage.getItem("infoModalSessionSeen");
         if (!hasSeenModal) {
-            setModalOpen(true);
+        setModalOpen(true);
+        sessionStorage.setItem("infoModalSessionSeen", "true");
         }
     }, []);
 
     const handleCloseModal = () => {
-        Cookies.set('infoModalSeen', 'true', { expires: 365 });
+        // Cookies.set('infoModalSeen', 'true', { expires: 365 });
         setModalOpen(false);
     }
 
@@ -61,7 +69,7 @@ export const HomePage = () => {
             <OurAuctions/>
             <AboutUs />
         </section>
-        {isModalOpen && <InfoModal 
+        {isModalOpen && <InfoModal
             onClose = {handleCloseModal}/>}
         <Footer/>
     </>

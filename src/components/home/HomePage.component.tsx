@@ -69,8 +69,8 @@ export const HomePage = () => {
             <OurAuctions/>
             <AboutUs />
         </section>
-        {isModalOpen && <InfoModal
-            onClose = {handleCloseModal}/>}
+        {/* {isModalOpen && <InfoModal
+            onClose = {handleCloseModal}/>} */}
         <Footer/>
     </>
 };
